@@ -3530,7 +3530,7 @@ bool CHARACTER::CanUseSkill(DWORD dwSkillVnum) const
 
 bool CHARACTER::CheckSkillHitCount(const BYTE SkillID, const VID &TargetVID)
 {
-	/*
+	
 	std::map<int, TSkillUseInfo>::iterator iter = m_SkillUseInfo.find(SkillID);
 
 	if (iter == m_SkillUseInfo.end())
@@ -3557,7 +3557,7 @@ bool CHARACTER::CheckSkillHitCount(const BYTE SkillID, const VID &TargetVID)
 			return false;
 	}
 
-	boost::unordered_map<VID, size_t>::iterator iterTargetMap = rSkillUseInfo.TargetVIDMap.find(TargetVID);
+	boost::unordered_map<DWORD, size_t>::iterator iterTargetMap = rSkillUseInfo.TargetVIDMap.find((DWORD)TargetVID);
 
 	if (rSkillUseInfo.TargetVIDMap.end() != iterTargetMap)
 	{
@@ -3593,9 +3593,9 @@ bool CHARACTER::CheckSkillHitCount(const BYTE SkillID, const VID &TargetVID)
 	}
 	else
 	{
-		rSkillUseInfo.TargetVIDMap.insert( std::make_pair(TargetVID, 1) );
+		rSkillUseInfo.TargetVIDMap.insert( std::make_pair((DWORD)TargetVID, 1) );
 	}
-	*/
+	
 	return true;
 }
 
