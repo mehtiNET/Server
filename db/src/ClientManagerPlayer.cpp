@@ -416,7 +416,7 @@ void CClientManager::ItemAward(CPeer * peer,char* login)
 		char* whyStr = pItemAward->szWhy;	//why 콜룸 읽기
 		char cmdStr[100] = "";	//why콜룸에서 읽은 값을 임시 문자열에 복사해둠
 		strcpy(cmdStr,whyStr);	//명령어 얻는 과정에서 토큰쓰면 원본도 토큰화 되기 때문
-		char command[20] = "";
+		char *command = new char[20];
 		strcpy(command,GetCommand(cmdStr));	// command 얻기		
 		if( !(strcmp(command,"GIFT") ))	// command 가 GIFT이면
 		{
@@ -430,7 +430,7 @@ void CClientManager::ItemAward(CPeer * peer,char* login)
 }
 char* CClientManager::GetCommand(char* str)
 {
-	char command[20] = "";
+	char *command = new char[20];
 	char* tok;
 
 	if( str[0] == '[' )
@@ -440,6 +440,7 @@ char* CClientManager::GetCommand(char* str)
 	}
 
 	return command;
+	free(command);
 }
 
 bool CreatePlayerTableFromRes(MYSQL_RES * res, TPlayerTable * pkTab)

@@ -8,18 +8,12 @@ OBJDIR = .obj
 
 GCC_VERSION = $(shell $(CC) --version 2>&1 | grep "(GCC)" | cut -d' ' -f3  | cut -d'.' -f1)
 BSD_VERSION = $(shell uname -v 2>&1 | cut -d' ' -f2 | cut -d'.' -f1)
-P4_VERSION = $(shell p4 changes -m1 $(PWD)/...\#have | cut -d' ' -f2)
+BUILD_DATE = $(shell date +'%d_%m_%Y__%H_%M')
 $(shell if [ ! -d $(OBJDIR) ]; then mkdir $(OBJDIR); fi)
 
-TARGET = $(BINDIR)/db_r$(P4_VERSION)
-
+#TARGET = $(BINDIR)/db_r$(BUILD_DATE)
+TARGET = $(BINDIR)/db
 CFLAGS = -g -Wall -O2 -pipe -fno-rtti -fno-exceptions -pthread -D_THREAD_SAFE
-
-ifeq ($(GCC_VERSION), 4)
-CFLAGS += -mtune=i686
-else
-CFLAGS += -mcpu=i686
-endif
 
 # boost
 INCDIR += -I../../boost
@@ -57,14 +51,14 @@ $(OBJDIR)/%.o: %.cpp
 	@$(CC) $(CFLAGS) $(INCDIR) -c $< -o $@
 
 $(OBJDIR)/version.o: version.cpp
-	@$(CC) $(CFLAGS) -D__USER__=\"$(USER)\" -D__HOSTNAME__=\"$(HOSTNAME)\" -D__PWD__=\"$(PWD)\" -D__P4_VERSION__=\"$(P4_VERSION)\" -c $< -o $@
+	@$(CC) $(CFLAGS) -D__USER__=\"$(USER)\" -D__HOSTNAME__=\"$(HOSTNAME)\" -D__PWD__=\"$(PWD)\" -c $< -o $@
 	@echo compile $<
 
 $(OBJDIR):
 	@mkdir $(OBJDIR)
 
 clean:
-	@rm -f $(OBJS) $(BINDIR)/db_r*
+	@rm -f $(OBJS) $(BINDIR)/db
 
 dep:
 	@touch Depend

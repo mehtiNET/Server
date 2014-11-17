@@ -172,6 +172,9 @@ class CClientManager : public CNetBase, public singleton<CClientManager>
 	bool		InitializeTables();
 	bool		InitializeShopTable();
 	bool		InitializeMobTable();
+	//BEGIN NPC TABLE
+	bool		InitializeNpcTable();
+	//END NPC TABLE
 	bool		InitializeItemTable();
 	bool		InitializeQuestItemTable();
 	bool		InitializeSkillTable();
