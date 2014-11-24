@@ -1,6 +1,5 @@
 ##
 # This file is part of the enhanceMT Project.
-# Based on TrinityCore project cmake files.
 ##
 
 file(GLOB_RECURSE sources_localdir *.cpp *.h)
@@ -13,16 +12,19 @@ SET(db_SRCS
 include_directories(
 	${CMAKE_BINARY_DIR}
 	${CMAKE_SOURCE_DIR}/src
+	${CMAKE_SOURCE_DIR}/src/shared
 	${BOOST_INCLUDE_DIR}
+	${CRYPTOPP_INCLUDE_DIRS}
 	${MYSQL_INCLUDE_DIR}
-)
-
-link_directories(
-	${MYSQL_LIBRARIES}
+	${OPENSSL_INCLUDE_DIR}
 )
 
 add_executable(db ${db_SRCS})
 
-#target_link_libraries(db
-#	${MYSQL_LIBRARIES}/mysqlclient.lib
-#)
+find_library(MYSQL_LIBRARY mysqlclient ${MYSQL_INCLUDE_DIR}/lib)
+target_link_libraries(db
+	libthecore
+	shared
+	lua
+	${MYSQL_LIBRARY}
+)

@@ -70,7 +70,7 @@ all:
 	$(MAKE) -C liblua clean
 	$(MAKE) -C liblua
 
-	@touch ../libsql/Depend
+	@touch libsql/Depend
 	$(MAKE) -C libsql dep
 	$(MAKE) -C libsql clean
 	$(MAKE) -C libsql
@@ -80,7 +80,7 @@ all:
 	$(MAKE) -C ../libgame/src clean
 	$(MAKE) -C ../libgame/src
 
-	@touch ../libpoly/Depend
+	@touch libpoly/Depend
 	$(MAKE) -C libpoly dep
 	$(MAKE) -C libpoly clean
 	$(MAKE) -C libpoly 

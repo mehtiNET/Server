@@ -53,20 +53,20 @@
     <OutDir>..\..\db\</OutDir>
     <IntDir>$(Configuration)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>D:\Sources_Metin2\1-tchayong\Extern\include;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\Sources_Metin2\1-tchayong\Extern\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>../bin/release\</OutDir>
     <IntDir>$(Configuration)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>D:\Sources_Metin2\1-tchayong\Extern\include;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\Kevin\Documents\enhanceMT\Server\src\shared;C:\Users\Kevin\Documents\enhanceMT\Server\src\libmysql\6.0.2\win32;C:\Boost\include\boost-1_57;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(ProjectDir)../../libmysql/6.0.2/win32;$(ProjectDir)../../../Extern/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_WIN32;_CRT_SECURE_NO_WARNINGS;_USE_32BIT_TIME_T;_WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)../libmysql/6.0.2/win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;__WIN32__;_CRT_SECURE_NO_WARNINGS;_USE_32BIT_TIME_T;_WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
@@ -78,7 +78,7 @@
     <Link>
       <AdditionalDependencies>mysqlclient.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)$(ProjectName)_d.exe</OutputFile>
-      <AdditionalLibraryDirectories>$(ProjectDir)../../libmysql/6.0.2/win32/lib;$(ProjectDir)../../../Extern/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProjectDir)../libmysql/6.0.2/win32/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
@@ -88,8 +88,8 @@
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>$(ProjectDir)../../libmysql/6.0.2/win32;$(ProjectDir)../../external/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_WIN32;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)../libmysql/6.0.2/win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;__WIN32__;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <PrecompiledHeader />
@@ -99,7 +99,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>mysqlclient.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(ProjectDir)../../libmysql/6.0.2/win32/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProjectDir)../libmysql/6.0.2/win32/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
       <OptimizeReferences>true</OptimizeReferences>
@@ -168,23 +168,19 @@
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\libgame\libgame.2008.vcxproj">
-      <Project>{2ab4a5a4-3eaa-4486-b93c-38e8d39bf218}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
-    <ProjectReference Include="..\..\liblua\liblua.2008.vcxproj">
+    <ProjectReference Include="..\liblua\liblua.2008.vcxproj">
       <Project>{ec666345-5f4e-4a4e-8c66-c7a6326f8235}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
-    <ProjectReference Include="..\..\libpoly\libpoly.2008.vcxproj">
+    <ProjectReference Include="..\libpoly\libpoly.2008.vcxproj">
       <Project>{bd8e86dd-07ba-49b0-bf04-3282da8377eb}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
-    <ProjectReference Include="..\..\libsql\libsql.2008.vcxproj">
+    <ProjectReference Include="..\libsql\libsql.2008.vcxproj">
       <Project>{3967853d-4e19-4548-ac3a-f6012b78e384}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
-    <ProjectReference Include="..\..\libthecore\libthecore.2008.vcxproj">
+    <ProjectReference Include="..\libthecore\libthecore.2008.vcxproj">
       <Project>{5c8620c9-5d1f-419d-8267-48d2863c3d13}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>

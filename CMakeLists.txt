@@ -32,9 +32,10 @@ include(CheckPlatform)
 #set(OPENSSL_EXPECTED_VERSION 1.0.1)
 #find_package(OpenSSL REQUIRED)
 
-set(BOOST_INCLUDE_DIR C:/Boost/include/boost-1_57)
+set(ENV{BOOST_ROOT} C:/Boost/include/boost-1_57)
+#set(Boost_INCLUDE_DIRS $ENV{BOOST_ROOT})
 set(CRYPTOPP_INCLUDE_DIRS C:/cryptopp/include)
-set(MYSQL_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/src/libmysql/6.0.2/win32)
+set(MYSQL_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/src/shared/libmysql/6.0.2/win32)
 set(OPENSSL_INCLUDE_DIR C:/OpenSSL-Win32/include)
 
 #include_directories(
@@ -45,16 +46,20 @@ set(OPENSSL_INCLUDE_DIR C:/OpenSSL-Win32/include)
 #)
 
 set(BOOST_LIBRARY_DIR C:/Boost/lib)
-set(CRYPTOPP_LIBRARIES C:/cryptopp/lib)
-set(MYSQL_LIBRARIES ${CMAKE_SOURCE_DIR}/src/libmysql/6.0.2/win32/lib)
-set(OPENSSL_LIBRARIES C:/OpenSSL-Win32/lib/VC)
+set(CRYPTOPP_LIBRARY_DIR C:/cryptopp/lib)
+set(MYSQL_LIBRARIES ${CMAKE_SOURCE_DIR}/src/shared/libmysql/6.0.2/win32/lib)
+set(OPENSSL_LIBRARIES C:/OpenSSL-Win32/lib)
 
-#link_directories(
-#	${BOOST_LIBRARY_DIR}
-#	${CRYPTOPP_LIBRARIES}
-#	${MYSQL_LIBRARIES}
-#	${OPENSSL_LIBRARIES}
-#)
+# Boost
+include(ConfigureBoost)
+set(BOOST_INCLUDE_DIR ${Boost_INCLUDE_DIRS})
+
+link_directories(
+	${BOOST_LIBRARY_DIR}
+	${CRYPTOPP_LIBRARY_DIR}
+	${MYSQL_LIBRARIES}
+	${OPENSSL_LIBRARIES}
+)
 
 # Print out the results before continuing
 include(cmake/showoptions.cmake)

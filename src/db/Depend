@@ -1,6 +1,6 @@
 # DO NOT DELETE
 
-.obj/Config.o: stdafx.h ../libthecore/include/stdafx.h
+.obj/Config.o: stdafx.h libthecore/stdafx.h
 .obj/Config.o: /usr/include/stdio.h /usr/include/sys/cdefs.h
 .obj/Config.o: /usr/include/sys/_null.h /usr/include/sys/_types.h
 .obj/Config.o: /usr/include/machine/_types.h /usr/include/string.h
@@ -25,21 +25,21 @@
 .obj/Config.o: /usr/include/machine/trap.h /usr/include/sys/wait.h
 .obj/Config.o: /usr/include/pthread.h /usr/include/sched.h
 .obj/Config.o: /usr/include/semaphore.h /usr/include/sys/event.h
-.obj/Config.o: /usr/include/sys/queue.h ../libthecore/include/typedef.h
-.obj/Config.o: ../libthecore/include/heart.h
-.obj/Config.o: ../libthecore/include/fdwatch.h
-.obj/Config.o: ../libthecore/include/socket.h
-.obj/Config.o: ../libthecore/include/kstbl.h
-.obj/Config.o: ../libthecore/include/hangul.h
-.obj/Config.o: ../libthecore/include/buffer.h
-.obj/Config.o: ../libthecore/include/signal.h
-.obj/Config.o: ../libthecore/include/log.h ../libthecore/include/main.h
-.obj/Config.o: ../libthecore/include/utils.h
-.obj/Config.o: ../libthecore/include/crypt.h
-.obj/Config.o: ../libthecore/include/memcpy.h ../common/length.h
-.obj/Config.o: ../common/item_length.h ../common/tables.h
-.obj/Config.o: ../common/length.h ../common/singleton.h
-.obj/Config.o: ../common/utils.h ../common/stl.h
+.obj/Config.o: /usr/include/sys/queue.h libthecore/typedef.h
+.obj/Config.o: libthecore/heart.h
+.obj/Config.o: libthecore/fdwatch.h
+.obj/Config.o: libthecore/socket.h
+.obj/Config.o: libthecore/kstbl.h
+.obj/Config.o: libthecore/hangul.h
+.obj/Config.o: libthecore/buffer.h
+.obj/Config.o: libthecore/signal.h
+.obj/Config.o: libthecore/log.h libthecore/main.h
+.obj/Config.o: libthecore/utils.h
+.obj/Config.o: libthecore/crypt.h
+.obj/Config.o: libthecore/memcpy.h common/length.h
+.obj/Config.o: common/item_length.h common/tables.h
+.obj/Config.o: common/length.h common/singleton.h
+.obj/Config.o: common/utils.h common/stl.h
 .obj/Config.o: /usr/include/c++/4.2/vector
 .obj/Config.o: /usr/include/c++/4.2/bits/functexcept.h
 .obj/Config.o: /usr/include/c++/4.2/bits/c++config.h
@@ -108,9 +108,9 @@
 .obj/Config.o: /usr/include/c++/4.2/bits/stl_stack.h /usr/include/c++/4.2/set
 .obj/Config.o: /usr/include/c++/4.2/bits/stl_set.h
 .obj/Config.o: /usr/include/c++/4.2/bits/stl_multiset.h
-.obj/Config.o: /usr/include/c++/4.2/ext/functional ../common/service.h
+.obj/Config.o: /usr/include/c++/4.2/ext/functional common/service.h
 .obj/Config.o: Config.h
-.obj/NetBase.o: stdafx.h ../libthecore/include/stdafx.h
+.obj/NetBase.o: stdafx.h libthecore/stdafx.h
 .obj/NetBase.o: /usr/include/stdio.h /usr/include/sys/cdefs.h
 .obj/NetBase.o: /usr/include/sys/_null.h /usr/include/sys/_types.h
 .obj/NetBase.o: /usr/include/machine/_types.h /usr/include/string.h
@@ -136,22 +136,22 @@
 .obj/NetBase.o: /usr/include/sys/wait.h /usr/include/pthread.h
 .obj/NetBase.o: /usr/include/sched.h /usr/include/semaphore.h
 .obj/NetBase.o: /usr/include/sys/event.h /usr/include/sys/queue.h
-.obj/NetBase.o: ../libthecore/include/typedef.h
-.obj/NetBase.o: ../libthecore/include/heart.h
-.obj/NetBase.o: ../libthecore/include/fdwatch.h
-.obj/NetBase.o: ../libthecore/include/socket.h
-.obj/NetBase.o: ../libthecore/include/kstbl.h
-.obj/NetBase.o: ../libthecore/include/hangul.h
-.obj/NetBase.o: ../libthecore/include/buffer.h
-.obj/NetBase.o: ../libthecore/include/signal.h
-.obj/NetBase.o: ../libthecore/include/log.h
-.obj/NetBase.o: ../libthecore/include/main.h
-.obj/NetBase.o: ../libthecore/include/utils.h
-.obj/NetBase.o: ../libthecore/include/crypt.h
-.obj/NetBase.o: ../libthecore/include/memcpy.h ../common/length.h
-.obj/NetBase.o: ../common/item_length.h ../common/tables.h
-.obj/NetBase.o: ../common/length.h ../common/singleton.h
-.obj/NetBase.o: ../common/utils.h ../common/stl.h
+.obj/NetBase.o: libthecore/typedef.h
+.obj/NetBase.o: libthecore/heart.h
+.obj/NetBase.o: libthecore/fdwatch.h
+.obj/NetBase.o: libthecore/socket.h
+.obj/NetBase.o: libthecore/kstbl.h
+.obj/NetBase.o: libthecore/hangul.h
+.obj/NetBase.o: libthecore/buffer.h
+.obj/NetBase.o: libthecore/signal.h
+.obj/NetBase.o: libthecore/log.h
+.obj/NetBase.o: libthecore/main.h
+.obj/NetBase.o: libthecore/utils.h
+.obj/NetBase.o: libthecore/crypt.h
+.obj/NetBase.o: libthecore/memcpy.h common/length.h
+.obj/NetBase.o: common/item_length.h common/tables.h
+.obj/NetBase.o: common/length.h common/singleton.h
+.obj/NetBase.o: common/utils.h common/stl.h
 .obj/NetBase.o: /usr/include/c++/4.2/vector
 .obj/NetBase.o: /usr/include/c++/4.2/bits/functexcept.h
 .obj/NetBase.o: /usr/include/c++/4.2/bits/c++config.h
@@ -221,7 +221,7 @@
 .obj/NetBase.o: /usr/include/c++/4.2/bits/stl_stack.h
 .obj/NetBase.o: /usr/include/c++/4.2/set /usr/include/c++/4.2/bits/stl_set.h
 .obj/NetBase.o: /usr/include/c++/4.2/bits/stl_multiset.h
-.obj/NetBase.o: /usr/include/c++/4.2/ext/functional ../common/service.h
+.obj/NetBase.o: /usr/include/c++/4.2/ext/functional common/service.h
 .obj/NetBase.o: NetBase.h Config.h ClientManager.h
 .obj/NetBase.o: /usr/include/boost/unordered_map.hpp
 .obj/NetBase.o: /usr/include/boost/unordered/unordered_map.hpp
@@ -466,8 +466,8 @@
 .obj/NetBase.o: /usr/include/boost/unordered_set.hpp
 .obj/NetBase.o: /usr/include/boost/unordered/unordered_set.hpp
 .obj/NetBase.o: /usr/include/boost/unordered/unordered_set_fwd.hpp
-.obj/NetBase.o: ../common/building.h ../common/auction_table.h
-.obj/NetBase.o: ../common/tables.h Peer.h PeerBase.h DBManager.h
+.obj/NetBase.o: common/building.h common/auction_table.h
+.obj/NetBase.o: common/tables.h Peer.h PeerBase.h DBManager.h
 .obj/NetBase.o: ../../libmysql/7.x-5.1.35/mysql/mysql.h
 .obj/NetBase.o: ../../libmysql/7.x-5.1.35/mysql/mysql_version.h
 .obj/NetBase.o: ../../libmysql/7.x-5.1.35/mysql/mysql_com.h
@@ -475,13 +475,13 @@
 .obj/NetBase.o: ../../libmysql/7.x-5.1.35/mysql/my_list.h
 .obj/NetBase.o: ../../libmysql/7.x-5.1.35/mysql/typelib.h
 .obj/NetBase.o: ../../libmysql/7.x-5.1.35/mysql/my_alloc.h
-.obj/NetBase.o: ../libsql/AsyncSQL.h ../libthecore/include/stdafx.h
-.obj/NetBase.o: ../libthecore/include/log.h /usr/include/c++/4.2/queue
+.obj/NetBase.o: libsql/AsyncSQL.h libthecore/stdafx.h
+.obj/NetBase.o: libthecore/log.h /usr/include/c++/4.2/queue
 .obj/NetBase.o: /usr/include/c++/4.2/bits/stl_queue.h
 .obj/NetBase.o: ../../libmysql/7.x-5.1.35/mysql/errmsg.h
 .obj/NetBase.o: ../../libmysql/7.x-5.1.35/mysql/mysqld_error.h
-.obj/NetBase.o: ../libsql/Semaphore.h LoginData.h
-.obj/Peer.o: stdafx.h ../libthecore/include/stdafx.h /usr/include/stdio.h
+.obj/NetBase.o: libsql/Semaphore.h LoginData.h
+.obj/Peer.o: stdafx.h libthecore/stdafx.h /usr/include/stdio.h
 .obj/Peer.o: /usr/include/sys/cdefs.h /usr/include/sys/_null.h
 .obj/Peer.o: /usr/include/sys/_types.h /usr/include/machine/_types.h
 .obj/Peer.o: /usr/include/string.h /usr/include/strings.h
@@ -505,20 +505,20 @@
 .obj/Peer.o: /usr/include/sys/wait.h /usr/include/pthread.h
 .obj/Peer.o: /usr/include/sched.h /usr/include/semaphore.h
 .obj/Peer.o: /usr/include/sys/event.h /usr/include/sys/queue.h
-.obj/Peer.o: ../libthecore/include/typedef.h
-.obj/Peer.o: ../libthecore/include/heart.h
-.obj/Peer.o: ../libthecore/include/fdwatch.h
-.obj/Peer.o: ../libthecore/include/socket.h
-.obj/Peer.o: ../libthecore/include/kstbl.h
-.obj/Peer.o: ../libthecore/include/hangul.h
-.obj/Peer.o: ../libthecore/include/buffer.h
-.obj/Peer.o: ../libthecore/include/signal.h ../libthecore/include/log.h
-.obj/Peer.o: ../libthecore/include/main.h ../libthecore/include/utils.h
-.obj/Peer.o: ../libthecore/include/crypt.h
-.obj/Peer.o: ../libthecore/include/memcpy.h ../common/length.h
-.obj/Peer.o: ../common/item_length.h ../common/tables.h
-.obj/Peer.o: ../common/length.h ../common/singleton.h
-.obj/Peer.o: ../common/utils.h ../common/stl.h
+.obj/Peer.o: libthecore/typedef.h
+.obj/Peer.o: libthecore/heart.h
+.obj/Peer.o: libthecore/fdwatch.h
+.obj/Peer.o: libthecore/socket.h
+.obj/Peer.o: libthecore/kstbl.h
+.obj/Peer.o: libthecore/hangul.h
+.obj/Peer.o: libthecore/buffer.h
+.obj/Peer.o: libthecore/signal.h libthecore/log.h
+.obj/Peer.o: libthecore/main.h libthecore/utils.h
+.obj/Peer.o: libthecore/crypt.h
+.obj/Peer.o: libthecore/memcpy.h common/length.h
+.obj/Peer.o: common/item_length.h common/tables.h
+.obj/Peer.o: common/length.h common/singleton.h
+.obj/Peer.o: common/utils.h common/stl.h
 .obj/Peer.o: /usr/include/c++/4.2/vector
 .obj/Peer.o: /usr/include/c++/4.2/bits/functexcept.h
 .obj/Peer.o: /usr/include/c++/4.2/bits/c++config.h
@@ -584,9 +584,9 @@
 .obj/Peer.o: /usr/include/c++/4.2/bits/stl_stack.h /usr/include/c++/4.2/set
 .obj/Peer.o: /usr/include/c++/4.2/bits/stl_set.h
 .obj/Peer.o: /usr/include/c++/4.2/bits/stl_multiset.h
-.obj/Peer.o: /usr/include/c++/4.2/ext/functional ../common/service.h
+.obj/Peer.o: /usr/include/c++/4.2/ext/functional common/service.h
 .obj/Peer.o: Peer.h PeerBase.h NetBase.h ItemIDRangeManager.h
-.obj/PeerBase.o: stdafx.h ../libthecore/include/stdafx.h
+.obj/PeerBase.o: stdafx.h libthecore/stdafx.h
 .obj/PeerBase.o: /usr/include/stdio.h /usr/include/sys/cdefs.h
 .obj/PeerBase.o: /usr/include/sys/_null.h /usr/include/sys/_types.h
 .obj/PeerBase.o: /usr/include/machine/_types.h /usr/include/string.h
@@ -612,22 +612,22 @@
 .obj/PeerBase.o: /usr/include/sys/wait.h /usr/include/pthread.h
 .obj/PeerBase.o: /usr/include/sched.h /usr/include/semaphore.h
 .obj/PeerBase.o: /usr/include/sys/event.h /usr/include/sys/queue.h
-.obj/PeerBase.o: ../libthecore/include/typedef.h
-.obj/PeerBase.o: ../libthecore/include/heart.h
-.obj/PeerBase.o: ../libthecore/include/fdwatch.h
-.obj/PeerBase.o: ../libthecore/include/socket.h
-.obj/PeerBase.o: ../libthecore/include/kstbl.h
-.obj/PeerBase.o: ../libthecore/include/hangul.h
-.obj/PeerBase.o: ../libthecore/include/buffer.h
-.obj/PeerBase.o: ../libthecore/include/signal.h
-.obj/PeerBase.o: ../libthecore/include/log.h
-.obj/PeerBase.o: ../libthecore/include/main.h
-.obj/PeerBase.o: ../libthecore/include/utils.h
-.obj/PeerBase.o: ../libthecore/include/crypt.h
-.obj/PeerBase.o: ../libthecore/include/memcpy.h ../common/length.h
-.obj/PeerBase.o: ../common/item_length.h ../common/tables.h
-.obj/PeerBase.o: ../common/length.h ../common/singleton.h
-.obj/PeerBase.o: ../common/utils.h ../common/stl.h
+.obj/PeerBase.o: libthecore/typedef.h
+.obj/PeerBase.o: libthecore/heart.h
+.obj/PeerBase.o: libthecore/fdwatch.h
+.obj/PeerBase.o: libthecore/socket.h
+.obj/PeerBase.o: libthecore/kstbl.h
+.obj/PeerBase.o: libthecore/hangul.h
+.obj/PeerBase.o: libthecore/buffer.h
+.obj/PeerBase.o: libthecore/signal.h
+.obj/PeerBase.o: libthecore/log.h
+.obj/PeerBase.o: libthecore/main.h
+.obj/PeerBase.o: libthecore/utils.h
+.obj/PeerBase.o: libthecore/crypt.h
+.obj/PeerBase.o: libthecore/memcpy.h common/length.h
+.obj/PeerBase.o: common/item_length.h common/tables.h
+.obj/PeerBase.o: common/length.h common/singleton.h
+.obj/PeerBase.o: common/utils.h common/stl.h
 .obj/PeerBase.o: /usr/include/c++/4.2/vector
 .obj/PeerBase.o: /usr/include/c++/4.2/bits/functexcept.h
 .obj/PeerBase.o: /usr/include/c++/4.2/bits/c++config.h
@@ -698,9 +698,9 @@
 .obj/PeerBase.o: /usr/include/c++/4.2/bits/stl_stack.h
 .obj/PeerBase.o: /usr/include/c++/4.2/set /usr/include/c++/4.2/bits/stl_set.h
 .obj/PeerBase.o: /usr/include/c++/4.2/bits/stl_multiset.h
-.obj/PeerBase.o: /usr/include/c++/4.2/ext/functional ../common/service.h
+.obj/PeerBase.o: /usr/include/c++/4.2/ext/functional common/service.h
 .obj/PeerBase.o: PeerBase.h NetBase.h
-.obj/Main.o: stdafx.h ../libthecore/include/stdafx.h /usr/include/stdio.h
+.obj/Main.o: stdafx.h libthecore/stdafx.h /usr/include/stdio.h
 .obj/Main.o: /usr/include/sys/cdefs.h /usr/include/sys/_null.h
 .obj/Main.o: /usr/include/sys/_types.h /usr/include/machine/_types.h
 .obj/Main.o: /usr/include/string.h /usr/include/strings.h
@@ -724,20 +724,20 @@
 .obj/Main.o: /usr/include/sys/wait.h /usr/include/pthread.h
 .obj/Main.o: /usr/include/sched.h /usr/include/semaphore.h
 .obj/Main.o: /usr/include/sys/event.h /usr/include/sys/queue.h
-.obj/Main.o: ../libthecore/include/typedef.h
-.obj/Main.o: ../libthecore/include/heart.h
-.obj/Main.o: ../libthecore/include/fdwatch.h
-.obj/Main.o: ../libthecore/include/socket.h
-.obj/Main.o: ../libthecore/include/kstbl.h
-.obj/Main.o: ../libthecore/include/hangul.h
-.obj/Main.o: ../libthecore/include/buffer.h
-.obj/Main.o: ../libthecore/include/signal.h ../libthecore/include/log.h
-.obj/Main.o: ../libthecore/include/main.h ../libthecore/include/utils.h
-.obj/Main.o: ../libthecore/include/crypt.h
-.obj/Main.o: ../libthecore/include/memcpy.h ../common/length.h
-.obj/Main.o: ../common/item_length.h ../common/tables.h
-.obj/Main.o: ../common/length.h ../common/singleton.h
-.obj/Main.o: ../common/utils.h ../common/stl.h
+.obj/Main.o: libthecore/typedef.h
+.obj/Main.o: libthecore/heart.h
+.obj/Main.o: libthecore/fdwatch.h
+.obj/Main.o: libthecore/socket.h
+.obj/Main.o: libthecore/kstbl.h
+.obj/Main.o: libthecore/hangul.h
+.obj/Main.o: libthecore/buffer.h
+.obj/Main.o: libthecore/signal.h libthecore/log.h
+.obj/Main.o: libthecore/main.h libthecore/utils.h
+.obj/Main.o: libthecore/crypt.h
+.obj/Main.o: libthecore/memcpy.h common/length.h
+.obj/Main.o: common/item_length.h common/tables.h
+.obj/Main.o: common/length.h common/singleton.h
+.obj/Main.o: common/utils.h common/stl.h
 .obj/Main.o: /usr/include/c++/4.2/vector
 .obj/Main.o: /usr/include/c++/4.2/bits/functexcept.h
 .obj/Main.o: /usr/include/c++/4.2/bits/c++config.h
@@ -803,7 +803,7 @@
 .obj/Main.o: /usr/include/c++/4.2/bits/stl_stack.h /usr/include/c++/4.2/set
 .obj/Main.o: /usr/include/c++/4.2/bits/stl_set.h
 .obj/Main.o: /usr/include/c++/4.2/bits/stl_multiset.h
-.obj/Main.o: /usr/include/c++/4.2/ext/functional ../common/service.h
+.obj/Main.o: /usr/include/c++/4.2/ext/functional common/service.h
 .obj/Main.o: Config.h Peer.h PeerBase.h NetBase.h DBManager.h
 .obj/Main.o: ../../libmysql/7.x-5.1.35/mysql/mysql.h
 .obj/Main.o: ../../libmysql/7.x-5.1.35/mysql/mysql_version.h
@@ -812,12 +812,12 @@
 .obj/Main.o: ../../libmysql/7.x-5.1.35/mysql/my_list.h
 .obj/Main.o: ../../libmysql/7.x-5.1.35/mysql/typelib.h
 .obj/Main.o: ../../libmysql/7.x-5.1.35/mysql/my_alloc.h
-.obj/Main.o: ../libsql/AsyncSQL.h ../libthecore/include/stdafx.h
-.obj/Main.o: ../libthecore/include/log.h /usr/include/c++/4.2/queue
+.obj/Main.o: libsql/AsyncSQL.h libthecore/stdafx.h
+.obj/Main.o: libthecore/log.h /usr/include/c++/4.2/queue
 .obj/Main.o: /usr/include/c++/4.2/bits/stl_queue.h
 .obj/Main.o: ../../libmysql/7.x-5.1.35/mysql/errmsg.h
 .obj/Main.o: ../../libmysql/7.x-5.1.35/mysql/mysqld_error.h
-.obj/Main.o: ../libsql/Semaphore.h ClientManager.h
+.obj/Main.o: libsql/Semaphore.h ClientManager.h
 .obj/Main.o: /usr/include/boost/unordered_map.hpp
 .obj/Main.o: /usr/include/boost/unordered/unordered_map.hpp
 .obj/Main.o: /usr/include/boost/unordered/unordered_map_fwd.hpp
@@ -1058,13 +1058,13 @@
 .obj/Main.o: /usr/include/boost/unordered_set.hpp
 .obj/Main.o: /usr/include/boost/unordered/unordered_set.hpp
 .obj/Main.o: /usr/include/boost/unordered/unordered_set_fwd.hpp
-.obj/Main.o: ../common/building.h ../common/auction_table.h
-.obj/Main.o: ../common/tables.h LoginData.h GuildManager.h
-.obj/Main.o: ../libsql/libsql.h ../libsql/AsyncSQL.h
-.obj/Main.o: ../libpoly/Poly.h ../libpoly/SymTable.h ItemAwardManager.h
+.obj/Main.o: common/building.h common/auction_table.h
+.obj/Main.o: common/tables.h LoginData.h GuildManager.h
+.obj/Main.o: libsql/libsql.h libsql/AsyncSQL.h
+.obj/Main.o: libpoly/Poly.h libpoly/SymTable.h ItemAwardManager.h
 .obj/Main.o: HB.h PrivManager.h MoneyLog.h Marriage.h Monarch.h
 .obj/Main.o: BlockCountry.h ItemIDRangeManager.h
-.obj/Lock.o: stdafx.h ../libthecore/include/stdafx.h /usr/include/stdio.h
+.obj/Lock.o: stdafx.h libthecore/stdafx.h /usr/include/stdio.h
 .obj/Lock.o: /usr/include/sys/cdefs.h /usr/include/sys/_null.h
 .obj/Lock.o: /usr/include/sys/_types.h /usr/include/machine/_types.h
 .obj/Lock.o: /usr/include/string.h /usr/include/strings.h
@@ -1088,20 +1088,20 @@
 .obj/Lock.o: /usr/include/sys/wait.h /usr/include/pthread.h
 .obj/Lock.o: /usr/include/sched.h /usr/include/semaphore.h
 .obj/Lock.o: /usr/include/sys/event.h /usr/include/sys/queue.h
-.obj/Lock.o: ../libthecore/include/typedef.h
-.obj/Lock.o: ../libthecore/include/heart.h
-.obj/Lock.o: ../libthecore/include/fdwatch.h
-.obj/Lock.o: ../libthecore/include/socket.h
-.obj/Lock.o: ../libthecore/include/kstbl.h
-.obj/Lock.o: ../libthecore/include/hangul.h
-.obj/Lock.o: ../libthecore/include/buffer.h
-.obj/Lock.o: ../libthecore/include/signal.h ../libthecore/include/log.h
-.obj/Lock.o: ../libthecore/include/main.h ../libthecore/include/utils.h
-.obj/Lock.o: ../libthecore/include/crypt.h
-.obj/Lock.o: ../libthecore/include/memcpy.h ../common/length.h
-.obj/Lock.o: ../common/item_length.h ../common/tables.h
-.obj/Lock.o: ../common/length.h ../common/singleton.h
-.obj/Lock.o: ../common/utils.h ../common/stl.h
+.obj/Lock.o: libthecore/typedef.h
+.obj/Lock.o: libthecore/heart.h
+.obj/Lock.o: libthecore/fdwatch.h
+.obj/Lock.o: libthecore/socket.h
+.obj/Lock.o: libthecore/kstbl.h
+.obj/Lock.o: libthecore/hangul.h
+.obj/Lock.o: libthecore/buffer.h
+.obj/Lock.o: libthecore/signal.h libthecore/log.h
+.obj/Lock.o: libthecore/main.h libthecore/utils.h
+.obj/Lock.o: libthecore/crypt.h
+.obj/Lock.o: libthecore/memcpy.h common/length.h
+.obj/Lock.o: common/item_length.h common/tables.h
+.obj/Lock.o: common/length.h common/singleton.h
+.obj/Lock.o: common/utils.h common/stl.h
 .obj/Lock.o: /usr/include/c++/4.2/vector
 .obj/Lock.o: /usr/include/c++/4.2/bits/functexcept.h
 .obj/Lock.o: /usr/include/c++/4.2/bits/c++config.h
@@ -1167,9 +1167,9 @@
 .obj/Lock.o: /usr/include/c++/4.2/bits/stl_stack.h /usr/include/c++/4.2/set
 .obj/Lock.o: /usr/include/c++/4.2/bits/stl_set.h
 .obj/Lock.o: /usr/include/c++/4.2/bits/stl_multiset.h
-.obj/Lock.o: /usr/include/c++/4.2/ext/functional ../common/service.h
+.obj/Lock.o: /usr/include/c++/4.2/ext/functional common/service.h
 .obj/Lock.o: Lock.h
-.obj/DBManager.o: stdafx.h ../libthecore/include/stdafx.h
+.obj/DBManager.o: stdafx.h libthecore/stdafx.h
 .obj/DBManager.o: /usr/include/stdio.h /usr/include/sys/cdefs.h
 .obj/DBManager.o: /usr/include/sys/_null.h /usr/include/sys/_types.h
 .obj/DBManager.o: /usr/include/machine/_types.h /usr/include/string.h
@@ -1195,22 +1195,22 @@
 .obj/DBManager.o: /usr/include/sys/wait.h /usr/include/pthread.h
 .obj/DBManager.o: /usr/include/sched.h /usr/include/semaphore.h
 .obj/DBManager.o: /usr/include/sys/event.h /usr/include/sys/queue.h
-.obj/DBManager.o: ../libthecore/include/typedef.h
-.obj/DBManager.o: ../libthecore/include/heart.h
-.obj/DBManager.o: ../libthecore/include/fdwatch.h
-.obj/DBManager.o: ../libthecore/include/socket.h
-.obj/DBManager.o: ../libthecore/include/kstbl.h
-.obj/DBManager.o: ../libthecore/include/hangul.h
-.obj/DBManager.o: ../libthecore/include/buffer.h
-.obj/DBManager.o: ../libthecore/include/signal.h
-.obj/DBManager.o: ../libthecore/include/log.h
-.obj/DBManager.o: ../libthecore/include/main.h
-.obj/DBManager.o: ../libthecore/include/utils.h
-.obj/DBManager.o: ../libthecore/include/crypt.h
-.obj/DBManager.o: ../libthecore/include/memcpy.h ../common/length.h
-.obj/DBManager.o: ../common/item_length.h ../common/tables.h
-.obj/DBManager.o: ../common/length.h ../common/singleton.h
-.obj/DBManager.o: ../common/utils.h ../common/stl.h
+.obj/DBManager.o: libthecore/typedef.h
+.obj/DBManager.o: libthecore/heart.h
+.obj/DBManager.o: libthecore/fdwatch.h
+.obj/DBManager.o: libthecore/socket.h
+.obj/DBManager.o: libthecore/kstbl.h
+.obj/DBManager.o: libthecore/hangul.h
+.obj/DBManager.o: libthecore/buffer.h
+.obj/DBManager.o: libthecore/signal.h
+.obj/DBManager.o: libthecore/log.h
+.obj/DBManager.o: libthecore/main.h
+.obj/DBManager.o: libthecore/utils.h
+.obj/DBManager.o: libthecore/crypt.h
+.obj/DBManager.o: libthecore/memcpy.h common/length.h
+.obj/DBManager.o: common/item_length.h common/tables.h
+.obj/DBManager.o: common/length.h common/singleton.h
+.obj/DBManager.o: common/utils.h common/stl.h
 .obj/DBManager.o: /usr/include/c++/4.2/vector
 .obj/DBManager.o: /usr/include/c++/4.2/bits/functexcept.h
 .obj/DBManager.o: /usr/include/c++/4.2/bits/c++config.h
@@ -1282,7 +1282,7 @@
 .obj/DBManager.o: /usr/include/c++/4.2/set
 .obj/DBManager.o: /usr/include/c++/4.2/bits/stl_set.h
 .obj/DBManager.o: /usr/include/c++/4.2/bits/stl_multiset.h
-.obj/DBManager.o: /usr/include/c++/4.2/ext/functional ../common/service.h
+.obj/DBManager.o: /usr/include/c++/4.2/ext/functional common/service.h
 .obj/DBManager.o: DBManager.h ../../libmysql/7.x-5.1.35/mysql/mysql.h
 .obj/DBManager.o: ../../libmysql/7.x-5.1.35/mysql/mysql_version.h
 .obj/DBManager.o: ../../libmysql/7.x-5.1.35/mysql/mysql_com.h
@@ -1290,12 +1290,12 @@
 .obj/DBManager.o: ../../libmysql/7.x-5.1.35/mysql/my_list.h
 .obj/DBManager.o: ../../libmysql/7.x-5.1.35/mysql/typelib.h
 .obj/DBManager.o: ../../libmysql/7.x-5.1.35/mysql/my_alloc.h
-.obj/DBManager.o: ../libsql/AsyncSQL.h ../libthecore/include/stdafx.h
-.obj/DBManager.o: ../libthecore/include/log.h /usr/include/c++/4.2/queue
+.obj/DBManager.o: libsql/AsyncSQL.h libthecore/stdafx.h
+.obj/DBManager.o: libthecore/log.h /usr/include/c++/4.2/queue
 .obj/DBManager.o: /usr/include/c++/4.2/bits/stl_queue.h
 .obj/DBManager.o: ../../libmysql/7.x-5.1.35/mysql/errmsg.h
 .obj/DBManager.o: ../../libmysql/7.x-5.1.35/mysql/mysqld_error.h
-.obj/DBManager.o: ../libsql/Semaphore.h ClientManager.h
+.obj/DBManager.o: libsql/Semaphore.h ClientManager.h
 .obj/DBManager.o: /usr/include/boost/unordered_map.hpp
 .obj/DBManager.o: /usr/include/boost/unordered/unordered_map.hpp
 .obj/DBManager.o: /usr/include/boost/unordered/unordered_map_fwd.hpp
@@ -1539,10 +1539,10 @@
 .obj/DBManager.o: /usr/include/boost/unordered_set.hpp
 .obj/DBManager.o: /usr/include/boost/unordered/unordered_set.hpp
 .obj/DBManager.o: /usr/include/boost/unordered/unordered_set_fwd.hpp
-.obj/DBManager.o: ../common/building.h ../common/auction_table.h
-.obj/DBManager.o: ../common/tables.h Peer.h PeerBase.h NetBase.h
+.obj/DBManager.o: common/building.h common/auction_table.h
+.obj/DBManager.o: common/tables.h Peer.h PeerBase.h NetBase.h
 .obj/DBManager.o: LoginData.h
-.obj/Cache.o: stdafx.h ../libthecore/include/stdafx.h /usr/include/stdio.h
+.obj/Cache.o: stdafx.h libthecore/stdafx.h /usr/include/stdio.h
 .obj/Cache.o: /usr/include/sys/cdefs.h /usr/include/sys/_null.h
 .obj/Cache.o: /usr/include/sys/_types.h /usr/include/machine/_types.h
 .obj/Cache.o: /usr/include/string.h /usr/include/strings.h
@@ -1566,21 +1566,21 @@
 .obj/Cache.o: /usr/include/machine/trap.h /usr/include/sys/wait.h
 .obj/Cache.o: /usr/include/pthread.h /usr/include/sched.h
 .obj/Cache.o: /usr/include/semaphore.h /usr/include/sys/event.h
-.obj/Cache.o: /usr/include/sys/queue.h ../libthecore/include/typedef.h
-.obj/Cache.o: ../libthecore/include/heart.h
-.obj/Cache.o: ../libthecore/include/fdwatch.h
-.obj/Cache.o: ../libthecore/include/socket.h
-.obj/Cache.o: ../libthecore/include/kstbl.h
-.obj/Cache.o: ../libthecore/include/hangul.h
-.obj/Cache.o: ../libthecore/include/buffer.h
-.obj/Cache.o: ../libthecore/include/signal.h
-.obj/Cache.o: ../libthecore/include/log.h ../libthecore/include/main.h
-.obj/Cache.o: ../libthecore/include/utils.h
-.obj/Cache.o: ../libthecore/include/crypt.h
-.obj/Cache.o: ../libthecore/include/memcpy.h ../common/length.h
-.obj/Cache.o: ../common/item_length.h ../common/tables.h
-.obj/Cache.o: ../common/length.h ../common/singleton.h
-.obj/Cache.o: ../common/utils.h ../common/stl.h
+.obj/Cache.o: /usr/include/sys/queue.h libthecore/typedef.h
+.obj/Cache.o: libthecore/heart.h
+.obj/Cache.o: libthecore/fdwatch.h
+.obj/Cache.o: libthecore/socket.h
+.obj/Cache.o: libthecore/kstbl.h
+.obj/Cache.o: libthecore/hangul.h
+.obj/Cache.o: libthecore/buffer.h
+.obj/Cache.o: libthecore/signal.h
+.obj/Cache.o: libthecore/log.h libthecore/main.h
+.obj/Cache.o: libthecore/utils.h
+.obj/Cache.o: libthecore/crypt.h
+.obj/Cache.o: libthecore/memcpy.h common/length.h
+.obj/Cache.o: common/item_length.h common/tables.h
+.obj/Cache.o: common/length.h common/singleton.h
+.obj/Cache.o: common/utils.h common/stl.h
 .obj/Cache.o: /usr/include/c++/4.2/vector
 .obj/Cache.o: /usr/include/c++/4.2/bits/functexcept.h
 .obj/Cache.o: /usr/include/c++/4.2/bits/c++config.h
@@ -1649,9 +1649,9 @@
 .obj/Cache.o: /usr/include/c++/4.2/bits/stl_stack.h /usr/include/c++/4.2/set
 .obj/Cache.o: /usr/include/c++/4.2/bits/stl_set.h
 .obj/Cache.o: /usr/include/c++/4.2/bits/stl_multiset.h
-.obj/Cache.o: /usr/include/c++/4.2/ext/functional ../common/service.h
-.obj/Cache.o: Cache.h ../common/cache.h ../common/auction_table.h
-.obj/Cache.o: ../common/tables.h QID.h ClientManager.h
+.obj/Cache.o: /usr/include/c++/4.2/ext/functional common/service.h
+.obj/Cache.o: Cache.h common/cache.h common/auction_table.h
+.obj/Cache.o: common/tables.h QID.h ClientManager.h
 .obj/Cache.o: /usr/include/boost/unordered_map.hpp
 .obj/Cache.o: /usr/include/boost/unordered/unordered_map.hpp
 .obj/Cache.o: /usr/include/boost/unordered/unordered_map_fwd.hpp
@@ -1894,7 +1894,7 @@
 .obj/Cache.o: /usr/include/boost/unordered_set.hpp
 .obj/Cache.o: /usr/include/boost/unordered/unordered_set.hpp
 .obj/Cache.o: /usr/include/boost/unordered/unordered_set_fwd.hpp
-.obj/Cache.o: ../common/building.h Peer.h PeerBase.h NetBase.h DBManager.h
+.obj/Cache.o: common/building.h Peer.h PeerBase.h NetBase.h DBManager.h
 .obj/Cache.o: ../../libmysql/7.x-5.1.35/mysql/mysql.h
 .obj/Cache.o: ../../libmysql/7.x-5.1.35/mysql/mysql_version.h
 .obj/Cache.o: ../../libmysql/7.x-5.1.35/mysql/mysql_com.h
@@ -1902,13 +1902,13 @@
 .obj/Cache.o: ../../libmysql/7.x-5.1.35/mysql/my_list.h
 .obj/Cache.o: ../../libmysql/7.x-5.1.35/mysql/typelib.h
 .obj/Cache.o: ../../libmysql/7.x-5.1.35/mysql/my_alloc.h
-.obj/Cache.o: ../libsql/AsyncSQL.h ../libthecore/include/stdafx.h
-.obj/Cache.o: ../libthecore/include/log.h /usr/include/c++/4.2/queue
+.obj/Cache.o: libsql/AsyncSQL.h libthecore/stdafx.h
+.obj/Cache.o: libthecore/log.h /usr/include/c++/4.2/queue
 .obj/Cache.o: /usr/include/c++/4.2/bits/stl_queue.h
 .obj/Cache.o: ../../libmysql/7.x-5.1.35/mysql/errmsg.h
 .obj/Cache.o: ../../libmysql/7.x-5.1.35/mysql/mysqld_error.h
-.obj/Cache.o: ../libsql/Semaphore.h LoginData.h Main.h
-.obj/LoginData.o: stdafx.h ../libthecore/include/stdafx.h
+.obj/Cache.o: libsql/Semaphore.h LoginData.h Main.h
+.obj/LoginData.o: stdafx.h libthecore/stdafx.h
 .obj/LoginData.o: /usr/include/stdio.h /usr/include/sys/cdefs.h
 .obj/LoginData.o: /usr/include/sys/_null.h /usr/include/sys/_types.h
 .obj/LoginData.o: /usr/include/machine/_types.h /usr/include/string.h
@@ -1934,22 +1934,22 @@
 .obj/LoginData.o: /usr/include/sys/wait.h /usr/include/pthread.h
 .obj/LoginData.o: /usr/include/sched.h /usr/include/semaphore.h
 .obj/LoginData.o: /usr/include/sys/event.h /usr/include/sys/queue.h
-.obj/LoginData.o: ../libthecore/include/typedef.h
-.obj/LoginData.o: ../libthecore/include/heart.h
-.obj/LoginData.o: ../libthecore/include/fdwatch.h
-.obj/LoginData.o: ../libthecore/include/socket.h
-.obj/LoginData.o: ../libthecore/include/kstbl.h
-.obj/LoginData.o: ../libthecore/include/hangul.h
-.obj/LoginData.o: ../libthecore/include/buffer.h
-.obj/LoginData.o: ../libthecore/include/signal.h
-.obj/LoginData.o: ../libthecore/include/log.h
-.obj/LoginData.o: ../libthecore/include/main.h
-.obj/LoginData.o: ../libthecore/include/utils.h
-.obj/LoginData.o: ../libthecore/include/crypt.h
-.obj/LoginData.o: ../libthecore/include/memcpy.h ../common/length.h
-.obj/LoginData.o: ../common/item_length.h ../common/tables.h
-.obj/LoginData.o: ../common/length.h ../common/singleton.h
-.obj/LoginData.o: ../common/utils.h ../common/stl.h
+.obj/LoginData.o: libthecore/typedef.h
+.obj/LoginData.o: libthecore/heart.h
+.obj/LoginData.o: libthecore/fdwatch.h
+.obj/LoginData.o: libthecore/socket.h
+.obj/LoginData.o: libthecore/kstbl.h
+.obj/LoginData.o: libthecore/hangul.h
+.obj/LoginData.o: libthecore/buffer.h
+.obj/LoginData.o: libthecore/signal.h
+.obj/LoginData.o: libthecore/log.h
+.obj/LoginData.o: libthecore/main.h
+.obj/LoginData.o: libthecore/utils.h
+.obj/LoginData.o: libthecore/crypt.h
+.obj/LoginData.o: libthecore/memcpy.h common/length.h
+.obj/LoginData.o: common/item_length.h common/tables.h
+.obj/LoginData.o: common/length.h common/singleton.h
+.obj/LoginData.o: common/utils.h common/stl.h
 .obj/LoginData.o: /usr/include/c++/4.2/vector
 .obj/LoginData.o: /usr/include/c++/4.2/bits/functexcept.h
 .obj/LoginData.o: /usr/include/c++/4.2/bits/c++config.h
@@ -2021,7 +2021,7 @@
 .obj/LoginData.o: /usr/include/c++/4.2/set
 .obj/LoginData.o: /usr/include/c++/4.2/bits/stl_set.h
 .obj/LoginData.o: /usr/include/c++/4.2/bits/stl_multiset.h
-.obj/LoginData.o: /usr/include/c++/4.2/ext/functional ../common/service.h
+.obj/LoginData.o: /usr/include/c++/4.2/ext/functional common/service.h
 .obj/LoginData.o: LoginData.h ClientManager.h
 .obj/LoginData.o: /usr/include/boost/unordered_map.hpp
 .obj/LoginData.o: /usr/include/boost/unordered/unordered_map.hpp
@@ -2266,8 +2266,8 @@
 .obj/LoginData.o: /usr/include/boost/unordered_set.hpp
 .obj/LoginData.o: /usr/include/boost/unordered/unordered_set.hpp
 .obj/LoginData.o: /usr/include/boost/unordered/unordered_set_fwd.hpp
-.obj/LoginData.o: ../common/building.h ../common/auction_table.h
-.obj/LoginData.o: ../common/tables.h Peer.h PeerBase.h NetBase.h
+.obj/LoginData.o: common/building.h common/auction_table.h
+.obj/LoginData.o: common/tables.h Peer.h PeerBase.h NetBase.h
 .obj/LoginData.o: DBManager.h ../../libmysql/7.x-5.1.35/mysql/mysql.h
 .obj/LoginData.o: ../../libmysql/7.x-5.1.35/mysql/mysql_version.h
 .obj/LoginData.o: ../../libmysql/7.x-5.1.35/mysql/mysql_com.h
@@ -2275,13 +2275,13 @@
 .obj/LoginData.o: ../../libmysql/7.x-5.1.35/mysql/my_list.h
 .obj/LoginData.o: ../../libmysql/7.x-5.1.35/mysql/typelib.h
 .obj/LoginData.o: ../../libmysql/7.x-5.1.35/mysql/my_alloc.h
-.obj/LoginData.o: ../libsql/AsyncSQL.h ../libthecore/include/stdafx.h
-.obj/LoginData.o: ../libthecore/include/log.h /usr/include/c++/4.2/queue
+.obj/LoginData.o: libsql/AsyncSQL.h libthecore/stdafx.h
+.obj/LoginData.o: libthecore/log.h /usr/include/c++/4.2/queue
 .obj/LoginData.o: /usr/include/c++/4.2/bits/stl_queue.h
 .obj/LoginData.o: ../../libmysql/7.x-5.1.35/mysql/errmsg.h
 .obj/LoginData.o: ../../libmysql/7.x-5.1.35/mysql/mysqld_error.h
-.obj/LoginData.o: ../libsql/Semaphore.h
-.obj/ClientManager.o: stdafx.h ../libthecore/include/stdafx.h
+.obj/LoginData.o: libsql/Semaphore.h
+.obj/ClientManager.o: stdafx.h libthecore/stdafx.h
 .obj/ClientManager.o: /usr/include/stdio.h /usr/include/sys/cdefs.h
 .obj/ClientManager.o: /usr/include/sys/_null.h /usr/include/sys/_types.h
 .obj/ClientManager.o: /usr/include/machine/_types.h /usr/include/string.h
@@ -2309,22 +2309,22 @@
 .obj/ClientManager.o: /usr/include/pthread.h /usr/include/sched.h
 .obj/ClientManager.o: /usr/include/semaphore.h /usr/include/sys/event.h
 .obj/ClientManager.o: /usr/include/sys/queue.h
-.obj/ClientManager.o: ../libthecore/include/typedef.h
-.obj/ClientManager.o: ../libthecore/include/heart.h
-.obj/ClientManager.o: ../libthecore/include/fdwatch.h
-.obj/ClientManager.o: ../libthecore/include/socket.h
-.obj/ClientManager.o: ../libthecore/include/kstbl.h
-.obj/ClientManager.o: ../libthecore/include/hangul.h
-.obj/ClientManager.o: ../libthecore/include/buffer.h
-.obj/ClientManager.o: ../libthecore/include/signal.h
-.obj/ClientManager.o: ../libthecore/include/log.h
-.obj/ClientManager.o: ../libthecore/include/main.h
-.obj/ClientManager.o: ../libthecore/include/utils.h
-.obj/ClientManager.o: ../libthecore/include/crypt.h
-.obj/ClientManager.o: ../libthecore/include/memcpy.h ../common/length.h
-.obj/ClientManager.o: ../common/item_length.h ../common/tables.h
-.obj/ClientManager.o: ../common/length.h ../common/singleton.h
-.obj/ClientManager.o: ../common/utils.h ../common/stl.h
+.obj/ClientManager.o: libthecore/typedef.h
+.obj/ClientManager.o: libthecore/heart.h
+.obj/ClientManager.o: libthecore/fdwatch.h
+.obj/ClientManager.o: libthecore/socket.h
+.obj/ClientManager.o: libthecore/kstbl.h
+.obj/ClientManager.o: libthecore/hangul.h
+.obj/ClientManager.o: libthecore/buffer.h
+.obj/ClientManager.o: libthecore/signal.h
+.obj/ClientManager.o: libthecore/log.h
+.obj/ClientManager.o: libthecore/main.h
+.obj/ClientManager.o: libthecore/utils.h
+.obj/ClientManager.o: libthecore/crypt.h
+.obj/ClientManager.o: libthecore/memcpy.h common/length.h
+.obj/ClientManager.o: common/item_length.h common/tables.h
+.obj/ClientManager.o: common/length.h common/singleton.h
+.obj/ClientManager.o: common/utils.h common/stl.h
 .obj/ClientManager.o: /usr/include/c++/4.2/vector
 .obj/ClientManager.o: /usr/include/c++/4.2/bits/functexcept.h
 .obj/ClientManager.o: /usr/include/c++/4.2/bits/c++config.h
@@ -2400,9 +2400,9 @@
 .obj/ClientManager.o: /usr/include/c++/4.2/bits/stl_set.h
 .obj/ClientManager.o: /usr/include/c++/4.2/bits/stl_multiset.h
 .obj/ClientManager.o: /usr/include/c++/4.2/ext/functional
-.obj/ClientManager.o: ../common/service.h ../common/billing.h
-.obj/ClientManager.o: ../common/building.h ../common/VnumHelper.h
-.obj/ClientManager.o: ../libgame/include/grid.h ClientManager.h
+.obj/ClientManager.o: common/service.h common/billing.h
+.obj/ClientManager.o: common/building.h common/VnumHelper.h
+.obj/ClientManager.o: common/grid.h ClientManager.h
 .obj/ClientManager.o: /usr/include/boost/unordered_map.hpp
 .obj/ClientManager.o: /usr/include/boost/unordered/unordered_map.hpp
 .obj/ClientManager.o: /usr/include/boost/unordered/unordered_map_fwd.hpp
@@ -2647,7 +2647,7 @@
 .obj/ClientManager.o: /usr/include/boost/unordered_set.hpp
 .obj/ClientManager.o: /usr/include/boost/unordered/unordered_set.hpp
 .obj/ClientManager.o: /usr/include/boost/unordered/unordered_set_fwd.hpp
-.obj/ClientManager.o: ../common/auction_table.h ../common/tables.h
+.obj/ClientManager.o: common/auction_table.h common/tables.h
 .obj/ClientManager.o: Peer.h PeerBase.h NetBase.h DBManager.h
 .obj/ClientManager.o: ../../libmysql/7.x-5.1.35/mysql/mysql.h
 .obj/ClientManager.o: ../../libmysql/7.x-5.1.35/mysql/mysql_version.h
@@ -2656,20 +2656,20 @@
 .obj/ClientManager.o: ../../libmysql/7.x-5.1.35/mysql/my_list.h
 .obj/ClientManager.o: ../../libmysql/7.x-5.1.35/mysql/typelib.h
 .obj/ClientManager.o: ../../libmysql/7.x-5.1.35/mysql/my_alloc.h
-.obj/ClientManager.o: ../libsql/AsyncSQL.h
-.obj/ClientManager.o: ../libthecore/include/stdafx.h
-.obj/ClientManager.o: ../libthecore/include/log.h
+.obj/ClientManager.o: libsql/AsyncSQL.h
+.obj/ClientManager.o: libthecore/stdafx.h
+.obj/ClientManager.o: libthecore/log.h
 .obj/ClientManager.o: /usr/include/c++/4.2/queue
 .obj/ClientManager.o: /usr/include/c++/4.2/bits/stl_queue.h
 .obj/ClientManager.o: ../../libmysql/7.x-5.1.35/mysql/errmsg.h
 .obj/ClientManager.o: ../../libmysql/7.x-5.1.35/mysql/mysqld_error.h
-.obj/ClientManager.o: ../libsql/Semaphore.h LoginData.h Main.h Config.h
-.obj/ClientManager.o: QID.h GuildManager.h ../libsql/libsql.h
-.obj/ClientManager.o: ../libsql/AsyncSQL.h ../libpoly/Poly.h
-.obj/ClientManager.o: ../libpoly/SymTable.h PrivManager.h MoneyLog.h
+.obj/ClientManager.o: libsql/Semaphore.h LoginData.h Main.h Config.h
+.obj/ClientManager.o: QID.h GuildManager.h libsql/libsql.h
+.obj/ClientManager.o: libsql/AsyncSQL.h libpoly/Poly.h
+.obj/ClientManager.o: libpoly/SymTable.h PrivManager.h MoneyLog.h
 .obj/ClientManager.o: ItemAwardManager.h Marriage.h Monarch.h BlockCountry.h
-.obj/ClientManager.o: ItemIDRangeManager.h Cache.h ../common/cache.h
-.obj/ClientManagerPlayer.o: stdafx.h ../libthecore/include/stdafx.h
+.obj/ClientManager.o: ItemIDRangeManager.h Cache.h common/cache.h
+.obj/ClientManagerPlayer.o: stdafx.h libthecore/stdafx.h
 .obj/ClientManagerPlayer.o: /usr/include/stdio.h /usr/include/sys/cdefs.h
 .obj/ClientManagerPlayer.o: /usr/include/sys/_null.h
 .obj/ClientManagerPlayer.o: /usr/include/sys/_types.h
@@ -2704,23 +2704,23 @@
 .obj/ClientManagerPlayer.o: /usr/include/sys/wait.h /usr/include/pthread.h
 .obj/ClientManagerPlayer.o: /usr/include/sched.h /usr/include/semaphore.h
 .obj/ClientManagerPlayer.o: /usr/include/sys/event.h /usr/include/sys/queue.h
-.obj/ClientManagerPlayer.o: ../libthecore/include/typedef.h
-.obj/ClientManagerPlayer.o: ../libthecore/include/heart.h
-.obj/ClientManagerPlayer.o: ../libthecore/include/fdwatch.h
-.obj/ClientManagerPlayer.o: ../libthecore/include/socket.h
-.obj/ClientManagerPlayer.o: ../libthecore/include/kstbl.h
-.obj/ClientManagerPlayer.o: ../libthecore/include/hangul.h
-.obj/ClientManagerPlayer.o: ../libthecore/include/buffer.h
-.obj/ClientManagerPlayer.o: ../libthecore/include/signal.h
-.obj/ClientManagerPlayer.o: ../libthecore/include/log.h
-.obj/ClientManagerPlayer.o: ../libthecore/include/main.h
-.obj/ClientManagerPlayer.o: ../libthecore/include/utils.h
-.obj/ClientManagerPlayer.o: ../libthecore/include/crypt.h
-.obj/ClientManagerPlayer.o: ../libthecore/include/memcpy.h
-.obj/ClientManagerPlayer.o: ../common/length.h ../common/item_length.h
-.obj/ClientManagerPlayer.o: ../common/tables.h ../common/length.h
-.obj/ClientManagerPlayer.o: ../common/singleton.h ../common/utils.h
-.obj/ClientManagerPlayer.o: ../common/stl.h /usr/include/c++/4.2/vector
+.obj/ClientManagerPlayer.o: libthecore/typedef.h
+.obj/ClientManagerPlayer.o: libthecore/heart.h
+.obj/ClientManagerPlayer.o: libthecore/fdwatch.h
+.obj/ClientManagerPlayer.o: libthecore/socket.h
+.obj/ClientManagerPlayer.o: libthecore/kstbl.h
+.obj/ClientManagerPlayer.o: libthecore/hangul.h
+.obj/ClientManagerPlayer.o: libthecore/buffer.h
+.obj/ClientManagerPlayer.o: libthecore/signal.h
+.obj/ClientManagerPlayer.o: libthecore/log.h
+.obj/ClientManagerPlayer.o: libthecore/main.h
+.obj/ClientManagerPlayer.o: libthecore/utils.h
+.obj/ClientManagerPlayer.o: libthecore/crypt.h
+.obj/ClientManagerPlayer.o: libthecore/memcpy.h
+.obj/ClientManagerPlayer.o: common/length.h common/item_length.h
+.obj/ClientManagerPlayer.o: common/tables.h common/length.h
+.obj/ClientManagerPlayer.o: common/singleton.h common/utils.h
+.obj/ClientManagerPlayer.o: common/stl.h /usr/include/c++/4.2/vector
 .obj/ClientManagerPlayer.o: /usr/include/c++/4.2/bits/functexcept.h
 .obj/ClientManagerPlayer.o: /usr/include/c++/4.2/bits/c++config.h
 .obj/ClientManagerPlayer.o: /usr/include/c++/4.2/bits/os_defines.h
@@ -2799,7 +2799,7 @@
 .obj/ClientManagerPlayer.o: /usr/include/c++/4.2/bits/stl_set.h
 .obj/ClientManagerPlayer.o: /usr/include/c++/4.2/bits/stl_multiset.h
 .obj/ClientManagerPlayer.o: /usr/include/c++/4.2/ext/functional
-.obj/ClientManagerPlayer.o: ../common/service.h ClientManager.h
+.obj/ClientManagerPlayer.o: common/service.h ClientManager.h
 .obj/ClientManagerPlayer.o: /usr/include/boost/unordered_map.hpp
 .obj/ClientManagerPlayer.o: /usr/include/boost/unordered/unordered_map.hpp
 .obj/ClientManagerPlayer.o: /usr/include/boost/unordered/unordered_map_fwd.hpp
@@ -3048,9 +3048,9 @@
 .obj/ClientManagerPlayer.o: /usr/include/boost/unordered_set.hpp
 .obj/ClientManagerPlayer.o: /usr/include/boost/unordered/unordered_set.hpp
 .obj/ClientManagerPlayer.o: /usr/include/boost/unordered/unordered_set_fwd.hpp
-.obj/ClientManagerPlayer.o: ../common/building.h
-.obj/ClientManagerPlayer.o: ../common/auction_table.h
-.obj/ClientManagerPlayer.o: ../common/tables.h Peer.h PeerBase.h NetBase.h
+.obj/ClientManagerPlayer.o: common/building.h
+.obj/ClientManagerPlayer.o: common/auction_table.h
+.obj/ClientManagerPlayer.o: common/tables.h Peer.h PeerBase.h NetBase.h
 .obj/ClientManagerPlayer.o: DBManager.h
 .obj/ClientManagerPlayer.o: ../../libmysql/7.x-5.1.35/mysql/mysql.h
 .obj/ClientManagerPlayer.o: ../../libmysql/7.x-5.1.35/mysql/mysql_version.h
@@ -3059,17 +3059,17 @@
 .obj/ClientManagerPlayer.o: ../../libmysql/7.x-5.1.35/mysql/my_list.h
 .obj/ClientManagerPlayer.o: ../../libmysql/7.x-5.1.35/mysql/typelib.h
 .obj/ClientManagerPlayer.o: ../../libmysql/7.x-5.1.35/mysql/my_alloc.h
-.obj/ClientManagerPlayer.o: ../libsql/AsyncSQL.h
-.obj/ClientManagerPlayer.o: ../libthecore/include/stdafx.h
-.obj/ClientManagerPlayer.o: ../libthecore/include/log.h
+.obj/ClientManagerPlayer.o: libsql/AsyncSQL.h
+.obj/ClientManagerPlayer.o: libthecore/stdafx.h
+.obj/ClientManagerPlayer.o: libthecore/log.h
 .obj/ClientManagerPlayer.o: /usr/include/c++/4.2/queue
 .obj/ClientManagerPlayer.o: /usr/include/c++/4.2/bits/stl_queue.h
 .obj/ClientManagerPlayer.o: ../../libmysql/7.x-5.1.35/mysql/errmsg.h
 .obj/ClientManagerPlayer.o: ../../libmysql/7.x-5.1.35/mysql/mysqld_error.h
-.obj/ClientManagerPlayer.o: ../libsql/Semaphore.h LoginData.h Main.h QID.h
+.obj/ClientManagerPlayer.o: libsql/Semaphore.h LoginData.h Main.h QID.h
 .obj/ClientManagerPlayer.o: ItemAwardManager.h HB.h Cache.h
-.obj/ClientManagerPlayer.o: ../common/cache.h
-.obj/ClientManagerLogin.o: stdafx.h ../libthecore/include/stdafx.h
+.obj/ClientManagerPlayer.o: common/cache.h
+.obj/ClientManagerLogin.o: stdafx.h libthecore/stdafx.h
 .obj/ClientManagerLogin.o: /usr/include/stdio.h /usr/include/sys/cdefs.h
 .obj/ClientManagerLogin.o: /usr/include/sys/_null.h /usr/include/sys/_types.h
 .obj/ClientManagerLogin.o: /usr/include/machine/_types.h
@@ -3103,23 +3103,23 @@
 .obj/ClientManagerLogin.o: /usr/include/sys/wait.h /usr/include/pthread.h
 .obj/ClientManagerLogin.o: /usr/include/sched.h /usr/include/semaphore.h
 .obj/ClientManagerLogin.o: /usr/include/sys/event.h /usr/include/sys/queue.h
-.obj/ClientManagerLogin.o: ../libthecore/include/typedef.h
-.obj/ClientManagerLogin.o: ../libthecore/include/heart.h
-.obj/ClientManagerLogin.o: ../libthecore/include/fdwatch.h
-.obj/ClientManagerLogin.o: ../libthecore/include/socket.h
-.obj/ClientManagerLogin.o: ../libthecore/include/kstbl.h
-.obj/ClientManagerLogin.o: ../libthecore/include/hangul.h
-.obj/ClientManagerLogin.o: ../libthecore/include/buffer.h
-.obj/ClientManagerLogin.o: ../libthecore/include/signal.h
-.obj/ClientManagerLogin.o: ../libthecore/include/log.h
-.obj/ClientManagerLogin.o: ../libthecore/include/main.h
-.obj/ClientManagerLogin.o: ../libthecore/include/utils.h
-.obj/ClientManagerLogin.o: ../libthecore/include/crypt.h
-.obj/ClientManagerLogin.o: ../libthecore/include/memcpy.h
-.obj/ClientManagerLogin.o: ../common/length.h ../common/item_length.h
-.obj/ClientManagerLogin.o: ../common/tables.h ../common/length.h
-.obj/ClientManagerLogin.o: ../common/singleton.h ../common/utils.h
-.obj/ClientManagerLogin.o: ../common/stl.h /usr/include/c++/4.2/vector
+.obj/ClientManagerLogin.o: libthecore/typedef.h
+.obj/ClientManagerLogin.o: libthecore/heart.h
+.obj/ClientManagerLogin.o: libthecore/fdwatch.h
+.obj/ClientManagerLogin.o: libthecore/socket.h
+.obj/ClientManagerLogin.o: libthecore/kstbl.h
+.obj/ClientManagerLogin.o: libthecore/hangul.h
+.obj/ClientManagerLogin.o: libthecore/buffer.h
+.obj/ClientManagerLogin.o: libthecore/signal.h
+.obj/ClientManagerLogin.o: libthecore/log.h
+.obj/ClientManagerLogin.o: libthecore/main.h
+.obj/ClientManagerLogin.o: libthecore/utils.h
+.obj/ClientManagerLogin.o: libthecore/crypt.h
+.obj/ClientManagerLogin.o: libthecore/memcpy.h
+.obj/ClientManagerLogin.o: common/length.h common/item_length.h
+.obj/ClientManagerLogin.o: common/tables.h common/length.h
+.obj/ClientManagerLogin.o: common/singleton.h common/utils.h
+.obj/ClientManagerLogin.o: common/stl.h /usr/include/c++/4.2/vector
 .obj/ClientManagerLogin.o: /usr/include/c++/4.2/bits/functexcept.h
 .obj/ClientManagerLogin.o: /usr/include/c++/4.2/bits/c++config.h
 .obj/ClientManagerLogin.o: /usr/include/c++/4.2/bits/os_defines.h
@@ -3197,7 +3197,7 @@
 .obj/ClientManagerLogin.o: /usr/include/c++/4.2/bits/stl_set.h
 .obj/ClientManagerLogin.o: /usr/include/c++/4.2/bits/stl_multiset.h
 .obj/ClientManagerLogin.o: /usr/include/c++/4.2/ext/functional
-.obj/ClientManagerLogin.o: ../common/service.h ClientManager.h
+.obj/ClientManagerLogin.o: common/service.h ClientManager.h
 .obj/ClientManagerLogin.o: /usr/include/boost/unordered_map.hpp
 .obj/ClientManagerLogin.o: /usr/include/boost/unordered/unordered_map.hpp
 .obj/ClientManagerLogin.o: /usr/include/boost/unordered/unordered_map_fwd.hpp
@@ -3445,8 +3445,8 @@
 .obj/ClientManagerLogin.o: /usr/include/boost/unordered_set.hpp
 .obj/ClientManagerLogin.o: /usr/include/boost/unordered/unordered_set.hpp
 .obj/ClientManagerLogin.o: /usr/include/boost/unordered/unordered_set_fwd.hpp
-.obj/ClientManagerLogin.o: ../common/building.h
-.obj/ClientManagerLogin.o: ../common/auction_table.h ../common/tables.h
+.obj/ClientManagerLogin.o: common/building.h
+.obj/ClientManagerLogin.o: common/auction_table.h common/tables.h
 .obj/ClientManagerLogin.o: Peer.h PeerBase.h NetBase.h DBManager.h
 .obj/ClientManagerLogin.o: ../../libmysql/7.x-5.1.35/mysql/mysql.h
 .obj/ClientManagerLogin.o: ../../libmysql/7.x-5.1.35/mysql/mysql_version.h
@@ -3455,15 +3455,15 @@
 .obj/ClientManagerLogin.o: ../../libmysql/7.x-5.1.35/mysql/my_list.h
 .obj/ClientManagerLogin.o: ../../libmysql/7.x-5.1.35/mysql/typelib.h
 .obj/ClientManagerLogin.o: ../../libmysql/7.x-5.1.35/mysql/my_alloc.h
-.obj/ClientManagerLogin.o: ../libsql/AsyncSQL.h
-.obj/ClientManagerLogin.o: ../libthecore/include/stdafx.h
-.obj/ClientManagerLogin.o: ../libthecore/include/log.h
+.obj/ClientManagerLogin.o: libsql/AsyncSQL.h
+.obj/ClientManagerLogin.o: libthecore/stdafx.h
+.obj/ClientManagerLogin.o: libthecore/log.h
 .obj/ClientManagerLogin.o: /usr/include/c++/4.2/queue
 .obj/ClientManagerLogin.o: /usr/include/c++/4.2/bits/stl_queue.h
 .obj/ClientManagerLogin.o: ../../libmysql/7.x-5.1.35/mysql/errmsg.h
 .obj/ClientManagerLogin.o: ../../libmysql/7.x-5.1.35/mysql/mysqld_error.h
-.obj/ClientManagerLogin.o: ../libsql/Semaphore.h LoginData.h Main.h
-.obj/ClientManagerLogin.o: Config.h QID.h Cache.h ../common/cache.h
+.obj/ClientManagerLogin.o: libsql/Semaphore.h LoginData.h Main.h
+.obj/ClientManagerLogin.o: Config.h QID.h Cache.h common/cache.h
 .obj/ClientManagerBoot.o: /usr/include/c++/4.2/map
 .obj/ClientManagerBoot.o: /usr/include/c++/4.2/bits/stl_tree.h
 .obj/ClientManagerBoot.o: /usr/include/c++/4.2/bits/stl_algobase.h
@@ -3526,7 +3526,7 @@
 .obj/ClientManagerBoot.o: /usr/include/c++/4.2/bits/stl_function.h
 .obj/ClientManagerBoot.o: /usr/include/c++/4.2/bits/stl_map.h
 .obj/ClientManagerBoot.o: /usr/include/c++/4.2/bits/stl_multimap.h stdafx.h
-.obj/ClientManagerBoot.o: ../libthecore/include/stdafx.h
+.obj/ClientManagerBoot.o: libthecore/stdafx.h
 .obj/ClientManagerBoot.o: /usr/include/errno.h /usr/include/fcntl.h
 .obj/ClientManagerBoot.o: /usr/include/assert.h /usr/include/dirent.h
 .obj/ClientManagerBoot.o: /usr/include/sys/dirent.h /usr/include/sys/time.h
@@ -3540,23 +3540,23 @@
 .obj/ClientManagerBoot.o: /usr/include/machine/trap.h /usr/include/sys/wait.h
 .obj/ClientManagerBoot.o: /usr/include/semaphore.h /usr/include/sys/event.h
 .obj/ClientManagerBoot.o: /usr/include/sys/queue.h
-.obj/ClientManagerBoot.o: ../libthecore/include/typedef.h
-.obj/ClientManagerBoot.o: ../libthecore/include/heart.h
-.obj/ClientManagerBoot.o: ../libthecore/include/fdwatch.h
-.obj/ClientManagerBoot.o: ../libthecore/include/socket.h
-.obj/ClientManagerBoot.o: ../libthecore/include/kstbl.h
-.obj/ClientManagerBoot.o: ../libthecore/include/hangul.h
-.obj/ClientManagerBoot.o: ../libthecore/include/buffer.h
-.obj/ClientManagerBoot.o: ../libthecore/include/signal.h
-.obj/ClientManagerBoot.o: ../libthecore/include/log.h
-.obj/ClientManagerBoot.o: ../libthecore/include/main.h
-.obj/ClientManagerBoot.o: ../libthecore/include/utils.h
-.obj/ClientManagerBoot.o: ../libthecore/include/crypt.h
-.obj/ClientManagerBoot.o: ../libthecore/include/memcpy.h
-.obj/ClientManagerBoot.o: ../common/length.h ../common/item_length.h
-.obj/ClientManagerBoot.o: ../common/tables.h ../common/length.h
-.obj/ClientManagerBoot.o: ../common/singleton.h ../common/utils.h
-.obj/ClientManagerBoot.o: ../common/stl.h /usr/include/c++/4.2/vector
+.obj/ClientManagerBoot.o: libthecore/typedef.h
+.obj/ClientManagerBoot.o: libthecore/heart.h
+.obj/ClientManagerBoot.o: libthecore/fdwatch.h
+.obj/ClientManagerBoot.o: libthecore/socket.h
+.obj/ClientManagerBoot.o: libthecore/kstbl.h
+.obj/ClientManagerBoot.o: libthecore/hangul.h
+.obj/ClientManagerBoot.o: libthecore/buffer.h
+.obj/ClientManagerBoot.o: libthecore/signal.h
+.obj/ClientManagerBoot.o: libthecore/log.h
+.obj/ClientManagerBoot.o: libthecore/main.h
+.obj/ClientManagerBoot.o: libthecore/utils.h
+.obj/ClientManagerBoot.o: libthecore/crypt.h
+.obj/ClientManagerBoot.o: libthecore/memcpy.h
+.obj/ClientManagerBoot.o: common/length.h common/item_length.h
+.obj/ClientManagerBoot.o: common/tables.h common/length.h
+.obj/ClientManagerBoot.o: common/singleton.h common/utils.h
+.obj/ClientManagerBoot.o: common/stl.h /usr/include/c++/4.2/vector
 .obj/ClientManagerBoot.o: /usr/include/c++/4.2/bits/stl_uninitialized.h
 .obj/ClientManagerBoot.o: /usr/include/c++/4.2/bits/stl_vector.h
 .obj/ClientManagerBoot.o: /usr/include/c++/4.2/bits/stl_bvector.h
@@ -3588,7 +3588,7 @@
 .obj/ClientManagerBoot.o: /usr/include/c++/4.2/bits/stl_set.h
 .obj/ClientManagerBoot.o: /usr/include/c++/4.2/bits/stl_multiset.h
 .obj/ClientManagerBoot.o: /usr/include/c++/4.2/ext/functional
-.obj/ClientManagerBoot.o: ../common/service.h ClientManager.h
+.obj/ClientManagerBoot.o: common/service.h ClientManager.h
 .obj/ClientManagerBoot.o: /usr/include/boost/unordered_map.hpp
 .obj/ClientManagerBoot.o: /usr/include/boost/unordered/unordered_map.hpp
 .obj/ClientManagerBoot.o: /usr/include/boost/unordered/unordered_map_fwd.hpp
@@ -3836,8 +3836,8 @@
 .obj/ClientManagerBoot.o: /usr/include/boost/unordered_set.hpp
 .obj/ClientManagerBoot.o: /usr/include/boost/unordered/unordered_set.hpp
 .obj/ClientManagerBoot.o: /usr/include/boost/unordered/unordered_set_fwd.hpp
-.obj/ClientManagerBoot.o: ../common/building.h
-.obj/ClientManagerBoot.o: ../common/auction_table.h ../common/tables.h
+.obj/ClientManagerBoot.o: common/building.h
+.obj/ClientManagerBoot.o: common/auction_table.h common/tables.h
 .obj/ClientManagerBoot.o: Peer.h PeerBase.h NetBase.h DBManager.h
 .obj/ClientManagerBoot.o: ../../libmysql/7.x-5.1.35/mysql/mysql.h
 .obj/ClientManagerBoot.o: ../../libmysql/7.x-5.1.35/mysql/mysql_version.h
@@ -3846,17 +3846,17 @@
 .obj/ClientManagerBoot.o: ../../libmysql/7.x-5.1.35/mysql/my_list.h
 .obj/ClientManagerBoot.o: ../../libmysql/7.x-5.1.35/mysql/typelib.h
 .obj/ClientManagerBoot.o: ../../libmysql/7.x-5.1.35/mysql/my_alloc.h
-.obj/ClientManagerBoot.o: ../libsql/AsyncSQL.h
-.obj/ClientManagerBoot.o: ../libthecore/include/stdafx.h
-.obj/ClientManagerBoot.o: ../libthecore/include/log.h
+.obj/ClientManagerBoot.o: libsql/AsyncSQL.h
+.obj/ClientManagerBoot.o: libthecore/stdafx.h
+.obj/ClientManagerBoot.o: libthecore/log.h
 .obj/ClientManagerBoot.o: /usr/include/c++/4.2/queue
 .obj/ClientManagerBoot.o: /usr/include/c++/4.2/bits/stl_queue.h
 .obj/ClientManagerBoot.o: ../../libmysql/7.x-5.1.35/mysql/errmsg.h
 .obj/ClientManagerBoot.o: ../../libmysql/7.x-5.1.35/mysql/mysqld_error.h
-.obj/ClientManagerBoot.o: ../libsql/Semaphore.h LoginData.h Main.h
+.obj/ClientManagerBoot.o: libsql/Semaphore.h LoginData.h Main.h
 .obj/ClientManagerBoot.o: Monarch.h CsvReader.h ProtoReader.h
 .obj/ClientManagerBoot.o: /usr/include/c++/4.2/iostream
-.obj/ClientManagerParty.o: stdafx.h ../libthecore/include/stdafx.h
+.obj/ClientManagerParty.o: stdafx.h libthecore/stdafx.h
 .obj/ClientManagerParty.o: /usr/include/stdio.h /usr/include/sys/cdefs.h
 .obj/ClientManagerParty.o: /usr/include/sys/_null.h /usr/include/sys/_types.h
 .obj/ClientManagerParty.o: /usr/include/machine/_types.h
@@ -3890,23 +3890,23 @@
 .obj/ClientManagerParty.o: /usr/include/sys/wait.h /usr/include/pthread.h
 .obj/ClientManagerParty.o: /usr/include/sched.h /usr/include/semaphore.h
 .obj/ClientManagerParty.o: /usr/include/sys/event.h /usr/include/sys/queue.h
-.obj/ClientManagerParty.o: ../libthecore/include/typedef.h
-.obj/ClientManagerParty.o: ../libthecore/include/heart.h
-.obj/ClientManagerParty.o: ../libthecore/include/fdwatch.h
-.obj/ClientManagerParty.o: ../libthecore/include/socket.h
-.obj/ClientManagerParty.o: ../libthecore/include/kstbl.h
-.obj/ClientManagerParty.o: ../libthecore/include/hangul.h
-.obj/ClientManagerParty.o: ../libthecore/include/buffer.h
-.obj/ClientManagerParty.o: ../libthecore/include/signal.h
-.obj/ClientManagerParty.o: ../libthecore/include/log.h
-.obj/ClientManagerParty.o: ../libthecore/include/main.h
-.obj/ClientManagerParty.o: ../libthecore/include/utils.h
-.obj/ClientManagerParty.o: ../libthecore/include/crypt.h
-.obj/ClientManagerParty.o: ../libthecore/include/memcpy.h
-.obj/ClientManagerParty.o: ../common/length.h ../common/item_length.h
-.obj/ClientManagerParty.o: ../common/tables.h ../common/length.h
-.obj/ClientManagerParty.o: ../common/singleton.h ../common/utils.h
-.obj/ClientManagerParty.o: ../common/stl.h /usr/include/c++/4.2/vector
+.obj/ClientManagerParty.o: libthecore/typedef.h
+.obj/ClientManagerParty.o: libthecore/heart.h
+.obj/ClientManagerParty.o: libthecore/fdwatch.h
+.obj/ClientManagerParty.o: libthecore/socket.h
+.obj/ClientManagerParty.o: libthecore/kstbl.h
+.obj/ClientManagerParty.o: libthecore/hangul.h
+.obj/ClientManagerParty.o: libthecore/buffer.h
+.obj/ClientManagerParty.o: libthecore/signal.h
+.obj/ClientManagerParty.o: libthecore/log.h
+.obj/ClientManagerParty.o: libthecore/main.h
+.obj/ClientManagerParty.o: libthecore/utils.h
+.obj/ClientManagerParty.o: libthecore/crypt.h
+.obj/ClientManagerParty.o: libthecore/memcpy.h
+.obj/ClientManagerParty.o: common/length.h common/item_length.h
+.obj/ClientManagerParty.o: common/tables.h common/length.h
+.obj/ClientManagerParty.o: common/singleton.h common/utils.h
+.obj/ClientManagerParty.o: common/stl.h /usr/include/c++/4.2/vector
 .obj/ClientManagerParty.o: /usr/include/c++/4.2/bits/functexcept.h
 .obj/ClientManagerParty.o: /usr/include/c++/4.2/bits/c++config.h
 .obj/ClientManagerParty.o: /usr/include/c++/4.2/bits/os_defines.h
@@ -3984,7 +3984,7 @@
 .obj/ClientManagerParty.o: /usr/include/c++/4.2/bits/stl_set.h
 .obj/ClientManagerParty.o: /usr/include/c++/4.2/bits/stl_multiset.h
 .obj/ClientManagerParty.o: /usr/include/c++/4.2/ext/functional
-.obj/ClientManagerParty.o: ../common/service.h ClientManager.h
+.obj/ClientManagerParty.o: common/service.h ClientManager.h
 .obj/ClientManagerParty.o: /usr/include/boost/unordered_map.hpp
 .obj/ClientManagerParty.o: /usr/include/boost/unordered/unordered_map.hpp
 .obj/ClientManagerParty.o: /usr/include/boost/unordered/unordered_map_fwd.hpp
@@ -4232,8 +4232,8 @@
 .obj/ClientManagerParty.o: /usr/include/boost/unordered_set.hpp
 .obj/ClientManagerParty.o: /usr/include/boost/unordered/unordered_set.hpp
 .obj/ClientManagerParty.o: /usr/include/boost/unordered/unordered_set_fwd.hpp
-.obj/ClientManagerParty.o: ../common/building.h
-.obj/ClientManagerParty.o: ../common/auction_table.h ../common/tables.h
+.obj/ClientManagerParty.o: common/building.h
+.obj/ClientManagerParty.o: common/auction_table.h common/tables.h
 .obj/ClientManagerParty.o: Peer.h PeerBase.h NetBase.h DBManager.h
 .obj/ClientManagerParty.o: ../../libmysql/7.x-5.1.35/mysql/mysql.h
 .obj/ClientManagerParty.o: ../../libmysql/7.x-5.1.35/mysql/mysql_version.h
@@ -4242,16 +4242,16 @@
 .obj/ClientManagerParty.o: ../../libmysql/7.x-5.1.35/mysql/my_list.h
 .obj/ClientManagerParty.o: ../../libmysql/7.x-5.1.35/mysql/typelib.h
 .obj/ClientManagerParty.o: ../../libmysql/7.x-5.1.35/mysql/my_alloc.h
-.obj/ClientManagerParty.o: ../libsql/AsyncSQL.h
-.obj/ClientManagerParty.o: ../libthecore/include/stdafx.h
-.obj/ClientManagerParty.o: ../libthecore/include/log.h
+.obj/ClientManagerParty.o: libsql/AsyncSQL.h
+.obj/ClientManagerParty.o: libthecore/stdafx.h
+.obj/ClientManagerParty.o: libthecore/log.h
 .obj/ClientManagerParty.o: /usr/include/c++/4.2/queue
 .obj/ClientManagerParty.o: /usr/include/c++/4.2/bits/stl_queue.h
 .obj/ClientManagerParty.o: ../../libmysql/7.x-5.1.35/mysql/errmsg.h
 .obj/ClientManagerParty.o: ../../libmysql/7.x-5.1.35/mysql/mysqld_error.h
-.obj/ClientManagerParty.o: ../libsql/Semaphore.h LoginData.h Config.h
+.obj/ClientManagerParty.o: libsql/Semaphore.h LoginData.h Config.h
 .obj/ClientManagerParty.o: QID.h
-.obj/ClientManagerGuild.o: stdafx.h ../libthecore/include/stdafx.h
+.obj/ClientManagerGuild.o: stdafx.h libthecore/stdafx.h
 .obj/ClientManagerGuild.o: /usr/include/stdio.h /usr/include/sys/cdefs.h
 .obj/ClientManagerGuild.o: /usr/include/sys/_null.h /usr/include/sys/_types.h
 .obj/ClientManagerGuild.o: /usr/include/machine/_types.h
@@ -4285,23 +4285,23 @@
 .obj/ClientManagerGuild.o: /usr/include/sys/wait.h /usr/include/pthread.h
 .obj/ClientManagerGuild.o: /usr/include/sched.h /usr/include/semaphore.h
 .obj/ClientManagerGuild.o: /usr/include/sys/event.h /usr/include/sys/queue.h
-.obj/ClientManagerGuild.o: ../libthecore/include/typedef.h
-.obj/ClientManagerGuild.o: ../libthecore/include/heart.h
-.obj/ClientManagerGuild.o: ../libthecore/include/fdwatch.h
-.obj/ClientManagerGuild.o: ../libthecore/include/socket.h
-.obj/ClientManagerGuild.o: ../libthecore/include/kstbl.h
-.obj/ClientManagerGuild.o: ../libthecore/include/hangul.h
-.obj/ClientManagerGuild.o: ../libthecore/include/buffer.h
-.obj/ClientManagerGuild.o: ../libthecore/include/signal.h
-.obj/ClientManagerGuild.o: ../libthecore/include/log.h
-.obj/ClientManagerGuild.o: ../libthecore/include/main.h
-.obj/ClientManagerGuild.o: ../libthecore/include/utils.h
-.obj/ClientManagerGuild.o: ../libthecore/include/crypt.h
-.obj/ClientManagerGuild.o: ../libthecore/include/memcpy.h
-.obj/ClientManagerGuild.o: ../common/length.h ../common/item_length.h
-.obj/ClientManagerGuild.o: ../common/tables.h ../common/length.h
-.obj/ClientManagerGuild.o: ../common/singleton.h ../common/utils.h
-.obj/ClientManagerGuild.o: ../common/stl.h /usr/include/c++/4.2/vector
+.obj/ClientManagerGuild.o: libthecore/typedef.h
+.obj/ClientManagerGuild.o: libthecore/heart.h
+.obj/ClientManagerGuild.o: libthecore/fdwatch.h
+.obj/ClientManagerGuild.o: libthecore/socket.h
+.obj/ClientManagerGuild.o: libthecore/kstbl.h
+.obj/ClientManagerGuild.o: libthecore/hangul.h
+.obj/ClientManagerGuild.o: libthecore/buffer.h
+.obj/ClientManagerGuild.o: libthecore/signal.h
+.obj/ClientManagerGuild.o: libthecore/log.h
+.obj/ClientManagerGuild.o: libthecore/main.h
+.obj/ClientManagerGuild.o: libthecore/utils.h
+.obj/ClientManagerGuild.o: libthecore/crypt.h
+.obj/ClientManagerGuild.o: libthecore/memcpy.h
+.obj/ClientManagerGuild.o: common/length.h common/item_length.h
+.obj/ClientManagerGuild.o: common/tables.h common/length.h
+.obj/ClientManagerGuild.o: common/singleton.h common/utils.h
+.obj/ClientManagerGuild.o: common/stl.h /usr/include/c++/4.2/vector
 .obj/ClientManagerGuild.o: /usr/include/c++/4.2/bits/functexcept.h
 .obj/ClientManagerGuild.o: /usr/include/c++/4.2/bits/c++config.h
 .obj/ClientManagerGuild.o: /usr/include/c++/4.2/bits/os_defines.h
@@ -4379,7 +4379,7 @@
 .obj/ClientManagerGuild.o: /usr/include/c++/4.2/bits/stl_set.h
 .obj/ClientManagerGuild.o: /usr/include/c++/4.2/bits/stl_multiset.h
 .obj/ClientManagerGuild.o: /usr/include/c++/4.2/ext/functional
-.obj/ClientManagerGuild.o: ../common/service.h ClientManager.h
+.obj/ClientManagerGuild.o: common/service.h ClientManager.h
 .obj/ClientManagerGuild.o: /usr/include/boost/unordered_map.hpp
 .obj/ClientManagerGuild.o: /usr/include/boost/unordered/unordered_map.hpp
 .obj/ClientManagerGuild.o: /usr/include/boost/unordered/unordered_map_fwd.hpp
@@ -4627,8 +4627,8 @@
 .obj/ClientManagerGuild.o: /usr/include/boost/unordered_set.hpp
 .obj/ClientManagerGuild.o: /usr/include/boost/unordered/unordered_set.hpp
 .obj/ClientManagerGuild.o: /usr/include/boost/unordered/unordered_set_fwd.hpp
-.obj/ClientManagerGuild.o: ../common/building.h
-.obj/ClientManagerGuild.o: ../common/auction_table.h ../common/tables.h
+.obj/ClientManagerGuild.o: common/building.h
+.obj/ClientManagerGuild.o: common/auction_table.h common/tables.h
 .obj/ClientManagerGuild.o: Peer.h PeerBase.h NetBase.h DBManager.h
 .obj/ClientManagerGuild.o: ../../libmysql/7.x-5.1.35/mysql/mysql.h
 .obj/ClientManagerGuild.o: ../../libmysql/7.x-5.1.35/mysql/mysql_version.h
@@ -4637,18 +4637,18 @@
 .obj/ClientManagerGuild.o: ../../libmysql/7.x-5.1.35/mysql/my_list.h
 .obj/ClientManagerGuild.o: ../../libmysql/7.x-5.1.35/mysql/typelib.h
 .obj/ClientManagerGuild.o: ../../libmysql/7.x-5.1.35/mysql/my_alloc.h
-.obj/ClientManagerGuild.o: ../libsql/AsyncSQL.h
-.obj/ClientManagerGuild.o: ../libthecore/include/stdafx.h
-.obj/ClientManagerGuild.o: ../libthecore/include/log.h
+.obj/ClientManagerGuild.o: libsql/AsyncSQL.h
+.obj/ClientManagerGuild.o: libthecore/stdafx.h
+.obj/ClientManagerGuild.o: libthecore/log.h
 .obj/ClientManagerGuild.o: /usr/include/c++/4.2/queue
 .obj/ClientManagerGuild.o: /usr/include/c++/4.2/bits/stl_queue.h
 .obj/ClientManagerGuild.o: ../../libmysql/7.x-5.1.35/mysql/errmsg.h
 .obj/ClientManagerGuild.o: ../../libmysql/7.x-5.1.35/mysql/mysqld_error.h
-.obj/ClientManagerGuild.o: ../libsql/Semaphore.h LoginData.h Main.h
+.obj/ClientManagerGuild.o: libsql/Semaphore.h LoginData.h Main.h
 .obj/ClientManagerGuild.o: Config.h QID.h GuildManager.h
-.obj/ClientManagerGuild.o: ../libsql/libsql.h ../libsql/AsyncSQL.h
-.obj/ClientManagerGuild.o: ../libpoly/Poly.h ../libpoly/SymTable.h
-.obj/GuildManager.o: stdafx.h ../libthecore/include/stdafx.h
+.obj/ClientManagerGuild.o: libsql/libsql.h libsql/AsyncSQL.h
+.obj/ClientManagerGuild.o: libpoly/Poly.h libpoly/SymTable.h
+.obj/GuildManager.o: stdafx.h libthecore/stdafx.h
 .obj/GuildManager.o: /usr/include/stdio.h /usr/include/sys/cdefs.h
 .obj/GuildManager.o: /usr/include/sys/_null.h /usr/include/sys/_types.h
 .obj/GuildManager.o: /usr/include/machine/_types.h /usr/include/string.h
@@ -4676,22 +4676,22 @@
 .obj/GuildManager.o: /usr/include/pthread.h /usr/include/sched.h
 .obj/GuildManager.o: /usr/include/semaphore.h /usr/include/sys/event.h
 .obj/GuildManager.o: /usr/include/sys/queue.h
-.obj/GuildManager.o: ../libthecore/include/typedef.h
-.obj/GuildManager.o: ../libthecore/include/heart.h
-.obj/GuildManager.o: ../libthecore/include/fdwatch.h
-.obj/GuildManager.o: ../libthecore/include/socket.h
-.obj/GuildManager.o: ../libthecore/include/kstbl.h
-.obj/GuildManager.o: ../libthecore/include/hangul.h
-.obj/GuildManager.o: ../libthecore/include/buffer.h
-.obj/GuildManager.o: ../libthecore/include/signal.h
-.obj/GuildManager.o: ../libthecore/include/log.h
-.obj/GuildManager.o: ../libthecore/include/main.h
-.obj/GuildManager.o: ../libthecore/include/utils.h
-.obj/GuildManager.o: ../libthecore/include/crypt.h
-.obj/GuildManager.o: ../libthecore/include/memcpy.h ../common/length.h
-.obj/GuildManager.o: ../common/item_length.h ../common/tables.h
-.obj/GuildManager.o: ../common/length.h ../common/singleton.h
-.obj/GuildManager.o: ../common/utils.h ../common/stl.h
+.obj/GuildManager.o: libthecore/typedef.h
+.obj/GuildManager.o: libthecore/heart.h
+.obj/GuildManager.o: libthecore/fdwatch.h
+.obj/GuildManager.o: libthecore/socket.h
+.obj/GuildManager.o: libthecore/kstbl.h
+.obj/GuildManager.o: libthecore/hangul.h
+.obj/GuildManager.o: libthecore/buffer.h
+.obj/GuildManager.o: libthecore/signal.h
+.obj/GuildManager.o: libthecore/log.h
+.obj/GuildManager.o: libthecore/main.h
+.obj/GuildManager.o: libthecore/utils.h
+.obj/GuildManager.o: libthecore/crypt.h
+.obj/GuildManager.o: libthecore/memcpy.h common/length.h
+.obj/GuildManager.o: common/item_length.h common/tables.h
+.obj/GuildManager.o: common/length.h common/singleton.h
+.obj/GuildManager.o: common/utils.h common/stl.h
 .obj/GuildManager.o: /usr/include/c++/4.2/vector
 .obj/GuildManager.o: /usr/include/c++/4.2/bits/functexcept.h
 .obj/GuildManager.o: /usr/include/c++/4.2/bits/c++config.h
@@ -4765,11 +4765,11 @@
 .obj/GuildManager.o: /usr/include/c++/4.2/bits/stl_set.h
 .obj/GuildManager.o: /usr/include/c++/4.2/bits/stl_multiset.h
 .obj/GuildManager.o: /usr/include/c++/4.2/ext/functional
-.obj/GuildManager.o: ../common/service.h GuildManager.h Peer.h PeerBase.h
+.obj/GuildManager.o: common/service.h GuildManager.h Peer.h PeerBase.h
 .obj/GuildManager.o: NetBase.h /usr/include/c++/4.2/queue
 .obj/GuildManager.o: /usr/include/c++/4.2/bits/stl_queue.h
-.obj/GuildManager.o: ../libsql/libsql.h ../libsql/AsyncSQL.h
-.obj/GuildManager.o: ../libpoly/Poly.h ../libpoly/SymTable.h Main.h
+.obj/GuildManager.o: libsql/libsql.h libsql/AsyncSQL.h
+.obj/GuildManager.o: libpoly/Poly.h libpoly/SymTable.h Main.h
 .obj/GuildManager.o: ClientManager.h /usr/include/boost/unordered_map.hpp
 .obj/GuildManager.o: /usr/include/boost/unordered/unordered_map.hpp
 .obj/GuildManager.o: /usr/include/boost/unordered/unordered_map_fwd.hpp
@@ -5014,8 +5014,8 @@
 .obj/GuildManager.o: /usr/include/boost/unordered_set.hpp
 .obj/GuildManager.o: /usr/include/boost/unordered/unordered_set.hpp
 .obj/GuildManager.o: /usr/include/boost/unordered/unordered_set_fwd.hpp
-.obj/GuildManager.o: ../common/building.h ../common/auction_table.h
-.obj/GuildManager.o: ../common/tables.h DBManager.h
+.obj/GuildManager.o: common/building.h common/auction_table.h
+.obj/GuildManager.o: common/tables.h DBManager.h
 .obj/GuildManager.o: ../../libmysql/7.x-5.1.35/mysql/mysql.h
 .obj/GuildManager.o: ../../libmysql/7.x-5.1.35/mysql/mysql_version.h
 .obj/GuildManager.o: ../../libmysql/7.x-5.1.35/mysql/mysql_com.h
@@ -5023,13 +5023,13 @@
 .obj/GuildManager.o: ../../libmysql/7.x-5.1.35/mysql/my_list.h
 .obj/GuildManager.o: ../../libmysql/7.x-5.1.35/mysql/typelib.h
 .obj/GuildManager.o: ../../libmysql/7.x-5.1.35/mysql/my_alloc.h
-.obj/GuildManager.o: ../libsql/AsyncSQL.h
-.obj/GuildManager.o: ../libthecore/include/stdafx.h
-.obj/GuildManager.o: ../libthecore/include/log.h
+.obj/GuildManager.o: libsql/AsyncSQL.h
+.obj/GuildManager.o: libthecore/stdafx.h
+.obj/GuildManager.o: libthecore/log.h
 .obj/GuildManager.o: ../../libmysql/7.x-5.1.35/mysql/errmsg.h
 .obj/GuildManager.o: ../../libmysql/7.x-5.1.35/mysql/mysqld_error.h
-.obj/GuildManager.o: ../libsql/Semaphore.h LoginData.h QID.h Config.h
-.obj/HB.o: stdafx.h ../libthecore/include/stdafx.h /usr/include/stdio.h
+.obj/GuildManager.o: libsql/Semaphore.h LoginData.h QID.h Config.h
+.obj/HB.o: stdafx.h libthecore/stdafx.h /usr/include/stdio.h
 .obj/HB.o: /usr/include/sys/cdefs.h /usr/include/sys/_null.h
 .obj/HB.o: /usr/include/sys/_types.h /usr/include/machine/_types.h
 .obj/HB.o: /usr/include/string.h /usr/include/strings.h /usr/include/stdarg.h
@@ -5052,18 +5052,18 @@
 .obj/HB.o: /usr/include/machine/trap.h /usr/include/sys/wait.h
 .obj/HB.o: /usr/include/pthread.h /usr/include/sched.h
 .obj/HB.o: /usr/include/semaphore.h /usr/include/sys/event.h
-.obj/HB.o: /usr/include/sys/queue.h ../libthecore/include/typedef.h
-.obj/HB.o: ../libthecore/include/heart.h
-.obj/HB.o: ../libthecore/include/fdwatch.h
-.obj/HB.o: ../libthecore/include/socket.h ../libthecore/include/kstbl.h
-.obj/HB.o: ../libthecore/include/hangul.h
-.obj/HB.o: ../libthecore/include/buffer.h
-.obj/HB.o: ../libthecore/include/signal.h ../libthecore/include/log.h
-.obj/HB.o: ../libthecore/include/main.h ../libthecore/include/utils.h
-.obj/HB.o: ../libthecore/include/crypt.h ../libthecore/include/memcpy.h
-.obj/HB.o: ../common/length.h ../common/item_length.h
-.obj/HB.o: ../common/tables.h ../common/length.h
-.obj/HB.o: ../common/singleton.h ../common/utils.h ../common/stl.h
+.obj/HB.o: /usr/include/sys/queue.h libthecore/typedef.h
+.obj/HB.o: libthecore/heart.h
+.obj/HB.o: libthecore/fdwatch.h
+.obj/HB.o: libthecore/socket.h libthecore/kstbl.h
+.obj/HB.o: libthecore/hangul.h
+.obj/HB.o: libthecore/buffer.h
+.obj/HB.o: libthecore/signal.h libthecore/log.h
+.obj/HB.o: libthecore/main.h libthecore/utils.h
+.obj/HB.o: libthecore/crypt.h libthecore/memcpy.h
+.obj/HB.o: common/length.h common/item_length.h
+.obj/HB.o: common/tables.h common/length.h
+.obj/HB.o: common/singleton.h common/utils.h common/stl.h
 .obj/HB.o: /usr/include/c++/4.2/vector
 .obj/HB.o: /usr/include/c++/4.2/bits/functexcept.h
 .obj/HB.o: /usr/include/c++/4.2/bits/c++config.h
@@ -5127,20 +5127,20 @@
 .obj/HB.o: /usr/include/c++/4.2/bits/stl_stack.h /usr/include/c++/4.2/set
 .obj/HB.o: /usr/include/c++/4.2/bits/stl_set.h
 .obj/HB.o: /usr/include/c++/4.2/bits/stl_multiset.h
-.obj/HB.o: /usr/include/c++/4.2/ext/functional ../common/service.h HB.h
+.obj/HB.o: /usr/include/c++/4.2/ext/functional common/service.h HB.h
 .obj/HB.o: Main.h DBManager.h ../../libmysql/7.x-5.1.35/mysql/mysql.h
 .obj/HB.o: ../../libmysql/7.x-5.1.35/mysql/mysql_version.h
 .obj/HB.o: ../../libmysql/7.x-5.1.35/mysql/mysql_com.h
 .obj/HB.o: ../../libmysql/7.x-5.1.35/mysql/mysql_time.h
 .obj/HB.o: ../../libmysql/7.x-5.1.35/mysql/my_list.h
 .obj/HB.o: ../../libmysql/7.x-5.1.35/mysql/typelib.h
-.obj/HB.o: ../../libmysql/7.x-5.1.35/mysql/my_alloc.h ../libsql/AsyncSQL.h
-.obj/HB.o: ../libthecore/include/stdafx.h ../libthecore/include/log.h
+.obj/HB.o: ../../libmysql/7.x-5.1.35/mysql/my_alloc.h libsql/AsyncSQL.h
+.obj/HB.o: libthecore/stdafx.h libthecore/log.h
 .obj/HB.o: /usr/include/c++/4.2/queue /usr/include/c++/4.2/bits/stl_queue.h
 .obj/HB.o: ../../libmysql/7.x-5.1.35/mysql/errmsg.h
 .obj/HB.o: ../../libmysql/7.x-5.1.35/mysql/mysqld_error.h
-.obj/HB.o: ../libsql/Semaphore.h
-.obj/PrivManager.o: stdafx.h ../libthecore/include/stdafx.h
+.obj/HB.o: libsql/Semaphore.h
+.obj/PrivManager.o: stdafx.h libthecore/stdafx.h
 .obj/PrivManager.o: /usr/include/stdio.h /usr/include/sys/cdefs.h
 .obj/PrivManager.o: /usr/include/sys/_null.h /usr/include/sys/_types.h
 .obj/PrivManager.o: /usr/include/machine/_types.h /usr/include/string.h
@@ -5167,22 +5167,22 @@
 .obj/PrivManager.o: /usr/include/sys/wait.h /usr/include/pthread.h
 .obj/PrivManager.o: /usr/include/sched.h /usr/include/semaphore.h
 .obj/PrivManager.o: /usr/include/sys/event.h /usr/include/sys/queue.h
-.obj/PrivManager.o: ../libthecore/include/typedef.h
-.obj/PrivManager.o: ../libthecore/include/heart.h
-.obj/PrivManager.o: ../libthecore/include/fdwatch.h
-.obj/PrivManager.o: ../libthecore/include/socket.h
-.obj/PrivManager.o: ../libthecore/include/kstbl.h
-.obj/PrivManager.o: ../libthecore/include/hangul.h
-.obj/PrivManager.o: ../libthecore/include/buffer.h
-.obj/PrivManager.o: ../libthecore/include/signal.h
-.obj/PrivManager.o: ../libthecore/include/log.h
-.obj/PrivManager.o: ../libthecore/include/main.h
-.obj/PrivManager.o: ../libthecore/include/utils.h
-.obj/PrivManager.o: ../libthecore/include/crypt.h
-.obj/PrivManager.o: ../libthecore/include/memcpy.h ../common/length.h
-.obj/PrivManager.o: ../common/item_length.h ../common/tables.h
-.obj/PrivManager.o: ../common/length.h ../common/singleton.h
-.obj/PrivManager.o: ../common/utils.h ../common/stl.h
+.obj/PrivManager.o: libthecore/typedef.h
+.obj/PrivManager.o: libthecore/heart.h
+.obj/PrivManager.o: libthecore/fdwatch.h
+.obj/PrivManager.o: libthecore/socket.h
+.obj/PrivManager.o: libthecore/kstbl.h
+.obj/PrivManager.o: libthecore/hangul.h
+.obj/PrivManager.o: libthecore/buffer.h
+.obj/PrivManager.o: libthecore/signal.h
+.obj/PrivManager.o: libthecore/log.h
+.obj/PrivManager.o: libthecore/main.h
+.obj/PrivManager.o: libthecore/utils.h
+.obj/PrivManager.o: libthecore/crypt.h
+.obj/PrivManager.o: libthecore/memcpy.h common/length.h
+.obj/PrivManager.o: common/item_length.h common/tables.h
+.obj/PrivManager.o: common/length.h common/singleton.h
+.obj/PrivManager.o: common/utils.h common/stl.h
 .obj/PrivManager.o: /usr/include/c++/4.2/vector
 .obj/PrivManager.o: /usr/include/c++/4.2/bits/functexcept.h
 .obj/PrivManager.o: /usr/include/c++/4.2/bits/c++config.h
@@ -5255,7 +5255,7 @@
 .obj/PrivManager.o: /usr/include/c++/4.2/bits/stl_set.h
 .obj/PrivManager.o: /usr/include/c++/4.2/bits/stl_multiset.h
 .obj/PrivManager.o: /usr/include/c++/4.2/ext/functional
-.obj/PrivManager.o: ../common/service.h PrivManager.h Peer.h PeerBase.h
+.obj/PrivManager.o: common/service.h PrivManager.h Peer.h PeerBase.h
 .obj/PrivManager.o: NetBase.h /usr/include/c++/4.2/queue
 .obj/PrivManager.o: /usr/include/c++/4.2/bits/stl_queue.h ClientManager.h
 .obj/PrivManager.o: /usr/include/boost/unordered_map.hpp
@@ -5502,8 +5502,8 @@
 .obj/PrivManager.o: /usr/include/boost/unordered_set.hpp
 .obj/PrivManager.o: /usr/include/boost/unordered/unordered_set.hpp
 .obj/PrivManager.o: /usr/include/boost/unordered/unordered_set_fwd.hpp
-.obj/PrivManager.o: ../common/building.h ../common/auction_table.h
-.obj/PrivManager.o: ../common/tables.h DBManager.h
+.obj/PrivManager.o: common/building.h common/auction_table.h
+.obj/PrivManager.o: common/tables.h DBManager.h
 .obj/PrivManager.o: ../../libmysql/7.x-5.1.35/mysql/mysql.h
 .obj/PrivManager.o: ../../libmysql/7.x-5.1.35/mysql/mysql_version.h
 .obj/PrivManager.o: ../../libmysql/7.x-5.1.35/mysql/mysql_com.h
@@ -5511,12 +5511,12 @@
 .obj/PrivManager.o: ../../libmysql/7.x-5.1.35/mysql/my_list.h
 .obj/PrivManager.o: ../../libmysql/7.x-5.1.35/mysql/typelib.h
 .obj/PrivManager.o: ../../libmysql/7.x-5.1.35/mysql/my_alloc.h
-.obj/PrivManager.o: ../libsql/AsyncSQL.h ../libthecore/include/stdafx.h
-.obj/PrivManager.o: ../libthecore/include/log.h
+.obj/PrivManager.o: libsql/AsyncSQL.h libthecore/stdafx.h
+.obj/PrivManager.o: libthecore/log.h
 .obj/PrivManager.o: ../../libmysql/7.x-5.1.35/mysql/errmsg.h
 .obj/PrivManager.o: ../../libmysql/7.x-5.1.35/mysql/mysqld_error.h
-.obj/PrivManager.o: ../libsql/Semaphore.h LoginData.h
-.obj/MoneyLog.o: stdafx.h ../libthecore/include/stdafx.h
+.obj/PrivManager.o: libsql/Semaphore.h LoginData.h
+.obj/MoneyLog.o: stdafx.h libthecore/stdafx.h
 .obj/MoneyLog.o: /usr/include/stdio.h /usr/include/sys/cdefs.h
 .obj/MoneyLog.o: /usr/include/sys/_null.h /usr/include/sys/_types.h
 .obj/MoneyLog.o: /usr/include/machine/_types.h /usr/include/string.h
@@ -5542,22 +5542,22 @@
 .obj/MoneyLog.o: /usr/include/sys/wait.h /usr/include/pthread.h
 .obj/MoneyLog.o: /usr/include/sched.h /usr/include/semaphore.h
 .obj/MoneyLog.o: /usr/include/sys/event.h /usr/include/sys/queue.h
-.obj/MoneyLog.o: ../libthecore/include/typedef.h
-.obj/MoneyLog.o: ../libthecore/include/heart.h
-.obj/MoneyLog.o: ../libthecore/include/fdwatch.h
-.obj/MoneyLog.o: ../libthecore/include/socket.h
-.obj/MoneyLog.o: ../libthecore/include/kstbl.h
-.obj/MoneyLog.o: ../libthecore/include/hangul.h
-.obj/MoneyLog.o: ../libthecore/include/buffer.h
-.obj/MoneyLog.o: ../libthecore/include/signal.h
-.obj/MoneyLog.o: ../libthecore/include/log.h
-.obj/MoneyLog.o: ../libthecore/include/main.h
-.obj/MoneyLog.o: ../libthecore/include/utils.h
-.obj/MoneyLog.o: ../libthecore/include/crypt.h
-.obj/MoneyLog.o: ../libthecore/include/memcpy.h ../common/length.h
-.obj/MoneyLog.o: ../common/item_length.h ../common/tables.h
-.obj/MoneyLog.o: ../common/length.h ../common/singleton.h
-.obj/MoneyLog.o: ../common/utils.h ../common/stl.h
+.obj/MoneyLog.o: libthecore/typedef.h
+.obj/MoneyLog.o: libthecore/heart.h
+.obj/MoneyLog.o: libthecore/fdwatch.h
+.obj/MoneyLog.o: libthecore/socket.h
+.obj/MoneyLog.o: libthecore/kstbl.h
+.obj/MoneyLog.o: libthecore/hangul.h
+.obj/MoneyLog.o: libthecore/buffer.h
+.obj/MoneyLog.o: libthecore/signal.h
+.obj/MoneyLog.o: libthecore/log.h
+.obj/MoneyLog.o: libthecore/main.h
+.obj/MoneyLog.o: libthecore/utils.h
+.obj/MoneyLog.o: libthecore/crypt.h
+.obj/MoneyLog.o: libthecore/memcpy.h common/length.h
+.obj/MoneyLog.o: common/item_length.h common/tables.h
+.obj/MoneyLog.o: common/length.h common/singleton.h
+.obj/MoneyLog.o: common/utils.h common/stl.h
 .obj/MoneyLog.o: /usr/include/c++/4.2/vector
 .obj/MoneyLog.o: /usr/include/c++/4.2/bits/functexcept.h
 .obj/MoneyLog.o: /usr/include/c++/4.2/bits/c++config.h
@@ -5628,7 +5628,7 @@
 .obj/MoneyLog.o: /usr/include/c++/4.2/bits/stl_stack.h
 .obj/MoneyLog.o: /usr/include/c++/4.2/set /usr/include/c++/4.2/bits/stl_set.h
 .obj/MoneyLog.o: /usr/include/c++/4.2/bits/stl_multiset.h
-.obj/MoneyLog.o: /usr/include/c++/4.2/ext/functional ../common/service.h
+.obj/MoneyLog.o: /usr/include/c++/4.2/ext/functional common/service.h
 .obj/MoneyLog.o: MoneyLog.h ClientManager.h
 .obj/MoneyLog.o: /usr/include/boost/unordered_map.hpp
 .obj/MoneyLog.o: /usr/include/boost/unordered/unordered_map.hpp
@@ -5873,8 +5873,8 @@
 .obj/MoneyLog.o: /usr/include/boost/unordered_set.hpp
 .obj/MoneyLog.o: /usr/include/boost/unordered/unordered_set.hpp
 .obj/MoneyLog.o: /usr/include/boost/unordered/unordered_set_fwd.hpp
-.obj/MoneyLog.o: ../common/building.h ../common/auction_table.h
-.obj/MoneyLog.o: ../common/tables.h Peer.h PeerBase.h NetBase.h
+.obj/MoneyLog.o: common/building.h common/auction_table.h
+.obj/MoneyLog.o: common/tables.h Peer.h PeerBase.h NetBase.h
 .obj/MoneyLog.o: DBManager.h ../../libmysql/7.x-5.1.35/mysql/mysql.h
 .obj/MoneyLog.o: ../../libmysql/7.x-5.1.35/mysql/mysql_version.h
 .obj/MoneyLog.o: ../../libmysql/7.x-5.1.35/mysql/mysql_com.h
@@ -5882,13 +5882,13 @@
 .obj/MoneyLog.o: ../../libmysql/7.x-5.1.35/mysql/my_list.h
 .obj/MoneyLog.o: ../../libmysql/7.x-5.1.35/mysql/typelib.h
 .obj/MoneyLog.o: ../../libmysql/7.x-5.1.35/mysql/my_alloc.h
-.obj/MoneyLog.o: ../libsql/AsyncSQL.h ../libthecore/include/stdafx.h
-.obj/MoneyLog.o: ../libthecore/include/log.h /usr/include/c++/4.2/queue
+.obj/MoneyLog.o: libsql/AsyncSQL.h libthecore/stdafx.h
+.obj/MoneyLog.o: libthecore/log.h /usr/include/c++/4.2/queue
 .obj/MoneyLog.o: /usr/include/c++/4.2/bits/stl_queue.h
 .obj/MoneyLog.o: ../../libmysql/7.x-5.1.35/mysql/errmsg.h
 .obj/MoneyLog.o: ../../libmysql/7.x-5.1.35/mysql/mysqld_error.h
-.obj/MoneyLog.o: ../libsql/Semaphore.h LoginData.h
-.obj/ItemAwardManager.o: stdafx.h ../libthecore/include/stdafx.h
+.obj/MoneyLog.o: libsql/Semaphore.h LoginData.h
+.obj/ItemAwardManager.o: stdafx.h libthecore/stdafx.h
 .obj/ItemAwardManager.o: /usr/include/stdio.h /usr/include/sys/cdefs.h
 .obj/ItemAwardManager.o: /usr/include/sys/_null.h /usr/include/sys/_types.h
 .obj/ItemAwardManager.o: /usr/include/machine/_types.h /usr/include/string.h
@@ -5919,23 +5919,23 @@
 .obj/ItemAwardManager.o: /usr/include/pthread.h /usr/include/sched.h
 .obj/ItemAwardManager.o: /usr/include/semaphore.h /usr/include/sys/event.h
 .obj/ItemAwardManager.o: /usr/include/sys/queue.h
-.obj/ItemAwardManager.o: ../libthecore/include/typedef.h
-.obj/ItemAwardManager.o: ../libthecore/include/heart.h
-.obj/ItemAwardManager.o: ../libthecore/include/fdwatch.h
-.obj/ItemAwardManager.o: ../libthecore/include/socket.h
-.obj/ItemAwardManager.o: ../libthecore/include/kstbl.h
-.obj/ItemAwardManager.o: ../libthecore/include/hangul.h
-.obj/ItemAwardManager.o: ../libthecore/include/buffer.h
-.obj/ItemAwardManager.o: ../libthecore/include/signal.h
-.obj/ItemAwardManager.o: ../libthecore/include/log.h
-.obj/ItemAwardManager.o: ../libthecore/include/main.h
-.obj/ItemAwardManager.o: ../libthecore/include/utils.h
-.obj/ItemAwardManager.o: ../libthecore/include/crypt.h
-.obj/ItemAwardManager.o: ../libthecore/include/memcpy.h
-.obj/ItemAwardManager.o: ../common/length.h ../common/item_length.h
-.obj/ItemAwardManager.o: ../common/tables.h ../common/length.h
-.obj/ItemAwardManager.o: ../common/singleton.h ../common/utils.h
-.obj/ItemAwardManager.o: ../common/stl.h /usr/include/c++/4.2/vector
+.obj/ItemAwardManager.o: libthecore/typedef.h
+.obj/ItemAwardManager.o: libthecore/heart.h
+.obj/ItemAwardManager.o: libthecore/fdwatch.h
+.obj/ItemAwardManager.o: libthecore/socket.h
+.obj/ItemAwardManager.o: libthecore/kstbl.h
+.obj/ItemAwardManager.o: libthecore/hangul.h
+.obj/ItemAwardManager.o: libthecore/buffer.h
+.obj/ItemAwardManager.o: libthecore/signal.h
+.obj/ItemAwardManager.o: libthecore/log.h
+.obj/ItemAwardManager.o: libthecore/main.h
+.obj/ItemAwardManager.o: libthecore/utils.h
+.obj/ItemAwardManager.o: libthecore/crypt.h
+.obj/ItemAwardManager.o: libthecore/memcpy.h
+.obj/ItemAwardManager.o: common/length.h common/item_length.h
+.obj/ItemAwardManager.o: common/tables.h common/length.h
+.obj/ItemAwardManager.o: common/singleton.h common/utils.h
+.obj/ItemAwardManager.o: common/stl.h /usr/include/c++/4.2/vector
 .obj/ItemAwardManager.o: /usr/include/c++/4.2/bits/functexcept.h
 .obj/ItemAwardManager.o: /usr/include/c++/4.2/bits/c++config.h
 .obj/ItemAwardManager.o: /usr/include/c++/4.2/bits/os_defines.h
@@ -6012,7 +6012,7 @@
 .obj/ItemAwardManager.o: /usr/include/c++/4.2/bits/stl_set.h
 .obj/ItemAwardManager.o: /usr/include/c++/4.2/bits/stl_multiset.h
 .obj/ItemAwardManager.o: /usr/include/c++/4.2/ext/functional
-.obj/ItemAwardManager.o: ../common/service.h QID.h DBManager.h
+.obj/ItemAwardManager.o: common/service.h QID.h DBManager.h
 .obj/ItemAwardManager.o: ../../libmysql/7.x-5.1.35/mysql/mysql.h
 .obj/ItemAwardManager.o: ../../libmysql/7.x-5.1.35/mysql/mysql_version.h
 .obj/ItemAwardManager.o: ../../libmysql/7.x-5.1.35/mysql/mysql_com.h
@@ -6020,14 +6020,14 @@
 .obj/ItemAwardManager.o: ../../libmysql/7.x-5.1.35/mysql/my_list.h
 .obj/ItemAwardManager.o: ../../libmysql/7.x-5.1.35/mysql/typelib.h
 .obj/ItemAwardManager.o: ../../libmysql/7.x-5.1.35/mysql/my_alloc.h
-.obj/ItemAwardManager.o: ../libsql/AsyncSQL.h
-.obj/ItemAwardManager.o: ../libthecore/include/stdafx.h
-.obj/ItemAwardManager.o: ../libthecore/include/log.h
+.obj/ItemAwardManager.o: libsql/AsyncSQL.h
+.obj/ItemAwardManager.o: libthecore/stdafx.h
+.obj/ItemAwardManager.o: libthecore/log.h
 .obj/ItemAwardManager.o: /usr/include/c++/4.2/queue
 .obj/ItemAwardManager.o: /usr/include/c++/4.2/bits/stl_queue.h
 .obj/ItemAwardManager.o: ../../libmysql/7.x-5.1.35/mysql/errmsg.h
 .obj/ItemAwardManager.o: ../../libmysql/7.x-5.1.35/mysql/mysqld_error.h
-.obj/ItemAwardManager.o: ../libsql/Semaphore.h ItemAwardManager.h Peer.h
+.obj/ItemAwardManager.o: libsql/Semaphore.h ItemAwardManager.h Peer.h
 .obj/ItemAwardManager.o: PeerBase.h NetBase.h ClientManager.h
 .obj/ItemAwardManager.o: /usr/include/boost/unordered_map.hpp
 .obj/ItemAwardManager.o: /usr/include/boost/unordered/unordered_map.hpp
@@ -6276,9 +6276,9 @@
 .obj/ItemAwardManager.o: /usr/include/boost/unordered_set.hpp
 .obj/ItemAwardManager.o: /usr/include/boost/unordered/unordered_set.hpp
 .obj/ItemAwardManager.o: /usr/include/boost/unordered/unordered_set_fwd.hpp
-.obj/ItemAwardManager.o: ../common/building.h ../common/auction_table.h
-.obj/ItemAwardManager.o: ../common/tables.h LoginData.h
-.obj/ClientManagerEventFlag.o: stdafx.h ../libthecore/include/stdafx.h
+.obj/ItemAwardManager.o: common/building.h common/auction_table.h
+.obj/ItemAwardManager.o: common/tables.h LoginData.h
+.obj/ClientManagerEventFlag.o: stdafx.h libthecore/stdafx.h
 .obj/ClientManagerEventFlag.o: /usr/include/stdio.h /usr/include/sys/cdefs.h
 .obj/ClientManagerEventFlag.o: /usr/include/sys/_null.h
 .obj/ClientManagerEventFlag.o: /usr/include/sys/_types.h
@@ -6317,24 +6317,24 @@
 .obj/ClientManagerEventFlag.o: /usr/include/sched.h /usr/include/semaphore.h
 .obj/ClientManagerEventFlag.o: /usr/include/sys/event.h
 .obj/ClientManagerEventFlag.o: /usr/include/sys/queue.h
-.obj/ClientManagerEventFlag.o: ../libthecore/include/typedef.h
-.obj/ClientManagerEventFlag.o: ../libthecore/include/heart.h
-.obj/ClientManagerEventFlag.o: ../libthecore/include/fdwatch.h
-.obj/ClientManagerEventFlag.o: ../libthecore/include/socket.h
-.obj/ClientManagerEventFlag.o: ../libthecore/include/kstbl.h
-.obj/ClientManagerEventFlag.o: ../libthecore/include/hangul.h
-.obj/ClientManagerEventFlag.o: ../libthecore/include/buffer.h
-.obj/ClientManagerEventFlag.o: ../libthecore/include/signal.h
-.obj/ClientManagerEventFlag.o: ../libthecore/include/log.h
-.obj/ClientManagerEventFlag.o: ../libthecore/include/main.h
-.obj/ClientManagerEventFlag.o: ../libthecore/include/utils.h
-.obj/ClientManagerEventFlag.o: ../libthecore/include/crypt.h
-.obj/ClientManagerEventFlag.o: ../libthecore/include/memcpy.h
-.obj/ClientManagerEventFlag.o: ../common/length.h
-.obj/ClientManagerEventFlag.o: ../common/item_length.h
-.obj/ClientManagerEventFlag.o: ../common/tables.h ../common/length.h
-.obj/ClientManagerEventFlag.o: ../common/singleton.h ../common/utils.h
-.obj/ClientManagerEventFlag.o: ../common/stl.h /usr/include/c++/4.2/vector
+.obj/ClientManagerEventFlag.o: libthecore/typedef.h
+.obj/ClientManagerEventFlag.o: libthecore/heart.h
+.obj/ClientManagerEventFlag.o: libthecore/fdwatch.h
+.obj/ClientManagerEventFlag.o: libthecore/socket.h
+.obj/ClientManagerEventFlag.o: libthecore/kstbl.h
+.obj/ClientManagerEventFlag.o: libthecore/hangul.h
+.obj/ClientManagerEventFlag.o: libthecore/buffer.h
+.obj/ClientManagerEventFlag.o: libthecore/signal.h
+.obj/ClientManagerEventFlag.o: libthecore/log.h
+.obj/ClientManagerEventFlag.o: libthecore/main.h
+.obj/ClientManagerEventFlag.o: libthecore/utils.h
+.obj/ClientManagerEventFlag.o: libthecore/crypt.h
+.obj/ClientManagerEventFlag.o: libthecore/memcpy.h
+.obj/ClientManagerEventFlag.o: common/length.h
+.obj/ClientManagerEventFlag.o: common/item_length.h
+.obj/ClientManagerEventFlag.o: common/tables.h common/length.h
+.obj/ClientManagerEventFlag.o: common/singleton.h common/utils.h
+.obj/ClientManagerEventFlag.o: common/stl.h /usr/include/c++/4.2/vector
 .obj/ClientManagerEventFlag.o: /usr/include/c++/4.2/bits/functexcept.h
 .obj/ClientManagerEventFlag.o: /usr/include/c++/4.2/bits/c++config.h
 .obj/ClientManagerEventFlag.o: /usr/include/c++/4.2/bits/os_defines.h
@@ -6414,7 +6414,7 @@
 .obj/ClientManagerEventFlag.o: /usr/include/c++/4.2/bits/stl_set.h
 .obj/ClientManagerEventFlag.o: /usr/include/c++/4.2/bits/stl_multiset.h
 .obj/ClientManagerEventFlag.o: /usr/include/c++/4.2/ext/functional
-.obj/ClientManagerEventFlag.o: ../common/service.h ClientManager.h
+.obj/ClientManagerEventFlag.o: common/service.h ClientManager.h
 .obj/ClientManagerEventFlag.o: /usr/include/boost/unordered_map.hpp
 .obj/ClientManagerEventFlag.o: /usr/include/boost/unordered/unordered_map.hpp
 .obj/ClientManagerEventFlag.o: /usr/include/boost/unordered/unordered_map_fwd.hpp
@@ -6663,9 +6663,9 @@
 .obj/ClientManagerEventFlag.o: /usr/include/boost/unordered_set.hpp
 .obj/ClientManagerEventFlag.o: /usr/include/boost/unordered/unordered_set.hpp
 .obj/ClientManagerEventFlag.o: /usr/include/boost/unordered/unordered_set_fwd.hpp
-.obj/ClientManagerEventFlag.o: ../common/building.h
-.obj/ClientManagerEventFlag.o: ../common/auction_table.h
-.obj/ClientManagerEventFlag.o: ../common/tables.h Peer.h PeerBase.h
+.obj/ClientManagerEventFlag.o: common/building.h
+.obj/ClientManagerEventFlag.o: common/auction_table.h
+.obj/ClientManagerEventFlag.o: common/tables.h Peer.h PeerBase.h
 .obj/ClientManagerEventFlag.o: NetBase.h DBManager.h
 .obj/ClientManagerEventFlag.o: ../../libmysql/7.x-5.1.35/mysql/mysql.h
 .obj/ClientManagerEventFlag.o: ../../libmysql/7.x-5.1.35/mysql/mysql_version.h
@@ -6674,16 +6674,16 @@
 .obj/ClientManagerEventFlag.o: ../../libmysql/7.x-5.1.35/mysql/my_list.h
 .obj/ClientManagerEventFlag.o: ../../libmysql/7.x-5.1.35/mysql/typelib.h
 .obj/ClientManagerEventFlag.o: ../../libmysql/7.x-5.1.35/mysql/my_alloc.h
-.obj/ClientManagerEventFlag.o: ../libsql/AsyncSQL.h
-.obj/ClientManagerEventFlag.o: ../libthecore/include/stdafx.h
-.obj/ClientManagerEventFlag.o: ../libthecore/include/log.h
+.obj/ClientManagerEventFlag.o: libsql/AsyncSQL.h
+.obj/ClientManagerEventFlag.o: libthecore/stdafx.h
+.obj/ClientManagerEventFlag.o: libthecore/log.h
 .obj/ClientManagerEventFlag.o: /usr/include/c++/4.2/queue
 .obj/ClientManagerEventFlag.o: /usr/include/c++/4.2/bits/stl_queue.h
 .obj/ClientManagerEventFlag.o: ../../libmysql/7.x-5.1.35/mysql/errmsg.h
 .obj/ClientManagerEventFlag.o: ../../libmysql/7.x-5.1.35/mysql/mysqld_error.h
-.obj/ClientManagerEventFlag.o: ../libsql/Semaphore.h LoginData.h Main.h
+.obj/ClientManagerEventFlag.o: libsql/Semaphore.h LoginData.h Main.h
 .obj/ClientManagerEventFlag.o: Config.h QID.h
-.obj/Marriage.o: stdafx.h ../libthecore/include/stdafx.h
+.obj/Marriage.o: stdafx.h libthecore/stdafx.h
 .obj/Marriage.o: /usr/include/stdio.h /usr/include/sys/cdefs.h
 .obj/Marriage.o: /usr/include/sys/_null.h /usr/include/sys/_types.h
 .obj/Marriage.o: /usr/include/machine/_types.h /usr/include/string.h
@@ -6709,22 +6709,22 @@
 .obj/Marriage.o: /usr/include/sys/wait.h /usr/include/pthread.h
 .obj/Marriage.o: /usr/include/sched.h /usr/include/semaphore.h
 .obj/Marriage.o: /usr/include/sys/event.h /usr/include/sys/queue.h
-.obj/Marriage.o: ../libthecore/include/typedef.h
-.obj/Marriage.o: ../libthecore/include/heart.h
-.obj/Marriage.o: ../libthecore/include/fdwatch.h
-.obj/Marriage.o: ../libthecore/include/socket.h
-.obj/Marriage.o: ../libthecore/include/kstbl.h
-.obj/Marriage.o: ../libthecore/include/hangul.h
-.obj/Marriage.o: ../libthecore/include/buffer.h
-.obj/Marriage.o: ../libthecore/include/signal.h
-.obj/Marriage.o: ../libthecore/include/log.h
-.obj/Marriage.o: ../libthecore/include/main.h
-.obj/Marriage.o: ../libthecore/include/utils.h
-.obj/Marriage.o: ../libthecore/include/crypt.h
-.obj/Marriage.o: ../libthecore/include/memcpy.h ../common/length.h
-.obj/Marriage.o: ../common/item_length.h ../common/tables.h
-.obj/Marriage.o: ../common/length.h ../common/singleton.h
-.obj/Marriage.o: ../common/utils.h ../common/stl.h
+.obj/Marriage.o: libthecore/typedef.h
+.obj/Marriage.o: libthecore/heart.h
+.obj/Marriage.o: libthecore/fdwatch.h
+.obj/Marriage.o: libthecore/socket.h
+.obj/Marriage.o: libthecore/kstbl.h
+.obj/Marriage.o: libthecore/hangul.h
+.obj/Marriage.o: libthecore/buffer.h
+.obj/Marriage.o: libthecore/signal.h
+.obj/Marriage.o: libthecore/log.h
+.obj/Marriage.o: libthecore/main.h
+.obj/Marriage.o: libthecore/utils.h
+.obj/Marriage.o: libthecore/crypt.h
+.obj/Marriage.o: libthecore/memcpy.h common/length.h
+.obj/Marriage.o: common/item_length.h common/tables.h
+.obj/Marriage.o: common/length.h common/singleton.h
+.obj/Marriage.o: common/utils.h common/stl.h
 .obj/Marriage.o: /usr/include/c++/4.2/vector
 .obj/Marriage.o: /usr/include/c++/4.2/bits/functexcept.h
 .obj/Marriage.o: /usr/include/c++/4.2/bits/c++config.h
@@ -6795,7 +6795,7 @@
 .obj/Marriage.o: /usr/include/c++/4.2/bits/stl_stack.h
 .obj/Marriage.o: /usr/include/c++/4.2/set /usr/include/c++/4.2/bits/stl_set.h
 .obj/Marriage.o: /usr/include/c++/4.2/bits/stl_multiset.h
-.obj/Marriage.o: /usr/include/c++/4.2/ext/functional ../common/service.h
+.obj/Marriage.o: /usr/include/c++/4.2/ext/functional common/service.h
 .obj/Marriage.o: Marriage.h /usr/include/c++/4.2/queue
 .obj/Marriage.o: /usr/include/c++/4.2/bits/stl_queue.h Peer.h PeerBase.h
 .obj/Marriage.o: NetBase.h Main.h DBManager.h
@@ -6806,11 +6806,11 @@
 .obj/Marriage.o: ../../libmysql/7.x-5.1.35/mysql/my_list.h
 .obj/Marriage.o: ../../libmysql/7.x-5.1.35/mysql/typelib.h
 .obj/Marriage.o: ../../libmysql/7.x-5.1.35/mysql/my_alloc.h
-.obj/Marriage.o: ../libsql/AsyncSQL.h ../libthecore/include/stdafx.h
-.obj/Marriage.o: ../libthecore/include/log.h
+.obj/Marriage.o: libsql/AsyncSQL.h libthecore/stdafx.h
+.obj/Marriage.o: libthecore/log.h
 .obj/Marriage.o: ../../libmysql/7.x-5.1.35/mysql/errmsg.h
 .obj/Marriage.o: ../../libmysql/7.x-5.1.35/mysql/mysqld_error.h
-.obj/Marriage.o: ../libsql/Semaphore.h ClientManager.h
+.obj/Marriage.o: libsql/Semaphore.h ClientManager.h
 .obj/Marriage.o: /usr/include/boost/unordered_map.hpp
 .obj/Marriage.o: /usr/include/boost/unordered/unordered_map.hpp
 .obj/Marriage.o: /usr/include/boost/unordered/unordered_map_fwd.hpp
@@ -7054,9 +7054,9 @@
 .obj/Marriage.o: /usr/include/boost/unordered_set.hpp
 .obj/Marriage.o: /usr/include/boost/unordered/unordered_set.hpp
 .obj/Marriage.o: /usr/include/boost/unordered/unordered_set_fwd.hpp
-.obj/Marriage.o: ../common/building.h ../common/auction_table.h
-.obj/Marriage.o: ../common/tables.h LoginData.h
-.obj/Monarch.o: Monarch.h ../libthecore/include/stdafx.h
+.obj/Marriage.o: common/building.h common/auction_table.h
+.obj/Marriage.o: common/tables.h LoginData.h
+.obj/Monarch.o: Monarch.h libthecore/stdafx.h
 .obj/Monarch.o: /usr/include/stdio.h /usr/include/sys/cdefs.h
 .obj/Monarch.o: /usr/include/sys/_null.h /usr/include/sys/_types.h
 .obj/Monarch.o: /usr/include/machine/_types.h /usr/include/string.h
@@ -7082,19 +7082,19 @@
 .obj/Monarch.o: /usr/include/sys/wait.h /usr/include/pthread.h
 .obj/Monarch.o: /usr/include/sched.h /usr/include/semaphore.h
 .obj/Monarch.o: /usr/include/sys/event.h /usr/include/sys/queue.h
-.obj/Monarch.o: ../libthecore/include/typedef.h
-.obj/Monarch.o: ../libthecore/include/heart.h
-.obj/Monarch.o: ../libthecore/include/fdwatch.h
-.obj/Monarch.o: ../libthecore/include/socket.h
-.obj/Monarch.o: ../libthecore/include/kstbl.h
-.obj/Monarch.o: ../libthecore/include/hangul.h
-.obj/Monarch.o: ../libthecore/include/buffer.h
-.obj/Monarch.o: ../libthecore/include/signal.h
-.obj/Monarch.o: ../libthecore/include/log.h
-.obj/Monarch.o: ../libthecore/include/main.h
-.obj/Monarch.o: ../libthecore/include/utils.h
-.obj/Monarch.o: ../libthecore/include/crypt.h
-.obj/Monarch.o: ../libthecore/include/memcpy.h /usr/include/c++/4.2/map
+.obj/Monarch.o: libthecore/typedef.h
+.obj/Monarch.o: libthecore/heart.h
+.obj/Monarch.o: libthecore/fdwatch.h
+.obj/Monarch.o: libthecore/socket.h
+.obj/Monarch.o: libthecore/kstbl.h
+.obj/Monarch.o: libthecore/hangul.h
+.obj/Monarch.o: libthecore/buffer.h
+.obj/Monarch.o: libthecore/signal.h
+.obj/Monarch.o: libthecore/log.h
+.obj/Monarch.o: libthecore/main.h
+.obj/Monarch.o: libthecore/utils.h
+.obj/Monarch.o: libthecore/crypt.h
+.obj/Monarch.o: libthecore/memcpy.h /usr/include/c++/4.2/map
 .obj/Monarch.o: /usr/include/c++/4.2/bits/stl_tree.h
 .obj/Monarch.o: /usr/include/c++/4.2/bits/stl_algobase.h
 .obj/Monarch.o: /usr/include/c++/4.2/bits/c++config.h
@@ -7139,9 +7139,9 @@
 .obj/Monarch.o: /usr/include/c++/4.2/bits/stl_uninitialized.h
 .obj/Monarch.o: /usr/include/c++/4.2/bits/stl_vector.h
 .obj/Monarch.o: /usr/include/c++/4.2/bits/stl_bvector.h
-.obj/Monarch.o: /usr/include/c++/4.2/bits/vector.tcc ../common/singleton.h
-.obj/Monarch.o: ../common/tables.h ../common/length.h
-.obj/Monarch.o: ../common/utils.h Main.h ClientManager.h
+.obj/Monarch.o: /usr/include/c++/4.2/bits/vector.tcc common/singleton.h
+.obj/Monarch.o: common/tables.h common/length.h
+.obj/Monarch.o: common/utils.h Main.h ClientManager.h
 .obj/Monarch.o: /usr/include/boost/unordered_map.hpp
 .obj/Monarch.o: /usr/include/boost/unordered/unordered_map.hpp
 .obj/Monarch.o: /usr/include/boost/unordered/unordered_map_fwd.hpp
@@ -7399,7 +7399,7 @@
 .obj/Monarch.o: /usr/include/boost/unordered_set.hpp
 .obj/Monarch.o: /usr/include/boost/unordered/unordered_set.hpp
 .obj/Monarch.o: /usr/include/boost/unordered/unordered_set_fwd.hpp
-.obj/Monarch.o: ../common/stl.h /usr/include/c++/4.2/list
+.obj/Monarch.o: common/stl.h /usr/include/c++/4.2/list
 .obj/Monarch.o: /usr/include/c++/4.2/bits/stl_list.h
 .obj/Monarch.o: /usr/include/c++/4.2/bits/list.tcc /usr/include/c++/4.2/stack
 .obj/Monarch.o: /usr/include/c++/4.2/deque
@@ -7408,8 +7408,8 @@
 .obj/Monarch.o: /usr/include/c++/4.2/bits/stl_stack.h
 .obj/Monarch.o: /usr/include/c++/4.2/set /usr/include/c++/4.2/bits/stl_set.h
 .obj/Monarch.o: /usr/include/c++/4.2/bits/stl_multiset.h
-.obj/Monarch.o: /usr/include/c++/4.2/ext/functional ../common/building.h
-.obj/Monarch.o: ../common/auction_table.h ../common/tables.h Peer.h
+.obj/Monarch.o: /usr/include/c++/4.2/ext/functional common/building.h
+.obj/Monarch.o: common/auction_table.h common/tables.h Peer.h
 .obj/Monarch.o: PeerBase.h NetBase.h DBManager.h
 .obj/Monarch.o: ../../libmysql/7.x-5.1.35/mysql/mysql.h
 .obj/Monarch.o: ../../libmysql/7.x-5.1.35/mysql/mysql_version.h
@@ -7418,13 +7418,13 @@
 .obj/Monarch.o: ../../libmysql/7.x-5.1.35/mysql/my_list.h
 .obj/Monarch.o: ../../libmysql/7.x-5.1.35/mysql/typelib.h
 .obj/Monarch.o: ../../libmysql/7.x-5.1.35/mysql/my_alloc.h
-.obj/Monarch.o: ../libsql/AsyncSQL.h ../libthecore/include/stdafx.h
-.obj/Monarch.o: ../libthecore/include/log.h /usr/include/c++/4.2/queue
+.obj/Monarch.o: libsql/AsyncSQL.h libthecore/stdafx.h
+.obj/Monarch.o: libthecore/log.h /usr/include/c++/4.2/queue
 .obj/Monarch.o: /usr/include/c++/4.2/bits/stl_queue.h
 .obj/Monarch.o: ../../libmysql/7.x-5.1.35/mysql/errmsg.h
 .obj/Monarch.o: ../../libmysql/7.x-5.1.35/mysql/mysqld_error.h
-.obj/Monarch.o: ../libsql/Semaphore.h LoginData.h
-.obj/BlockCountry.o: stdafx.h ../libthecore/include/stdafx.h
+.obj/Monarch.o: libsql/Semaphore.h LoginData.h
+.obj/BlockCountry.o: stdafx.h libthecore/stdafx.h
 .obj/BlockCountry.o: /usr/include/stdio.h /usr/include/sys/cdefs.h
 .obj/BlockCountry.o: /usr/include/sys/_null.h /usr/include/sys/_types.h
 .obj/BlockCountry.o: /usr/include/machine/_types.h /usr/include/string.h
@@ -7452,22 +7452,22 @@
 .obj/BlockCountry.o: /usr/include/pthread.h /usr/include/sched.h
 .obj/BlockCountry.o: /usr/include/semaphore.h /usr/include/sys/event.h
 .obj/BlockCountry.o: /usr/include/sys/queue.h
-.obj/BlockCountry.o: ../libthecore/include/typedef.h
-.obj/BlockCountry.o: ../libthecore/include/heart.h
-.obj/BlockCountry.o: ../libthecore/include/fdwatch.h
-.obj/BlockCountry.o: ../libthecore/include/socket.h
-.obj/BlockCountry.o: ../libthecore/include/kstbl.h
-.obj/BlockCountry.o: ../libthecore/include/hangul.h
-.obj/BlockCountry.o: ../libthecore/include/buffer.h
-.obj/BlockCountry.o: ../libthecore/include/signal.h
-.obj/BlockCountry.o: ../libthecore/include/log.h
-.obj/BlockCountry.o: ../libthecore/include/main.h
-.obj/BlockCountry.o: ../libthecore/include/utils.h
-.obj/BlockCountry.o: ../libthecore/include/crypt.h
-.obj/BlockCountry.o: ../libthecore/include/memcpy.h ../common/length.h
-.obj/BlockCountry.o: ../common/item_length.h ../common/tables.h
-.obj/BlockCountry.o: ../common/length.h ../common/singleton.h
-.obj/BlockCountry.o: ../common/utils.h ../common/stl.h
+.obj/BlockCountry.o: libthecore/typedef.h
+.obj/BlockCountry.o: libthecore/heart.h
+.obj/BlockCountry.o: libthecore/fdwatch.h
+.obj/BlockCountry.o: libthecore/socket.h
+.obj/BlockCountry.o: libthecore/kstbl.h
+.obj/BlockCountry.o: libthecore/hangul.h
+.obj/BlockCountry.o: libthecore/buffer.h
+.obj/BlockCountry.o: libthecore/signal.h
+.obj/BlockCountry.o: libthecore/log.h
+.obj/BlockCountry.o: libthecore/main.h
+.obj/BlockCountry.o: libthecore/utils.h
+.obj/BlockCountry.o: libthecore/crypt.h
+.obj/BlockCountry.o: libthecore/memcpy.h common/length.h
+.obj/BlockCountry.o: common/item_length.h common/tables.h
+.obj/BlockCountry.o: common/length.h common/singleton.h
+.obj/BlockCountry.o: common/utils.h common/stl.h
 .obj/BlockCountry.o: /usr/include/c++/4.2/vector
 .obj/BlockCountry.o: /usr/include/c++/4.2/bits/functexcept.h
 .obj/BlockCountry.o: /usr/include/c++/4.2/bits/c++config.h
@@ -7541,7 +7541,7 @@
 .obj/BlockCountry.o: /usr/include/c++/4.2/bits/stl_set.h
 .obj/BlockCountry.o: /usr/include/c++/4.2/bits/stl_multiset.h
 .obj/BlockCountry.o: /usr/include/c++/4.2/ext/functional
-.obj/BlockCountry.o: ../common/service.h BlockCountry.h Peer.h PeerBase.h
+.obj/BlockCountry.o: common/service.h BlockCountry.h Peer.h PeerBase.h
 .obj/BlockCountry.o: NetBase.h DBManager.h
 .obj/BlockCountry.o: ../../libmysql/7.x-5.1.35/mysql/mysql.h
 .obj/BlockCountry.o: ../../libmysql/7.x-5.1.35/mysql/mysql_version.h
@@ -7550,15 +7550,15 @@
 .obj/BlockCountry.o: ../../libmysql/7.x-5.1.35/mysql/my_list.h
 .obj/BlockCountry.o: ../../libmysql/7.x-5.1.35/mysql/typelib.h
 .obj/BlockCountry.o: ../../libmysql/7.x-5.1.35/mysql/my_alloc.h
-.obj/BlockCountry.o: ../libsql/AsyncSQL.h
-.obj/BlockCountry.o: ../libthecore/include/stdafx.h
-.obj/BlockCountry.o: ../libthecore/include/log.h
+.obj/BlockCountry.o: libsql/AsyncSQL.h
+.obj/BlockCountry.o: libthecore/stdafx.h
+.obj/BlockCountry.o: libthecore/log.h
 .obj/BlockCountry.o: /usr/include/c++/4.2/queue
 .obj/BlockCountry.o: /usr/include/c++/4.2/bits/stl_queue.h
 .obj/BlockCountry.o: ../../libmysql/7.x-5.1.35/mysql/errmsg.h
 .obj/BlockCountry.o: ../../libmysql/7.x-5.1.35/mysql/mysqld_error.h
-.obj/BlockCountry.o: ../libsql/Semaphore.h
-.obj/ItemIDRangeManager.o: stdafx.h ../libthecore/include/stdafx.h
+.obj/BlockCountry.o: libsql/Semaphore.h
+.obj/ItemIDRangeManager.o: stdafx.h libthecore/stdafx.h
 .obj/ItemIDRangeManager.o: /usr/include/stdio.h /usr/include/sys/cdefs.h
 .obj/ItemIDRangeManager.o: /usr/include/sys/_null.h /usr/include/sys/_types.h
 .obj/ItemIDRangeManager.o: /usr/include/machine/_types.h
@@ -7592,23 +7592,23 @@
 .obj/ItemIDRangeManager.o: /usr/include/sys/wait.h /usr/include/pthread.h
 .obj/ItemIDRangeManager.o: /usr/include/sched.h /usr/include/semaphore.h
 .obj/ItemIDRangeManager.o: /usr/include/sys/event.h /usr/include/sys/queue.h
-.obj/ItemIDRangeManager.o: ../libthecore/include/typedef.h
-.obj/ItemIDRangeManager.o: ../libthecore/include/heart.h
-.obj/ItemIDRangeManager.o: ../libthecore/include/fdwatch.h
-.obj/ItemIDRangeManager.o: ../libthecore/include/socket.h
-.obj/ItemIDRangeManager.o: ../libthecore/include/kstbl.h
-.obj/ItemIDRangeManager.o: ../libthecore/include/hangul.h
-.obj/ItemIDRangeManager.o: ../libthecore/include/buffer.h
-.obj/ItemIDRangeManager.o: ../libthecore/include/signal.h
-.obj/ItemIDRangeManager.o: ../libthecore/include/log.h
-.obj/ItemIDRangeManager.o: ../libthecore/include/main.h
-.obj/ItemIDRangeManager.o: ../libthecore/include/utils.h
-.obj/ItemIDRangeManager.o: ../libthecore/include/crypt.h
-.obj/ItemIDRangeManager.o: ../libthecore/include/memcpy.h
-.obj/ItemIDRangeManager.o: ../common/length.h ../common/item_length.h
-.obj/ItemIDRangeManager.o: ../common/tables.h ../common/length.h
-.obj/ItemIDRangeManager.o: ../common/singleton.h ../common/utils.h
-.obj/ItemIDRangeManager.o: ../common/stl.h /usr/include/c++/4.2/vector
+.obj/ItemIDRangeManager.o: libthecore/typedef.h
+.obj/ItemIDRangeManager.o: libthecore/heart.h
+.obj/ItemIDRangeManager.o: libthecore/fdwatch.h
+.obj/ItemIDRangeManager.o: libthecore/socket.h
+.obj/ItemIDRangeManager.o: libthecore/kstbl.h
+.obj/ItemIDRangeManager.o: libthecore/hangul.h
+.obj/ItemIDRangeManager.o: libthecore/buffer.h
+.obj/ItemIDRangeManager.o: libthecore/signal.h
+.obj/ItemIDRangeManager.o: libthecore/log.h
+.obj/ItemIDRangeManager.o: libthecore/main.h
+.obj/ItemIDRangeManager.o: libthecore/utils.h
+.obj/ItemIDRangeManager.o: libthecore/crypt.h
+.obj/ItemIDRangeManager.o: libthecore/memcpy.h
+.obj/ItemIDRangeManager.o: common/length.h common/item_length.h
+.obj/ItemIDRangeManager.o: common/tables.h common/length.h
+.obj/ItemIDRangeManager.o: common/singleton.h common/utils.h
+.obj/ItemIDRangeManager.o: common/stl.h /usr/include/c++/4.2/vector
 .obj/ItemIDRangeManager.o: /usr/include/c++/4.2/bits/functexcept.h
 .obj/ItemIDRangeManager.o: /usr/include/c++/4.2/bits/c++config.h
 .obj/ItemIDRangeManager.o: /usr/include/c++/4.2/bits/os_defines.h
@@ -7686,7 +7686,7 @@
 .obj/ItemIDRangeManager.o: /usr/include/c++/4.2/bits/stl_set.h
 .obj/ItemIDRangeManager.o: /usr/include/c++/4.2/bits/stl_multiset.h
 .obj/ItemIDRangeManager.o: /usr/include/c++/4.2/ext/functional
-.obj/ItemIDRangeManager.o: ../common/service.h ItemIDRangeManager.h Main.h
+.obj/ItemIDRangeManager.o: common/service.h ItemIDRangeManager.h Main.h
 .obj/ItemIDRangeManager.o: DBManager.h
 .obj/ItemIDRangeManager.o: ../../libmysql/7.x-5.1.35/mysql/mysql.h
 .obj/ItemIDRangeManager.o: ../../libmysql/7.x-5.1.35/mysql/mysql_version.h
@@ -7695,14 +7695,14 @@
 .obj/ItemIDRangeManager.o: ../../libmysql/7.x-5.1.35/mysql/my_list.h
 .obj/ItemIDRangeManager.o: ../../libmysql/7.x-5.1.35/mysql/typelib.h
 .obj/ItemIDRangeManager.o: ../../libmysql/7.x-5.1.35/mysql/my_alloc.h
-.obj/ItemIDRangeManager.o: ../libsql/AsyncSQL.h
-.obj/ItemIDRangeManager.o: ../libthecore/include/stdafx.h
-.obj/ItemIDRangeManager.o: ../libthecore/include/log.h
+.obj/ItemIDRangeManager.o: libsql/AsyncSQL.h
+.obj/ItemIDRangeManager.o: libthecore/stdafx.h
+.obj/ItemIDRangeManager.o: libthecore/log.h
 .obj/ItemIDRangeManager.o: /usr/include/c++/4.2/queue
 .obj/ItemIDRangeManager.o: /usr/include/c++/4.2/bits/stl_queue.h
 .obj/ItemIDRangeManager.o: ../../libmysql/7.x-5.1.35/mysql/errmsg.h
 .obj/ItemIDRangeManager.o: ../../libmysql/7.x-5.1.35/mysql/mysqld_error.h
-.obj/ItemIDRangeManager.o: ../libsql/Semaphore.h ClientManager.h
+.obj/ItemIDRangeManager.o: libsql/Semaphore.h ClientManager.h
 .obj/ItemIDRangeManager.o: /usr/include/boost/unordered_map.hpp
 .obj/ItemIDRangeManager.o: /usr/include/boost/unordered/unordered_map.hpp
 .obj/ItemIDRangeManager.o: /usr/include/boost/unordered/unordered_map_fwd.hpp
@@ -7950,10 +7950,10 @@
 .obj/ItemIDRangeManager.o: /usr/include/boost/unordered_set.hpp
 .obj/ItemIDRangeManager.o: /usr/include/boost/unordered/unordered_set.hpp
 .obj/ItemIDRangeManager.o: /usr/include/boost/unordered/unordered_set_fwd.hpp
-.obj/ItemIDRangeManager.o: ../common/building.h
-.obj/ItemIDRangeManager.o: ../common/auction_table.h ../common/tables.h
+.obj/ItemIDRangeManager.o: common/building.h
+.obj/ItemIDRangeManager.o: common/auction_table.h common/tables.h
 .obj/ItemIDRangeManager.o: Peer.h PeerBase.h NetBase.h LoginData.h
-.obj/ClientManagerHorseName.o: stdafx.h ../libthecore/include/stdafx.h
+.obj/ClientManagerHorseName.o: stdafx.h libthecore/stdafx.h
 .obj/ClientManagerHorseName.o: /usr/include/stdio.h /usr/include/sys/cdefs.h
 .obj/ClientManagerHorseName.o: /usr/include/sys/_null.h
 .obj/ClientManagerHorseName.o: /usr/include/sys/_types.h
@@ -7992,24 +7992,24 @@
 .obj/ClientManagerHorseName.o: /usr/include/sched.h /usr/include/semaphore.h
 .obj/ClientManagerHorseName.o: /usr/include/sys/event.h
 .obj/ClientManagerHorseName.o: /usr/include/sys/queue.h
-.obj/ClientManagerHorseName.o: ../libthecore/include/typedef.h
-.obj/ClientManagerHorseName.o: ../libthecore/include/heart.h
-.obj/ClientManagerHorseName.o: ../libthecore/include/fdwatch.h
-.obj/ClientManagerHorseName.o: ../libthecore/include/socket.h
-.obj/ClientManagerHorseName.o: ../libthecore/include/kstbl.h
-.obj/ClientManagerHorseName.o: ../libthecore/include/hangul.h
-.obj/ClientManagerHorseName.o: ../libthecore/include/buffer.h
-.obj/ClientManagerHorseName.o: ../libthecore/include/signal.h
-.obj/ClientManagerHorseName.o: ../libthecore/include/log.h
-.obj/ClientManagerHorseName.o: ../libthecore/include/main.h
-.obj/ClientManagerHorseName.o: ../libthecore/include/utils.h
-.obj/ClientManagerHorseName.o: ../libthecore/include/crypt.h
-.obj/ClientManagerHorseName.o: ../libthecore/include/memcpy.h
-.obj/ClientManagerHorseName.o: ../common/length.h
-.obj/ClientManagerHorseName.o: ../common/item_length.h
-.obj/ClientManagerHorseName.o: ../common/tables.h ../common/length.h
-.obj/ClientManagerHorseName.o: ../common/singleton.h ../common/utils.h
-.obj/ClientManagerHorseName.o: ../common/stl.h /usr/include/c++/4.2/vector
+.obj/ClientManagerHorseName.o: libthecore/typedef.h
+.obj/ClientManagerHorseName.o: libthecore/heart.h
+.obj/ClientManagerHorseName.o: libthecore/fdwatch.h
+.obj/ClientManagerHorseName.o: libthecore/socket.h
+.obj/ClientManagerHorseName.o: libthecore/kstbl.h
+.obj/ClientManagerHorseName.o: libthecore/hangul.h
+.obj/ClientManagerHorseName.o: libthecore/buffer.h
+.obj/ClientManagerHorseName.o: libthecore/signal.h
+.obj/ClientManagerHorseName.o: libthecore/log.h
+.obj/ClientManagerHorseName.o: libthecore/main.h
+.obj/ClientManagerHorseName.o: libthecore/utils.h
+.obj/ClientManagerHorseName.o: libthecore/crypt.h
+.obj/ClientManagerHorseName.o: libthecore/memcpy.h
+.obj/ClientManagerHorseName.o: common/length.h
+.obj/ClientManagerHorseName.o: common/item_length.h
+.obj/ClientManagerHorseName.o: common/tables.h common/length.h
+.obj/ClientManagerHorseName.o: common/singleton.h common/utils.h
+.obj/ClientManagerHorseName.o: common/stl.h /usr/include/c++/4.2/vector
 .obj/ClientManagerHorseName.o: /usr/include/c++/4.2/bits/functexcept.h
 .obj/ClientManagerHorseName.o: /usr/include/c++/4.2/bits/c++config.h
 .obj/ClientManagerHorseName.o: /usr/include/c++/4.2/bits/os_defines.h
@@ -8089,7 +8089,7 @@
 .obj/ClientManagerHorseName.o: /usr/include/c++/4.2/bits/stl_set.h
 .obj/ClientManagerHorseName.o: /usr/include/c++/4.2/bits/stl_multiset.h
 .obj/ClientManagerHorseName.o: /usr/include/c++/4.2/ext/functional
-.obj/ClientManagerHorseName.o: ../common/service.h ClientManager.h
+.obj/ClientManagerHorseName.o: common/service.h ClientManager.h
 .obj/ClientManagerHorseName.o: /usr/include/boost/unordered_map.hpp
 .obj/ClientManagerHorseName.o: /usr/include/boost/unordered/unordered_map.hpp
 .obj/ClientManagerHorseName.o: /usr/include/boost/unordered/unordered_map_fwd.hpp
@@ -8338,9 +8338,9 @@
 .obj/ClientManagerHorseName.o: /usr/include/boost/unordered_set.hpp
 .obj/ClientManagerHorseName.o: /usr/include/boost/unordered/unordered_set.hpp
 .obj/ClientManagerHorseName.o: /usr/include/boost/unordered/unordered_set_fwd.hpp
-.obj/ClientManagerHorseName.o: ../common/building.h
-.obj/ClientManagerHorseName.o: ../common/auction_table.h
-.obj/ClientManagerHorseName.o: ../common/tables.h Peer.h PeerBase.h
+.obj/ClientManagerHorseName.o: common/building.h
+.obj/ClientManagerHorseName.o: common/auction_table.h
+.obj/ClientManagerHorseName.o: common/tables.h Peer.h PeerBase.h
 .obj/ClientManagerHorseName.o: NetBase.h DBManager.h
 .obj/ClientManagerHorseName.o: ../../libmysql/7.x-5.1.35/mysql/mysql.h
 .obj/ClientManagerHorseName.o: ../../libmysql/7.x-5.1.35/mysql/mysql_version.h
@@ -8349,18 +8349,18 @@
 .obj/ClientManagerHorseName.o: ../../libmysql/7.x-5.1.35/mysql/my_list.h
 .obj/ClientManagerHorseName.o: ../../libmysql/7.x-5.1.35/mysql/typelib.h
 .obj/ClientManagerHorseName.o: ../../libmysql/7.x-5.1.35/mysql/my_alloc.h
-.obj/ClientManagerHorseName.o: ../libsql/AsyncSQL.h
-.obj/ClientManagerHorseName.o: ../libthecore/include/stdafx.h
-.obj/ClientManagerHorseName.o: ../libthecore/include/log.h
+.obj/ClientManagerHorseName.o: libsql/AsyncSQL.h
+.obj/ClientManagerHorseName.o: libthecore/stdafx.h
+.obj/ClientManagerHorseName.o: libthecore/log.h
 .obj/ClientManagerHorseName.o: /usr/include/c++/4.2/queue
 .obj/ClientManagerHorseName.o: /usr/include/c++/4.2/bits/stl_queue.h
 .obj/ClientManagerHorseName.o: ../../libmysql/7.x-5.1.35/mysql/errmsg.h
 .obj/ClientManagerHorseName.o: ../../libmysql/7.x-5.1.35/mysql/mysqld_error.h
-.obj/ClientManagerHorseName.o: ../libsql/Semaphore.h LoginData.h
+.obj/ClientManagerHorseName.o: libsql/Semaphore.h LoginData.h
 .obj/version.o: /usr/include/stdio.h /usr/include/sys/cdefs.h
 .obj/version.o: /usr/include/sys/_null.h /usr/include/sys/_types.h
 .obj/version.o: /usr/include/machine/_types.h /usr/include/stdlib.h
-.obj/AuctionManager.o: stdafx.h ../libthecore/include/stdafx.h
+.obj/AuctionManager.o: stdafx.h libthecore/stdafx.h
 .obj/AuctionManager.o: /usr/include/stdio.h /usr/include/sys/cdefs.h
 .obj/AuctionManager.o: /usr/include/sys/_null.h /usr/include/sys/_types.h
 .obj/AuctionManager.o: /usr/include/machine/_types.h /usr/include/string.h
@@ -8389,23 +8389,23 @@
 .obj/AuctionManager.o: /usr/include/pthread.h /usr/include/sched.h
 .obj/AuctionManager.o: /usr/include/semaphore.h /usr/include/sys/event.h
 .obj/AuctionManager.o: /usr/include/sys/queue.h
-.obj/AuctionManager.o: ../libthecore/include/typedef.h
-.obj/AuctionManager.o: ../libthecore/include/heart.h
-.obj/AuctionManager.o: ../libthecore/include/fdwatch.h
-.obj/AuctionManager.o: ../libthecore/include/socket.h
-.obj/AuctionManager.o: ../libthecore/include/kstbl.h
-.obj/AuctionManager.o: ../libthecore/include/hangul.h
-.obj/AuctionManager.o: ../libthecore/include/buffer.h
-.obj/AuctionManager.o: ../libthecore/include/signal.h
-.obj/AuctionManager.o: ../libthecore/include/log.h
-.obj/AuctionManager.o: ../libthecore/include/main.h
-.obj/AuctionManager.o: ../libthecore/include/utils.h
-.obj/AuctionManager.o: ../libthecore/include/crypt.h
-.obj/AuctionManager.o: ../libthecore/include/memcpy.h
-.obj/AuctionManager.o: ../common/length.h ../common/item_length.h
-.obj/AuctionManager.o: ../common/tables.h ../common/length.h
-.obj/AuctionManager.o: ../common/singleton.h ../common/utils.h
-.obj/AuctionManager.o: ../common/stl.h /usr/include/c++/4.2/vector
+.obj/AuctionManager.o: libthecore/typedef.h
+.obj/AuctionManager.o: libthecore/heart.h
+.obj/AuctionManager.o: libthecore/fdwatch.h
+.obj/AuctionManager.o: libthecore/socket.h
+.obj/AuctionManager.o: libthecore/kstbl.h
+.obj/AuctionManager.o: libthecore/hangul.h
+.obj/AuctionManager.o: libthecore/buffer.h
+.obj/AuctionManager.o: libthecore/signal.h
+.obj/AuctionManager.o: libthecore/log.h
+.obj/AuctionManager.o: libthecore/main.h
+.obj/AuctionManager.o: libthecore/utils.h
+.obj/AuctionManager.o: libthecore/crypt.h
+.obj/AuctionManager.o: libthecore/memcpy.h
+.obj/AuctionManager.o: common/length.h common/item_length.h
+.obj/AuctionManager.o: common/tables.h common/length.h
+.obj/AuctionManager.o: common/singleton.h common/utils.h
+.obj/AuctionManager.o: common/stl.h /usr/include/c++/4.2/vector
 .obj/AuctionManager.o: /usr/include/c++/4.2/bits/functexcept.h
 .obj/AuctionManager.o: /usr/include/c++/4.2/bits/c++config.h
 .obj/AuctionManager.o: /usr/include/c++/4.2/bits/os_defines.h
@@ -8481,8 +8481,8 @@
 .obj/AuctionManager.o: /usr/include/c++/4.2/bits/stl_set.h
 .obj/AuctionManager.o: /usr/include/c++/4.2/bits/stl_multiset.h
 .obj/AuctionManager.o: /usr/include/c++/4.2/ext/functional
-.obj/AuctionManager.o: ../common/service.h
-.obj/ProtoReader.o: stdafx.h ../libthecore/include/stdafx.h
+.obj/AuctionManager.o: common/service.h
+.obj/ProtoReader.o: stdafx.h libthecore/stdafx.h
 .obj/ProtoReader.o: /usr/include/stdio.h /usr/include/sys/cdefs.h
 .obj/ProtoReader.o: /usr/include/sys/_null.h /usr/include/sys/_types.h
 .obj/ProtoReader.o: /usr/include/machine/_types.h /usr/include/string.h
@@ -8509,22 +8509,22 @@
 .obj/ProtoReader.o: /usr/include/sys/wait.h /usr/include/pthread.h
 .obj/ProtoReader.o: /usr/include/sched.h /usr/include/semaphore.h
 .obj/ProtoReader.o: /usr/include/sys/event.h /usr/include/sys/queue.h
-.obj/ProtoReader.o: ../libthecore/include/typedef.h
-.obj/ProtoReader.o: ../libthecore/include/heart.h
-.obj/ProtoReader.o: ../libthecore/include/fdwatch.h
-.obj/ProtoReader.o: ../libthecore/include/socket.h
-.obj/ProtoReader.o: ../libthecore/include/kstbl.h
-.obj/ProtoReader.o: ../libthecore/include/hangul.h
-.obj/ProtoReader.o: ../libthecore/include/buffer.h
-.obj/ProtoReader.o: ../libthecore/include/signal.h
-.obj/ProtoReader.o: ../libthecore/include/log.h
-.obj/ProtoReader.o: ../libthecore/include/main.h
-.obj/ProtoReader.o: ../libthecore/include/utils.h
-.obj/ProtoReader.o: ../libthecore/include/crypt.h
-.obj/ProtoReader.o: ../libthecore/include/memcpy.h ../common/length.h
-.obj/ProtoReader.o: ../common/item_length.h ../common/tables.h
-.obj/ProtoReader.o: ../common/length.h ../common/singleton.h
-.obj/ProtoReader.o: ../common/utils.h ../common/stl.h
+.obj/ProtoReader.o: libthecore/typedef.h
+.obj/ProtoReader.o: libthecore/heart.h
+.obj/ProtoReader.o: libthecore/fdwatch.h
+.obj/ProtoReader.o: libthecore/socket.h
+.obj/ProtoReader.o: libthecore/kstbl.h
+.obj/ProtoReader.o: libthecore/hangul.h
+.obj/ProtoReader.o: libthecore/buffer.h
+.obj/ProtoReader.o: libthecore/signal.h
+.obj/ProtoReader.o: libthecore/log.h
+.obj/ProtoReader.o: libthecore/main.h
+.obj/ProtoReader.o: libthecore/utils.h
+.obj/ProtoReader.o: libthecore/crypt.h
+.obj/ProtoReader.o: libthecore/memcpy.h common/length.h
+.obj/ProtoReader.o: common/item_length.h common/tables.h
+.obj/ProtoReader.o: common/length.h common/singleton.h
+.obj/ProtoReader.o: common/utils.h common/stl.h
 .obj/ProtoReader.o: /usr/include/c++/4.2/vector
 .obj/ProtoReader.o: /usr/include/c++/4.2/bits/functexcept.h
 .obj/ProtoReader.o: /usr/include/c++/4.2/bits/c++config.h
@@ -8597,7 +8597,7 @@
 .obj/ProtoReader.o: /usr/include/c++/4.2/bits/stl_set.h
 .obj/ProtoReader.o: /usr/include/c++/4.2/bits/stl_multiset.h
 .obj/ProtoReader.o: /usr/include/c++/4.2/ext/functional
-.obj/ProtoReader.o: ../common/service.h /usr/include/math.h ProtoReader.h
+.obj/ProtoReader.o: common/service.h /usr/include/math.h ProtoReader.h
 .obj/ProtoReader.o: /usr/include/c++/4.2/iostream
 .obj/ProtoReader.o: /usr/include/c++/4.2/ostream /usr/include/c++/4.2/ios
 .obj/ProtoReader.o: /usr/include/c++/4.2/bits/localefwd.h
@@ -8623,7 +8623,7 @@
 .obj/ProtoReader.o: /usr/include/c++/4.2/bits/istream.tcc CsvReader.h
 .obj/ProtoReader.o: /usr/include/c++/4.2/sstream
 .obj/ProtoReader.o: /usr/include/c++/4.2/bits/sstream.tcc
-.obj/CsvReader.o: stdafx.h ../libthecore/include/stdafx.h
+.obj/CsvReader.o: stdafx.h libthecore/stdafx.h
 .obj/CsvReader.o: /usr/include/stdio.h /usr/include/sys/cdefs.h
 .obj/CsvReader.o: /usr/include/sys/_null.h /usr/include/sys/_types.h
 .obj/CsvReader.o: /usr/include/machine/_types.h /usr/include/string.h
@@ -8649,22 +8649,22 @@
 .obj/CsvReader.o: /usr/include/sys/wait.h /usr/include/pthread.h
 .obj/CsvReader.o: /usr/include/sched.h /usr/include/semaphore.h
 .obj/CsvReader.o: /usr/include/sys/event.h /usr/include/sys/queue.h
-.obj/CsvReader.o: ../libthecore/include/typedef.h
-.obj/CsvReader.o: ../libthecore/include/heart.h
-.obj/CsvReader.o: ../libthecore/include/fdwatch.h
-.obj/CsvReader.o: ../libthecore/include/socket.h
-.obj/CsvReader.o: ../libthecore/include/kstbl.h
-.obj/CsvReader.o: ../libthecore/include/hangul.h
-.obj/CsvReader.o: ../libthecore/include/buffer.h
-.obj/CsvReader.o: ../libthecore/include/signal.h
-.obj/CsvReader.o: ../libthecore/include/log.h
-.obj/CsvReader.o: ../libthecore/include/main.h
-.obj/CsvReader.o: ../libthecore/include/utils.h
-.obj/CsvReader.o: ../libthecore/include/crypt.h
-.obj/CsvReader.o: ../libthecore/include/memcpy.h ../common/length.h
-.obj/CsvReader.o: ../common/item_length.h ../common/tables.h
-.obj/CsvReader.o: ../common/length.h ../common/singleton.h
-.obj/CsvReader.o: ../common/utils.h ../common/stl.h
+.obj/CsvReader.o: libthecore/typedef.h
+.obj/CsvReader.o: libthecore/heart.h
+.obj/CsvReader.o: libthecore/fdwatch.h
+.obj/CsvReader.o: libthecore/socket.h
+.obj/CsvReader.o: libthecore/kstbl.h
+.obj/CsvReader.o: libthecore/hangul.h
+.obj/CsvReader.o: libthecore/buffer.h
+.obj/CsvReader.o: libthecore/signal.h
+.obj/CsvReader.o: libthecore/log.h
+.obj/CsvReader.o: libthecore/main.h
+.obj/CsvReader.o: libthecore/utils.h
+.obj/CsvReader.o: libthecore/crypt.h
+.obj/CsvReader.o: libthecore/memcpy.h common/length.h
+.obj/CsvReader.o: common/item_length.h common/tables.h
+.obj/CsvReader.o: common/length.h common/singleton.h
+.obj/CsvReader.o: common/utils.h common/stl.h
 .obj/CsvReader.o: /usr/include/c++/4.2/vector
 .obj/CsvReader.o: /usr/include/c++/4.2/bits/functexcept.h
 .obj/CsvReader.o: /usr/include/c++/4.2/bits/c++config.h
@@ -8736,7 +8736,7 @@
 .obj/CsvReader.o: /usr/include/c++/4.2/set
 .obj/CsvReader.o: /usr/include/c++/4.2/bits/stl_set.h
 .obj/CsvReader.o: /usr/include/c++/4.2/bits/stl_multiset.h
-.obj/CsvReader.o: /usr/include/c++/4.2/ext/functional ../common/service.h
+.obj/CsvReader.o: /usr/include/c++/4.2/ext/functional common/service.h
 .obj/CsvReader.o: CsvReader.h /usr/include/c++/4.2/fstream
 .obj/CsvReader.o: /usr/include/c++/4.2/istream /usr/include/c++/4.2/ios
 .obj/CsvReader.o: /usr/include/c++/4.2/bits/localefwd.h

@@ -34,3 +34,6 @@ message(STATUS "MSVC: Disabled NON-SECURE warnings")
 #Ignore warnings about POSIX deprecation
 add_definitions(-D_CRT_NONSTDC_NO_WARNINGS)
 message(STATUS "MSVC: Disabled POSIX warnings")
+
+set(CMAKE_CXX_FLAGS_RELEASE "/MT")
+set(CMAKE_CXX_FLAGS_DEBUG "/MTd")
