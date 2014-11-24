@@ -15,12 +15,13 @@
 #include "guild.h"
 #include "affect.h"
 #include "unique_item.h"
-#include "lua_incl.h"
 #include "arena.h"
 #include "castle.h"
 #include "sectree.h"
 #include "ani.h"
 #include "locale_service.h"
+
+#include <lua.hpp>
 
 int battle_hit(LPCHARACTER ch, LPCHARACTER victim, int & iRetDam);
 

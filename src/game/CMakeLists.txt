@@ -2,7 +2,7 @@
 # This file is part of the enhanceMT Project.
 ##
 
-file(GLOB sources_localdir *.cpp *.c *.h)
+file(GLOB_RECURSE sources_localdir *.cpp *.c *.h)
 
 # If not FreeBSD
 list(REMOVE_ITEM sources_localdir ${CMAKE_CURRENT_SOURCE_DIR}/FileMonitor_FreeBSD.h)
@@ -14,7 +14,24 @@ SET(game_SRCS
 )
 
 include_directories(
-	${CMAKE_BINARY_DIR}
+	${CMAKE_CURRENT_SOURCE_DIR}
+	${CMAKE_CURRENT_SOURCE_DIR}/Arena
+	${CMAKE_CURRENT_SOURCE_DIR}/Auction
+	${CMAKE_CURRENT_SOURCE_DIR}/Battle
+	${CMAKE_CURRENT_SOURCE_DIR}/Castle
+	${CMAKE_CURRENT_SOURCE_DIR}/Commands
+	${CMAKE_CURRENT_SOURCE_DIR}/Entities
+	${CMAKE_CURRENT_SOURCE_DIR}/Entities/Character
+	${CMAKE_CURRENT_SOURCE_DIR}/Entities/Horse
+	${CMAKE_CURRENT_SOURCE_DIR}/Entities/Pet
+	${CMAKE_CURRENT_SOURCE_DIR}/Guilds
+	${CMAKE_CURRENT_SOURCE_DIR}/Items
+	${CMAKE_CURRENT_SOURCE_DIR}/Logs
+	${CMAKE_CURRENT_SOURCE_DIR}/LuaEngine
+	${CMAKE_CURRENT_SOURCE_DIR}/Movement
+	${CMAKE_CURRENT_SOURCE_DIR}/Quests
+	${CMAKE_CURRENT_SOURCE_DIR}/Server
+	${CMAKE_CURRENT_SOURCE_DIR}/Server/Protocol
 	${CMAKE_SOURCE_DIR}/src
 	${CMAKE_SOURCE_DIR}/src/shared
 	${CMAKE_SOURCE_DIR}/src/shared/libdevil

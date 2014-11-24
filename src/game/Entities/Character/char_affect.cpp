@@ -12,11 +12,12 @@
 #include "guild.h"
 #include "utils.h"
 #include "locale_service.h"
-#include "lua_incl.h"
 #include "arena.h"
 #include "horsename_manager.h"
 #include "item.h"
 #include "DragonSoul.h"
+
+#include <lua.hpp>
 
 #define IS_NO_SAVE_AFFECT(type) ((type) == AFFECT_WAR_FLAG || (type) == AFFECT_REVIVE_INVISIBLE || ((type) >= AFFECT_PREMIUM_START && (type) <= AFFECT_PREMIUM_END))
 #define IS_NO_CLEAR_ON_DEATH_AFFECT(type) ((type) == AFFECT_BLOCK_CHAT || ((type) >= 500 && (type) < 600))
