@@ -1,6 +1,5 @@
 ##
 # This file is part of the enhanceMT Project.
-# Based on TrinityCore project cmake files.
 ##
 
 add_subdirectory(shared)
