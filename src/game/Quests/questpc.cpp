@@ -571,8 +571,8 @@ namespace quest
 			TQuestTable & r = s_table[i++];
 
 			r.dwPID = m_dwID;
-			strlcpy(r.szName, stName.c_str(), sizeof(r.szName));
-			strlcpy(r.szState, stState.c_str(), sizeof(r.szState));
+			strlcpymt(r.szName, stName.c_str(), sizeof(r.szName));
+			strlcpymt(r.szState, stState.c_str(), sizeof(r.szState));
 			r.lValue = lValue;
 		}
 

@@ -267,7 +267,7 @@ bool GetIPInfo()
 
 		if (!strncmp(netip, "999.999", 7)) // ignore if address is starting with 192
 		{
-			strlcpy(g_szInternalIP, netip, sizeof(g_szInternalIP));
+			strlcpymt(g_szInternalIP, netip, sizeof(g_szInternalIP));
 #ifndef _WIN32
 			fprintf(stderr, "INTERNAL_IP: %s interface %s\n", netip, ifap->ifa_name);
 #else
@@ -276,7 +276,7 @@ bool GetIPInfo()
 		}
 		else if (!strncmp(netip, "10.", 3))
 		{
-			strlcpy(g_szInternalIP, netip, sizeof(g_szInternalIP));
+			strlcpymt(g_szInternalIP, netip, sizeof(g_szInternalIP));
 #ifndef _WIN32
 			fprintf(stderr, "INTERNAL_IP: %s interface %s\n", netip, ifap->ifa_name);
 #else
@@ -285,7 +285,7 @@ bool GetIPInfo()
 		}
 		else if (g_szPublicIP[0] == '0')
 		{
-			strlcpy(g_szPublicIP, netip, sizeof(g_szPublicIP));
+			strlcpymt(g_szPublicIP, netip, sizeof(g_szPublicIP));
 #ifndef _WIN32
 			fprintf(stderr, "PUBLIC_IP: %s interface %s\n", netip, ifap->ifa_name);
 #else
@@ -768,7 +768,7 @@ void config_init(const string& st_localeServiceName)
 
 		TOKEN("db_addr")
 		{
-			strlcpy(db_addr, value_string, sizeof(db_addr));
+			strlcpymt(db_addr, value_string, sizeof(db_addr));
 
 			for (int n =0; n < ADDRESS_MAX_LEN; ++n)
 			{
@@ -966,7 +966,7 @@ void config_init(const string& st_localeServiceName)
 
 		TOKEN("teen_addr")
 		{
-			strlcpy(teen_addr, value_string, sizeof(teen_addr));
+			strlcpymt(teen_addr, value_string, sizeof(teen_addr));
 
 			for (int n =0; n < ADDRESS_MAX_LEN; ++n)
 			{
@@ -1009,7 +1009,7 @@ void config_init(const string& st_localeServiceName)
 
 		TOKEN("bind_ip")
 		{
-			strlcpy(g_szPublicIP, value_string, sizeof(g_szPublicIP));
+			strlcpymt(g_szPublicIP, value_string, sizeof(g_szPublicIP));
 		}
 
 		TOKEN("view_range")

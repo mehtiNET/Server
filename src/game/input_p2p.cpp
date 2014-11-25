@@ -117,7 +117,7 @@ int CInputP2P::Notice(LPDESC d, const char * c_pData, size_t uiBytes)
 	}
 
 	char szBuf[256+1];
-	strlcpy(szBuf, c_pData + sizeof(TPacketGGNotice), MIN(p->lSize + 1, sizeof(szBuf)));
+	strlcpymt(szBuf, c_pData + sizeof(TPacketGGNotice), MIN(p->lSize + 1, sizeof(szBuf)));
 	SendNotice(szBuf);
 	return (p->lSize);
 }
@@ -137,7 +137,7 @@ int CInputP2P::MonarchNotice(LPDESC d, const char * c_pData, size_t uiBytes)
 	}
 
 	char szBuf[256+1];
-	strlcpy(szBuf, c_pData + sizeof(TPacketGGMonarchNotice), MIN(p->lSize + 1, sizeof(szBuf)));
+	strlcpymt(szBuf, c_pData + sizeof(TPacketGGMonarchNotice), MIN(p->lSize + 1, sizeof(szBuf)));
 	SendMonarchNotice(p->bEmpire, szBuf);
 	return (p->lSize);
 }

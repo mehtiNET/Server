@@ -136,7 +136,7 @@
 /* #undef HAVE_SNPRINTF */
 /* #undef HAVE_STPCPY */
 #define HAVE_STRERROR 1
-/* #undef HAVE_STRLCPY */
+/* #undef HAVE_strlcpymt */
 #define HAVE_STRNLEN 1
 #define HAVE_STRPBRK 1
 /* #undef HAVE_STRSEP */

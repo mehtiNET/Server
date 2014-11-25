@@ -151,7 +151,7 @@ void CItem::EncodeInsertPacket(LPENTITY ent)
 
 		p.bHeader = HEADER_GC_ITEM_OWNERSHIP;
 		p.dwVID = m_dwVID;
-		strlcpy(p.szName, info->szOwnerName, sizeof(p.szName));
+		strlcpymt(p.szName, info->szOwnerName, sizeof(p.szName));
 
 		d->Packet(&p, sizeof(TPacketGCItemOwnership));
 	}
@@ -1095,7 +1095,7 @@ void CItem::SetOwnership(LPCHARACTER ch, int iSec)
 	m_dwOwnershipPID = ch->GetPlayerID();
 
 	item_event_info* info = AllocEventInfo<item_event_info>();
-	strlcpy(info->szOwnerName, ch->GetName(), sizeof(info->szOwnerName));
+	strlcpymt(info->szOwnerName, ch->GetName(), sizeof(info->szOwnerName));
 	info->item = this;
 
 	SetOwnershipEvent(event_create(ownership_event, info, PASSES_PER_SEC(iSec)));
@@ -1104,7 +1104,7 @@ void CItem::SetOwnership(LPCHARACTER ch, int iSec)
 
 	p.bHeader = HEADER_GC_ITEM_OWNERSHIP;
 	p.dwVID = m_dwVID;
-	strlcpy(p.szName, ch->GetName(), sizeof(p.szName));
+	strlcpymt(p.szName, ch->GetName(), sizeof(p.szName));
 
 	PacketAround(&p, sizeof(p));
 }

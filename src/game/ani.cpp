@@ -157,27 +157,27 @@ DWORD ANI::load_one_weapon(const char *dir_name, int weapon, BYTE combo, bool ho
 	switch (weapon)
 	{
 		case WEAPON_SWORD:
-			strlcpy(format, "%s/%sonehand_sword/combo_%02d.msa", sizeof(format));
+			strlcpymt(format, "%s/%sonehand_sword/combo_%02d.msa", sizeof(format));
 			break;
 
 		case WEAPON_DAGGER:
-			strlcpy(format, "%s/%sdualhand_sword/combo_%02d.msa", sizeof(format));
+			strlcpymt(format, "%s/%sdualhand_sword/combo_%02d.msa", sizeof(format));
 			break;
 
 		case WEAPON_BOW:
-			strlcpy(format, "%s/%sbow/attack.msa", sizeof(format));
+			strlcpymt(format, "%s/%sbow/attack.msa", sizeof(format));
 			break;
 
 		case WEAPON_TWO_HANDED:
-			strlcpy(format, "%s/%stwohand_sword/combo_%02d.msa", sizeof(format));
+			strlcpymt(format, "%s/%stwohand_sword/combo_%02d.msa", sizeof(format));
 			break;
 
 		case WEAPON_BELL:
-			strlcpy(format, "%s/%sbell/combo_%02d.msa", sizeof(format));
+			strlcpymt(format, "%s/%sbell/combo_%02d.msa", sizeof(format));
 			break;
 
 		case WEAPON_FAN:
-			strlcpy(format, "%s/%sfan/combo_%02d.msa", sizeof(format));
+			strlcpymt(format, "%s/%sfan/combo_%02d.msa", sizeof(format));
 			break;
 
 		default:

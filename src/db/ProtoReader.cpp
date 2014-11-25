@@ -591,16 +591,16 @@ bool Set_Proto_Mob_Table(TMobTable *mobTable, cCsvTable &csvTable,std::map<int,c
 {
 	int col = 0;
 	str_to_number(mobTable->dwVnum, csvTable.AsStringByIndex(col++));
-	strlcpy(mobTable->szName, csvTable.AsStringByIndex(col++), sizeof(mobTable->szName));
+	strlcpymt(mobTable->szName, csvTable.AsStringByIndex(col++), sizeof(mobTable->szName));
 
 	//3. 지역별 이름 넣어주기.
 	map<int,const char*>::iterator it;
 	it = nameMap.find(mobTable->dwVnum);
 	if (it != nameMap.end()) {
 		const char * localeName = it->second;
-		strlcpy(mobTable->szLocaleName, localeName, sizeof (mobTable->szLocaleName));
+		strlcpymt(mobTable->szLocaleName, localeName, sizeof (mobTable->szLocaleName));
 	} else {
-		strlcpy(mobTable->szLocaleName, mobTable->szName, sizeof (mobTable->szLocaleName));
+		strlcpymt(mobTable->szLocaleName, mobTable->szName, sizeof (mobTable->szLocaleName));
 	}
 
 	//RANK
@@ -631,7 +631,7 @@ bool Set_Proto_Mob_Table(TMobTable *mobTable, cCsvTable &csvTable,std::map<int,c
 
 	str_to_number(mobTable->bEmpire, csvTable.AsStringByIndex(col++));  //col = 11
 
-	strlcpy(mobTable->szFolder, csvTable.AsStringByIndex(col++), sizeof(mobTable->szFolder));
+	strlcpymt(mobTable->szFolder, csvTable.AsStringByIndex(col++), sizeof(mobTable->szFolder));
 
 	str_to_number(mobTable->bOnClickType, csvTable.AsStringByIndex(col++));	
 
@@ -784,15 +784,15 @@ bool Set_Proto_Item_Table(TItemTable *itemTable, cCsvTable &csvTable,std::map<in
 		}
 	}
 
-	strlcpy(itemTable->szName, csvTable.AsStringByIndex(1), sizeof(itemTable->szName));
+	strlcpymt(itemTable->szName, csvTable.AsStringByIndex(1), sizeof(itemTable->szName));
 	//지역별 이름 넣어주기.
 	map<int,const char*>::iterator it;
 	it = nameMap.find(itemTable->dwVnum);
 	if (it != nameMap.end()) {
 		const char * localeName = it->second;
-		strlcpy(itemTable->szLocaleName, localeName, sizeof (itemTable->szLocaleName));
+		strlcpymt(itemTable->szLocaleName, localeName, sizeof (itemTable->szLocaleName));
 	} else {
-		strlcpy(itemTable->szLocaleName, itemTable->szName, sizeof (itemTable->szLocaleName));
+		strlcpymt(itemTable->szLocaleName, itemTable->szName, sizeof (itemTable->szLocaleName));
 	}
 	itemTable->bType = dataArray[2];
 	itemTable->bSubType = dataArray[3];

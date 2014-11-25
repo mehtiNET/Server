@@ -61,7 +61,7 @@ namespace quest
 						continue;
 
 					sys_log(1, "QUEST reading %s", pde->d_name);
-					strlcpy(buf + is, pde->d_name, sizeof(buf) - is);
+					strlcpymt(buf + is, pde->d_name, sizeof(buf) - is);
 					LoadStateScript(event_index, buf, pde->d_name);
 				}
 
