@@ -3,6 +3,9 @@
 # Based on TrinityCore project cmake files.
 ##
 
+# Use Extern library ? (Windows only)
+set(IM_LAZY 0)
+
 # Set project name
 project(enhanceMT)
 
@@ -24,31 +27,34 @@ include(cmake/options.cmake)
 
 # Set platform and compiler options
 include(CheckPlatform)
-
-# Find CryptoPP
-#find_package(CryptoPP REQUIRED)
-
-# Find OpenSSL
-#set(OPENSSL_EXPECTED_VERSION 1.0.1)
-#find_package(OpenSSL REQUIRED)
-
-set(ENV{BOOST_ROOT} C:/Boost/include/boost-1_57)
-#set(Boost_INCLUDE_DIRS $ENV{BOOST_ROOT})
-set(CRYPTOPP_INCLUDE_DIRS C:/cryptopp/include)
-set(MYSQL_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/src/shared/libmysql/6.0.2/win32)
-set(OPENSSL_INCLUDE_DIR C:/OpenSSL-Win32/include)
-
-#include_directories(
-#	${BOOST_INCLUDE_DIR}
-#	${CRYPTOPP_INCLUDE_DIRS}
-#	${MYSQL_INCLUDE_DIR}
-#	${OPENSSL_INCLUDE_DIR}
-#)
-
-set(BOOST_LIBRARY_DIR C:/Boost/lib)
-set(CRYPTOPP_LIBRARY_DIR C:/cryptopp/lib)
-set(MYSQL_LIBRARIES ${CMAKE_SOURCE_DIR}/src/shared/libmysql/6.0.2/win32/lib)
-set(OPENSSL_LIBRARIES C:/OpenSSL-Win32/lib)
+	
+if(WIN32)
+	if(${IM_LAZY})
+		set(EXTERN_DIR ${CMAKE_SOURCE_DIR}/Extern)
+		
+		set(ENV{BOOST_ROOT} ${EXTERN_DIR}/boost-1_57)
+		set(CRYPTOPP_INCLUDE_DIRS ${EXTERN_DIR}/cryptopp/include)
+		set(MYSQL_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/src/shared/libmysql/6.0.2/win32)
+		set(OPENSSL_INCLUDE_DIR ${EXTERN_DIR}/OpenSSL-Win32/include)
+		
+		set(BOOST_LIBRARY_DIR ${EXTERN_DIR}/boost-1_57/lib)
+		set(CRYPTOPP_LIBRARY_DIR ${EXTERN_DIR}/cryptopp/lib)
+		set(MYSQL_LIBRARIES ${CMAKE_SOURCE_DIR}/src/shared/libmysql/6.0.2/win32/lib)
+		set(OPENSSL_LIBRARIES ${EXTERN_DIR}/OpenSSL-Win32/lib)
+	else()
+		set(ENV{BOOST_ROOT} C:/Boost/include/boost-1_57)
+		#set(Boost_INCLUDE_DIRS $ENV{BOOST_ROOT})
+		set(CRYPTOPP_INCLUDE_DIRS C:/cryptopp/include)
+		set(MYSQL_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/src/shared/libmysql/6.0.2/win32)
+		set(OPENSSL_INCLUDE_DIR C:/OpenSSL-Win32/include)
+		
+		set(BOOST_LIBRARY_DIR C:/Boost/lib)
+		set(CRYPTOPP_LIBRARY_DIR C:/cryptopp/lib)
+		set(MYSQL_LIBRARIES ${CMAKE_SOURCE_DIR}/src/shared/libmysql/6.0.2/win32/lib)
+		set(OPENSSL_LIBRARIES C:/OpenSSL-Win32/lib)
+	endif()
+elseif(UNIX)
+endif()
 
 # Boost
 include(ConfigureBoost)
