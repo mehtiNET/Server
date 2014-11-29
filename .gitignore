@@ -5,3 +5,5 @@
 *.log
 *.exe
 *.opensdf
+/Extern
+/build
