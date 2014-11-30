@@ -24,7 +24,7 @@ namespace quest
 
 		char script[256];
 		snprintf(script, sizeof(script), "%s/oxquiz.lua", LocaleService_GetBasePath().c_str());
-		int result = lua_dofile(quest::CQuestManager::instance().GetLuaState(), script);
+		int result = luaL_dofile(quest::CQuestManager::instance().GetLuaState(), script);
 
 		if (result != 0)
 		{

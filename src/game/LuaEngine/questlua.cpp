@@ -35,7 +35,7 @@ namespace quest
 		lua_State* L = CQuestManager::instance().GetLuaState();
 		int x = lua_gettop(L);
 
-		int errcode = lua_dobuffer(L, ("return "+str).c_str(), str.size()+7, "ScriptToString");
+		int errcode = luaL_loadbuffer(L, ("return "+str).c_str(), str.size()+7, "ScriptToString");
 		string retstr;
 		if (!errcode)
 		{
@@ -175,7 +175,7 @@ namespace quest
 
 		lua_State* L = CQuestManager::instance().GetLuaState();
 		int x = lua_gettop(L);
-		int errcode = lua_dobuffer(L, code, size, "IsScriptTrue");
+		int errcode = luaL_loadbuffer(L, code, size, "IsScriptTrue");
 		int bStart = lua_toboolean(L, -1);
 		if (errcode)
 		{
@@ -535,7 +535,7 @@ namespace quest
 			char settingsFileName[256];
 			snprintf(settingsFileName, sizeof(settingsFileName), "%s/settings.lua", LocaleService_GetBasePath().c_str());
 
-			int settingsLoadingResult = lua_dofile(L, settingsFileName);
+			int settingsLoadingResult = luaL_dofile(L, settingsFileName);
 			sys_log(0, "LoadSettings(%s), returns %d", settingsFileName, settingsLoadingResult);
 			if (settingsLoadingResult != 0)
 			{
@@ -548,7 +548,7 @@ namespace quest
 			char questlibFileName[256];
 			snprintf(questlibFileName, sizeof(questlibFileName), "%s/questlib.lua", LocaleService_GetQuestPath().c_str());
 
-			int questlibLoadingResult = lua_dofile(L, questlibFileName);
+			int questlibLoadingResult = luaL_dofile(L, questlibFileName);
 			sys_log(0, "LoadQuestlib(%s), returns %d", questlibFileName, questlibLoadingResult);
 			if (questlibLoadingResult != 0)
 			{
@@ -562,7 +562,7 @@ namespace quest
 			char translateFileName[256];
 			snprintf(translateFileName, sizeof(translateFileName), "%s/translate.lua", LocaleService_GetBasePath().c_str());
 
-			int translateLoadingResult = lua_dofile(L, translateFileName);
+			int translateLoadingResult = luaL_dofile(L, translateFileName);
 			sys_log(0, "LoadTranslate(%s), returns %d", translateFileName, translateLoadingResult);
 			if (translateLoadingResult != 0)
 			{
@@ -582,7 +582,7 @@ namespace quest
 				snprintf(questLocaleFileName, sizeof(questLocaleFileName), "%s/locale_%s.lua", g_stQuestDir.c_str(), g_stLocale.c_str());
 			}
 
-			int questLocaleLoadingResult = lua_dofile(L, questLocaleFileName);
+			int questLocaleLoadingResult = luaL_dofile(L, questLocaleFileName);
 			sys_log(0, "LoadQuestLocale(%s), returns %d", questLocaleFileName, questLocaleLoadingResult);
 			if (questLocaleLoadingResult != 0)
 			{
@@ -612,7 +612,7 @@ namespace quest
 					snprintf(buf + 11, sizeof(buf) - 11, "%s", pde->d_name);
 
 					RegisterQuest(pde->d_name, ++iQuestIdx);
-					int ret = lua_dofile(L, (stQuestObjectDir + "/state/" + pde->d_name).c_str());
+					int ret = luaL_dofile(L, (stQuestObjectDir + "/state/" + pde->d_name).c_str());
 					sys_log(0, "QUEST: loading %s, returns %d", (stQuestObjectDir + "/state/" + pde->d_name).c_str(), ret);
 
 					BuildStateIndexToName(pde->d_name);
@@ -622,7 +622,7 @@ namespace quest
 			}
 		}
 
-		lua_setgcthreshold(L, 0);
+		lua_gc(L, LUA_GCCOLLECT, 0);
 
 		lua_newtable(L);
 		lua_setglobal(L, "__codecache");
