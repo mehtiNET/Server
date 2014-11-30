@@ -44,7 +44,6 @@
 #include "gm.h"
 #include "panama.h"
 #include "map_location.h"
-#include "HackShield.h"
 #include "XTrapManager.h"
 
 #include "DragonSoul.h"
@@ -477,18 +476,6 @@ void CInputDB::PlayerLoad(LPDESC d, const char * data)
 			ch->GetGMLevel());
 
 	ch->QuerySafeboxSize();
-
-	if (isHackShieldEnable)
-	{
-		if (! CHackShieldManager::instance().CreateClientHandle(ch->GetPlayerID()))
-		{
-			d->SetPhase(PHASE_CLOSE);
-		}
-		else
-		{
-			ch->StartHackShieldCheckCycle( HackShield_CheckCycleTime );
-		}
-	}
 
 	CXTrapManager::instance().CreateClientSession( ch );
 }
@@ -2669,14 +2656,7 @@ void CInputDB::DetailLog(const TPacketNeedLoginLogInfo* info)
 		LPCHARACTER pChar = CHARACTER_MANAGER::instance().FindByPID( info->dwPlayerID );
 
 		if (NULL != pChar)
-		{
 			LogManager::instance().DetailLoginLog(true, pChar);
-
-			if (isHackShieldEnable)
-			{
-				pChar->StartHackShieldCheckCycle( HackShield_FirstCheckWaitTime );
-			}
-		}
 	}
 }
 

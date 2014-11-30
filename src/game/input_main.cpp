@@ -38,7 +38,6 @@
 #include "motion.h"
 #include "OXEvent.h"
 #include "locale_service.h"
-#include "HackShield.h"
 #include "XTrapManager.h"
 #include "DragonSoul.h"
 
@@ -3244,10 +3243,6 @@ int CInputMain::Analyze(LPDESC d, BYTE bHeader, const char * c_pData)
 			break;
 
 		case HEADER_CG_HS_ACK:
-			if (isHackShieldEnable)
-			{
-				CHackShieldManager::instance().VerifyAck(d->GetCharacter(), c_pData);
-			}
 			break;
 
 		case HEADER_CG_XTRAP_ACK:

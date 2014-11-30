@@ -58,7 +58,6 @@
 #include "threeway_war.h"
 #include "auth_brazil.h"
 #include "DragonLair.h"
-#include "HackShield.h"
 #include "skill_power.h"
 #include "SpeedServer.h"
 #include "XTrapManager.h"
@@ -441,18 +440,6 @@ int main(int argc, char **argv)
 	DebugAllocator::StaticSetUp();
 #endif
 
-#ifndef _WIN32
-	// <Factor> start unit tests if option is set
-	if ( argc > 1 ) 
-	{
-		if ( strcmp( argv[1], "unittest" ) == 0 )
-		{
-			::testing::InitGoogleTest(&argc, argv);
-			return RUN_ALL_TESTS();
-		}
-	}
-#endif
-
 	ilInit(); // DevIL Initialize
 
 	WriteVersion();
@@ -504,7 +491,6 @@ int main(int argc, char **argv)
 	CThreeWayWar	threeway_war;
 	CDragonLairManager	dl_manager;
 
-	CHackShieldManager	HSManager;
 	CXTrapManager		XTManager;
 
 	CSpeedServerManager SSManager;
@@ -553,17 +539,6 @@ int main(int argc, char **argv)
 	//if game server
 	if (!g_bAuthServer)
 	{
-		//hackshield
-		if (isHackShieldEnable)
-		{
-			if (!HSManager.Initialize())
-			{
-				fprintf(stderr, "Failed To Initialize HS");
-				CleanUpForEarlyExit();
-				return 0;
-			}
-		}
-
 		//xtrap
 		if(bXTrapEnabled)
 		{
@@ -658,15 +633,6 @@ int main(int argc, char **argv)
 	quest_manager.Destroy();
 	sys_log(0, "<shutdown> Destroying building::CManager...");
 	building_manager.Destroy();
-
-	if (!g_bAuthServer)
-	{
-		if (isHackShieldEnable)
-		{
-			sys_log(0, "<shutdown> Releasing HackShield manager...");
-			HSManager.Release();
-		}
-	}
 
 	sys_log(0, "<shutdown> Flushing TrafficProfiler...");
 	trafficProfiler.Flush();
