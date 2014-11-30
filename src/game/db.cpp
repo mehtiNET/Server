@@ -19,7 +19,6 @@
 #include "locale_service.h"
 #include "pcbang.h"
 #include "spam.h"
-#include "auth_brazil.h"
 
 extern bool g_bNoPasspod;
 extern std::string g_stBlockDate;
@@ -698,22 +697,9 @@ void DBManager::AnalyzeReturnQuery(SQLMsg * pMsg)
 
 				if (pMsg->Get()->uiNumRows == 0)
 				{
-					if (true == LC_IsBrazil())
-					{
-						// 계정이 없으면 새로 만들어야 한다
-						ReturnQuery(QID_BRAZIL_CREATE_ID, qi->dwIdent, pinfo,
-								"INSERT INTO account(login, password, social_id, create_time) "
-								"VALUES('%s', password('%s'), '0000000', NOW()) ;",
-								pinfo->login, pinfo->passwd);
-
-						sys_log(0, "[AUTH_BRAZIL] : Create A new AccountID From OnGame");
-					}
-					else
-					{
-						sys_log(0, "   NOID");
-						LoginFailure(d, "NOID");
-						M2_DELETE(pinfo);
-					}
+					sys_log(0, "   NOID");
+					LoginFailure(d, "NOID");
+					M2_DELETE(pinfo);
 				}
 				else
 				{
@@ -828,11 +814,6 @@ void DBManager::AnalyzeReturnQuery(SQLMsg * pMsg)
 
 					int nPasswordDiff = strcmp(szEncrytPassword, szPassword);
 
-					if (true == LC_IsBrazil())
-					{
-						nPasswordDiff = 0; // 브라질 버전에서는 비밀번호 체크를 하지 않는다.
-					}
-
 					if (nPasswordDiff)
 					{
 						LoginFailure(d, "WRONGPWD");
@@ -915,31 +896,9 @@ void DBManager::AnalyzeReturnQuery(SQLMsg * pMsg)
 
 				if (pMsg->Get()->uiNumRows == 0)
 				{
-					if (true == LC_IsBrazil())
-					{
-						// 계정이 없으면 새로 만들어야 한다
-						ReturnQuery(QID_BRAZIL_CREATE_ID, qi->dwIdent, pinfo,
-								"INSERT INTO account(login, password, social_id, create_time) "
-								"VALUES('%s', password('%s'), '0000000', NOW()) ;",
-								pinfo->login, pinfo->passwd);
-
-						sys_log(0, "[AUTH_BRAZIL] : Create A new AccountID From OnGame");
-					} else if (true == LC_IsJapan())
-					{
-						// 계정이 없으면 새로 만들어야 한다
-						ReturnQuery(QID_JAPAN_CREATE_ID, qi->dwIdent, pinfo,
-								"INSERT INTO account(login, password, social_id, create_time) "
-								"VALUES('%s', password('%s'), '0000000', NOW()) ;",
-								pinfo->login, "^Aasl@(!$)djl!231fj!&#");
-
-						sys_log(0, "[AUTH_JAPAN] : Create A new AccountID From OGE");
-					}
-					else
-					{
-						sys_log(0, "   NOID");
-						LoginFailure(d, "NOID");
-						M2_DELETE(pinfo);
-					}
+					sys_log(0, "   NOID");
+					LoginFailure(d, "NOID");
+					M2_DELETE(pinfo);
 				}
 				else
 				{
