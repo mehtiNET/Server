@@ -60,7 +60,6 @@
 #include "DragonLair.h"
 #include "skill_power.h"
 #include "SpeedServer.h"
-#include "XTrapManager.h"
 #include "DragonSoul.h"
 #include <boost/bind.hpp>
 #ifndef _WIN32
@@ -491,8 +490,6 @@ int main(int argc, char **argv)
 	CThreeWayWar	threeway_war;
 	CDragonLairManager	dl_manager;
 
-	CXTrapManager		XTManager;
-
 	CSpeedServerManager SSManager;
 	DSManager dsManager;
 
@@ -535,30 +532,6 @@ int main(int argc, char **argv)
 
 	if ( g_bTrafficProfileOn )
 		TrafficProfiler::instance().Initialize( TRAFFIC_PROFILE_FLUSH_CYCLE, "ProfileLog" );
-
-	//if game server
-	if (!g_bAuthServer)
-	{
-		//xtrap
-		if(bXTrapEnabled)
-		{
-			if (!XTManager.LoadXTrapModule())
-			{
-				CleanUpForEarlyExit();
-				return 0;
-			}
-#if defined (__FreeBSD__) && defined(__FILEMONITOR__)
-			//PFN_FileChangeListener pNotifyFunc = boost::bind( &CXTrapManager::NotifyMapFileChanged, CXTrapManager::instance(), _1 );
-			PFN_FileChangeListener pNotifyFunc = &(CXTrapManager::NotifyMapFileChanged);
-
-			const std::string strMap1Name = "map1.CS3";
-			const std::string strMap2Name = "map2.CS3";
-
-			FileMonitorFreeBSD::Instance().AddWatch( strMap1Name, pNotifyFunc );
-			FileMonitorFreeBSD::Instance().AddWatch( strMap2Name, pNotifyFunc );
-#endif
-		}
-	}
 
 	// Client PackageCrypt
 
