@@ -744,6 +744,11 @@ int start(int argc, char **argv)
 	
 	main_fdw = fdwatch_new(4096);
 
+	fprintf(stderr, "PUBLIC_IP: %s\n", g_szPublicIP);
+	fprintf(stderr, "PUBLIC_IP: %s\n", g_szPublicIP);
+	fprintf(stderr, "INTERNAL_IP: %s\n", g_szInternalIP);
+	fprintf(stderr, "INTERNAL_IP: %s\n", g_szInternalIP);
+
 	if ((tcp_socket = socket_tcp_bind(g_szPublicIP, mother_port)) == INVALID_SOCKET)
 	{
 		perror("socket_tcp_bind: tcp_socket");

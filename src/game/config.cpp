@@ -214,78 +214,6 @@ static void FN_log_adminpage()
 	dev_log(LOG_DEB0, "ADMIN_PAGE_PASSWORD = %s", g_stAdminPagePassword.c_str());
 }
 
-
-bool GetIPInfo()
-{
-#ifndef _WIN32
-	struct ifaddrs* ifaddrp = NULL;
-
-	if (0 != getifaddrs(&ifaddrp))
-		return false;
-
-	for( struct ifaddrs* ifap=ifaddrp ; NULL != ifap ; ifap = ifap->ifa_next )
-	{
-		struct sockaddr_in * sai = (struct sockaddr_in *) ifap->ifa_addr;
-
-		if (!ifap->ifa_netmask ||  // ignore if no netmask
-				sai->sin_addr.s_addr == 0 || // ignore if address is 0.0.0.0
-				sai->sin_addr.s_addr == 16777343) // ignore if address is 127.0.0.1
-			continue;
-#else
-	WSADATA wsa_data;
-	char host_name[100];
-	HOSTENT* host_ent;
-	int n = 0;
-
-	if (WSAStartup(0x0101, &wsa_data)) {
-		return false;
-	}
-
-	gethostname(host_name, sizeof(host_name));
-	host_ent = gethostbyname(host_name);
-	if (host_ent == NULL) {
-		return false;
-	}
-	for ( ; host_ent->h_addr_list[n] != NULL; ++n) {
-		struct sockaddr_in addr;
-		struct sockaddr_in* sai = &addr;
-		memcpy(&sai->sin_addr.s_addr, host_ent->h_addr_list[n], host_ent->h_length);
-#endif
-
-		char * netip = inet_ntoa(sai->sin_addr);
-
-		if (g_szPublicIP[0] == '0')
-		{
-			strlcpymt(g_szPublicIP, netip, sizeof(g_szPublicIP));
-#ifndef _WIN32
-			fprintf(stderr, "PUBLIC_IP: %s interface %s\n", netip, ifap->ifa_name);
-#else
-			fprintf(stderr, "PUBLIC_IP: %s\n", netip);
-#endif
-		}
-		else
-		{
-			strlcpymt(g_szInternalIP, netip, sizeof(g_szInternalIP));
-#ifndef _WIN32
-			fprintf(stderr, "INTERNAL_IP: %s interface %s\n", netip, ifap->ifa_name);
-#else
-			fprintf(stderr, "INTERNAL_IP: %s\n", netip);
-#endif
-		}
-	}
-
-#ifndef _WIN32
-	freeifaddrs( ifaddrp );
-#else
-	WSACleanup();
-#endif
-
-	if (g_szPublicIP[0] != '0')
-		return true;
-	else
-		return false;
-}
-
 void config_init(const string& st_localeServiceName)
 {
 	FILE	*fp;
@@ -310,12 +238,6 @@ void config_init(const string& st_localeServiceName)
 	if (!(fp = fopen(st_configFileName.c_str(), "r")))
 	{
 		fprintf(stderr, "Can not open [%s]\n", st_configFileName.c_str());
-		exit(1);
-	}
-
-	if (!GetIPInfo())
-	{
-		fprintf(stderr, "Can not get public ip address\n");
 		exit(1);
 	}
 
@@ -990,6 +912,11 @@ void config_init(const string& st_localeServiceName)
 		TOKEN("bind_ip")
 		{
 			strlcpymt(g_szPublicIP, value_string, sizeof(g_szPublicIP));
+		}
+
+		TOKEN("internal_ip")
+		{
+			strlcpymt(g_szInternalIP, value_string, sizeof(g_szInternalIP));
 		}
 
 		TOKEN("view_range")
