@@ -265,31 +265,22 @@ bool GetIPInfo()
 
 		char * netip = inet_ntoa(sai->sin_addr);
 
-		if (!strncmp(netip, "999.999", 7)) // ignore if address is starting with 192
-		{
-			strlcpymt(g_szInternalIP, netip, sizeof(g_szInternalIP));
-#ifndef _WIN32
-			fprintf(stderr, "INTERNAL_IP: %s interface %s\n", netip, ifap->ifa_name);
-#else
-			fprintf(stderr, "INTERNAL_IP: %s\n", netip);
-#endif
-		}
-		else if (!strncmp(netip, "10.", 3))
-		{
-			strlcpymt(g_szInternalIP, netip, sizeof(g_szInternalIP));
-#ifndef _WIN32
-			fprintf(stderr, "INTERNAL_IP: %s interface %s\n", netip, ifap->ifa_name);
-#else
-			fprintf(stderr, "INTERNAL_IP: %s\n", netip);
-#endif
-		}
-		else if (g_szPublicIP[0] == '0')
+		if (g_szPublicIP[0] == '0')
 		{
 			strlcpymt(g_szPublicIP, netip, sizeof(g_szPublicIP));
 #ifndef _WIN32
 			fprintf(stderr, "PUBLIC_IP: %s interface %s\n", netip, ifap->ifa_name);
 #else
 			fprintf(stderr, "PUBLIC_IP: %s\n", netip);
+#endif
+		}
+		else
+		{
+			strlcpymt(g_szInternalIP, netip, sizeof(g_szInternalIP));
+#ifndef _WIN32
+			fprintf(stderr, "INTERNAL_IP: %s interface %s\n", netip, ifap->ifa_name);
+#else
+			fprintf(stderr, "INTERNAL_IP: %s\n", netip);
 #endif
 		}
 	}
