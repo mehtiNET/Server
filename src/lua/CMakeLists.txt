@@ -2,11 +2,12 @@
 # This file is part of the enhanceMT Project.
 ##
 
-file(GLOB sources_localdir *.c)
+file(GLOB sources_localdir *.c *.h)
 list(REMOVE_ITEM sources_localdir ${CMAKE_CURRENT_SOURCE_DIR}/lua.c)
 list(REMOVE_ITEM sources_localdir ${CMAKE_CURRENT_SOURCE_DIR}/luac.c)
 
 SET(lua_SRCS
+	${lua_SRCS}
 	${sources_localdir}
 )
 

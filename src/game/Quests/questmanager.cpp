@@ -882,7 +882,7 @@ namespace quest
 		else
 		{
 			int x = lua_gettop(L);
-			luaL_loadbuffer(L, &(it->second[0]), it->second.size(), "StartScript");
+			lua_dobuffer(L, &(it->second[0]), it->second.size(), "StartScript");
 			int bStart = lua_toboolean(L, -1);
 			lua_settop(L, x);
 			return bStart != 0;
