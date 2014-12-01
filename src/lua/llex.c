@@ -41,14 +41,14 @@ static const char *const token2string [] = {
 
 
 void luaX_init (lua_State *L) {
-  int i;
+  int i, j;
   for (i=0; i<NUM_RESERVED-NUM_PRESERVED; i++) {
     TString *ts = luaS_new(L, token2string[i]);
     luaS_fix(ts);  /* reserved words are never collected */
     lua_assert(strlen(token2string[i])+1 <= TOKEN_LEN);
     ts->tsv.reserved = cast(lu_byte, i+1);  /* reserved word */
   }
-  int j;
+
   for(j=0;j<NUM_PRESERVED; i++, j++)
   {
     TString *ts = luaS_new(L, token2string[i]);
@@ -272,16 +272,14 @@ static void read_string (LexState *LS, int del, SemInfo *seminfo) {
   save_and_next(LS, l);
   while (LS->current != del) {
     checkbuffer(LS, l);
-
-	  unsigned char b_current = (unsigned char)LS->current;
-	  if (b_current & 0x80)
+	  if (LS->current & 0x80)
 	  {
 		  save_and_next(LS, l);
 		  save_and_next(LS, l);
 	  }
 	  else
 	  {
-		  switch (b_current) {
+		  switch (LS->current) {
       case EOZ:
         save(LS, '\0', l);
         luaX_lexerror(LS, "unfinished string", TK_EOS);
