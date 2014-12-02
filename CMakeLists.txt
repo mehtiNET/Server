@@ -4,7 +4,7 @@
 ##
 
 # Use Extern library ? (Windows only)
-set(IM_LAZY 0)
+set(USE_EXTERN_LIB 0)
 
 # Set project name
 project(enhanceMT)
@@ -29,7 +29,7 @@ include(cmake/options.cmake)
 include(CheckPlatform)
 	
 if(WIN32)
-	if(${IM_LAZY})
+	if(${USE_EXTERN_LIB})
 		set(EXTERN_DIR ${CMAKE_SOURCE_DIR}/Extern)
 		
 		set(ENV{BOOST_ROOT} ${EXTERN_DIR}/boost-1_57)
