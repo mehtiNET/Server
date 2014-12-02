@@ -50,7 +50,6 @@ if(WIN32)
         endif()
 	else()
 		set(ENV{BOOST_ROOT} C:/Boost/include/boost-1_57)
-		#set(Boost_INCLUDE_DIRS $ENV{BOOST_ROOT})
 		set(CRYPTOPP_INCLUDE_DIRS C:/cryptopp/include)
 		set(MYSQL_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/src/shared/libmysql/6.0.2/win32)
 		set(OPENSSL_INCLUDE_DIR C:/OpenSSL-Win32/include)
@@ -68,7 +67,7 @@ include(ConfigureBoost)
 set(BOOST_INCLUDE_DIR ${Boost_INCLUDE_DIRS})
 
 link_directories(
-	${BOOST_LIBRARYDIR}
+	${Boost_LIBRARY_DIRS}
 	${CRYPTOPP_LIBRARY_DIR}
 	${MYSQL_LIBRARIES}
 	${OPENSSL_LIBRARIES}
