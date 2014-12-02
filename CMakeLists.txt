@@ -33,11 +33,12 @@ if(WIN32)
 		set(EXTERN_DIR ${CMAKE_SOURCE_DIR}/Extern)
 		
 		set(ENV{BOOST_ROOT} ${EXTERN_DIR}/boost-1_57)
+		set(ENV{BOOST_LIBRARYDIR} ${EXTERN_DIR}/boost-1_57/lib)
+
 		set(CRYPTOPP_INCLUDE_DIRS ${EXTERN_DIR}/cryptopp/include)
 		set(MYSQL_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/src/shared/libmysql/6.0.2/win32)
 		set(OPENSSL_INCLUDE_DIR ${EXTERN_DIR}/OpenSSL-Win32/include)
 		
-		set(BOOST_LIBRARY_DIR ${EXTERN_DIR}/boost-1_57/lib)
         set(MYSQL_LIBRARIES ${CMAKE_SOURCE_DIR}/src/shared/libmysql/6.0.2/win32/lib)
         
         if(CMAKE_CXX_COMPILER_VERSION VERSION_GREATER 18.0)
@@ -54,7 +55,7 @@ if(WIN32)
 		set(MYSQL_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/src/shared/libmysql/6.0.2/win32)
 		set(OPENSSL_INCLUDE_DIR C:/OpenSSL-Win32/include)
 		
-		set(BOOST_LIBRARY_DIR C:/Boost/lib)
+		set(BOOST_LIBRARYDIR C:/Boost/lib)
 		set(CRYPTOPP_LIBRARY_DIR C:/cryptopp/lib)
 		set(MYSQL_LIBRARIES ${CMAKE_SOURCE_DIR}/src/shared/libmysql/6.0.2/win32/lib)
 		set(OPENSSL_LIBRARIES C:/OpenSSL-Win32/lib)
@@ -67,7 +68,7 @@ include(ConfigureBoost)
 set(BOOST_INCLUDE_DIR ${Boost_INCLUDE_DIRS})
 
 link_directories(
-	${BOOST_LIBRARY_DIR}
+	${BOOST_LIBRARYDIR}
 	${CRYPTOPP_LIBRARY_DIR}
 	${MYSQL_LIBRARIES}
 	${OPENSSL_LIBRARIES}
